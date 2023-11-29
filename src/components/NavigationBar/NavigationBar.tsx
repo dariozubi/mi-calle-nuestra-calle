@@ -19,9 +19,9 @@ function NavigationBar() {
 
 function NavLink({ children, href }: PropsWithChildren<{ href: string }>) {
   return (
-    <Link href={href} className="text-lg font-semibold">
+    <a href={href} className="text-lg font-semibold">
       {children}
-    </Link>
+    </a>
   )
 }
 

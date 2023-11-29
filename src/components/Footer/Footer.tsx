@@ -38,9 +38,9 @@ function Footer() {
 
 function FooterLink({ children, href }: PropsWithChildren<{ href: string }>) {
   return (
-    <Link href={href} className="w-1/3 text-sm">
+    <a href={href} className="w-1/3 text-sm">
       {children}
-    </Link>
+    </a>
   )
 }
 
