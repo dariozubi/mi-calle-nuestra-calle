@@ -2,7 +2,7 @@ import { PropsWithChildren } from 'react'
 
 function SeParte() {
   return (
-    <div className="p-16">
+    <div className="p-16" id="separte">
       <h2 className="mb-12 text-6xl font-extrabold">Sé parte</h2>
       <div className="flex">
         <div className="flex w-1/2 flex-col">

@@ -2,6 +2,8 @@ import ExploraProyectos from '@/components/ExploraProyectos'
 import Footer from '@/components/Footer'
 import NavigationBar from '@/components/NavigationBar'
 import Image from 'next/image'
+import Link from 'next/link'
+import { ArrowDown, ArrowUpRight } from 'react-feather'
 
 export default function TendederoVernaculo() {
   return (
@@ -30,16 +32,24 @@ export default function TendederoVernaculo() {
           </p>
           <hr className="mt-8" />
           <p className="mb-2 text-xl">Alianzas</p>
-          <p className="text-xl">
-            La Laguna <br />
+          <Link href="" className="flex items-center text-xl">
+            La Laguna
+            <ArrowUpRight size={20} className="-mb-1" />
+          </Link>
+          <Link href="" className="flex items-center text-xl">
             Diseña Colectiva
-          </p>
+            <ArrowUpRight size={20} className="-mb-1" />
+          </Link>
           <hr className="mt-8" />
           <p className="mb-2 text-xl">Metodologías</p>
-          <p className="text-xl">
-            Participa <br />
+          <Link href="" className="flex items-center text-xl">
+            Participa
+            <ArrowUpRight size={20} className="-mb-1" />
+          </Link>
+          <Link href="" className="flex items-center text-xl">
             Reporte final
-          </p>
+            <ArrowDown size={20} className="ml-1" />
+          </Link>
         </div>
         <div className="flex w-1/2 flex-col px-16">
           <h1 className="mb-12 text-xl">Tendedero Vernaculo</h1>

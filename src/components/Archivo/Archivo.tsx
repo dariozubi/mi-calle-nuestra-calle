@@ -5,7 +5,7 @@ import { FilterButton } from './FilterButton'
 function Archivo() {
   return (
     <>
-      <div className="bg-ladrillo p-16">
+      <div className="bg-ladrillo p-16" id="archivo">
         <div className="flex justify-between">
           <h2 className="text-6xl font-extrabold">Archivo</h2>
           <div className="flex items-end gap-8">
