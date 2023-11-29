@@ -3,7 +3,7 @@ import { PropsWithChildren } from 'react'
 
 function Footer() {
   return (
-    <div className="p-8">
+    <div className="p-16">
       <div className="flex justify-between">
         <Link className="font-bold" href="mailto:hola@micallenuestracalle.com">
           hola@micallenuestracalle.com

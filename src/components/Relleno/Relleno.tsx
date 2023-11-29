@@ -3,7 +3,7 @@ import Image from 'next/image'
 function Relleno() {
   return (
     <>
-      <div className="bg-yellow px-8 py-12 text-center">
+      <div className="bg-yellow px-16 py-12 text-center">
         <h3 className="text-5xl font-extrabold">
           creemos que la realidad es transformable.
         </h3>

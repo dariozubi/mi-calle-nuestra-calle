@@ -2,7 +2,7 @@ import ImageSection from '../ImageSection'
 
 function Projects() {
   return (
-    <div className="bg-yellow px-8 py-12">
+    <div className="bg-yellow p-16">
       <ImageSection />
     </div>
   )

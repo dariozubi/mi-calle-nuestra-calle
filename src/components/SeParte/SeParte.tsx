@@ -2,8 +2,8 @@ import { PropsWithChildren } from 'react'
 
 function SeParte() {
   return (
-    <div className="px-8 py-12">
-      <h2 className="mb-4 text-6xl font-extrabold">Sé parte</h2>
+    <div className="p-16">
+      <h2 className="mb-12 text-6xl font-extrabold">Sé parte</h2>
       <div className="flex">
         <div className="flex w-1/2 flex-col">
           <Item>ndnckjsndFKLwjehfkds</Item>

@@ -1,6 +1,6 @@
 function MainHeader() {
   return (
-    <h1 className="pb-10 pl-8 pr-24 pt-2 text-3xl font-bold">
+    <h1 className="px-16 pb-10 pt-2 text-3xl font-bold">
       Somos una <b className="text-blue">laboratoria</b>{' '}
       <b className="text-red">comunitaria</b> de{' '}
       <b className="text-yellow">arte</b>, investigación y futuros{' '}

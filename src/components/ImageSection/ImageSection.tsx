@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 async function ImageSection() {
   const response = await fetch('https://picsum.photos/v2/list?limit=8')
@@ -6,7 +7,11 @@ async function ImageSection() {
   return (
     <div className="flex flex-wrap">
       {data.map((img: { download_url: string; id: string }) => (
-        <div className="bg-blue relative aspect-square w-1/4" key={img.id}>
+        <Link
+          href="/proyecto/tendedero-vernaculo"
+          className="relative aspect-square w-1/4 bg-blue"
+          key={img.id}
+        >
           <Image
             src={img.download_url}
             alt="image"
@@ -15,7 +20,7 @@ async function ImageSection() {
               objectFit: 'cover',
             }}
           />
-        </div>
+        </Link>
       ))}
     </div>
   )

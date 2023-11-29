@@ -2,8 +2,8 @@ import { PropsWithChildren } from 'react'
 
 function NavigationBar() {
   return (
-    <nav className="flex w-full flex-col gap-3 p-8">
-      <p className="text-xl font-bold">mi calle, nuestra calle.</p>
+    <nav className="flex w-full flex-col gap-3 px-16 py-8">
+      <p className="text-xl font-extrabold">mi calle, nuestra calle.</p>
       <div className="flex gap-5">
         <NavLink>Nosotras</NavLink>
         <NavLink>Labs</NavLink>

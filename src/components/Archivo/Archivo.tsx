@@ -5,7 +5,7 @@ import { FilterButton } from './FilterButton'
 function Archivo() {
   return (
     <>
-      <div className="bg-ladrillo p-8">
+      <div className="bg-ladrillo p-16">
         <div className="flex justify-between">
           <h2 className="text-6xl font-extrabold">Archivo</h2>
           <div className="flex items-end gap-8">
@@ -24,7 +24,7 @@ function Archivo() {
           wisi enim ad minim
         </p>
       </div>
-      <div className="bg-ladrillo flex flex-col gap-1 pb-1">
+      <div className="flex flex-col gap-1 bg-ladrillo pb-1">
         {lista_archivo.map(item => (
           <ListItem item={item} key={item.url} />
         ))}

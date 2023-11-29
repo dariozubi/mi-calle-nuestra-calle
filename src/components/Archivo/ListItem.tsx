@@ -9,7 +9,7 @@ type Props = {
 
 export function ListItem({ item }: Props) {
   return (
-    <div className="bg-salmon w-fill flex justify-between px-8 py-4">
+    <div className="w-fill flex justify-between bg-salmon px-16 py-4">
       <p>{item.name}</p>
       <p>{item.publisher}</p>
       <p>{item.country}</p>
