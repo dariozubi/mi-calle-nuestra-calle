@@ -14,7 +14,7 @@ export function ListItem({ item }: Props) {
   return (
     <Link
       href={item.url}
-      className="w-fill flex bg-salmon px-16 py-4 hover:bg-ladrillo"
+      className="w-fill bg-grey flex px-16 py-4 hover:bg-pink"
     >
       <p className="w-1/4">{item.name}</p>
       <p className="w-1/4">{item.position}</p>

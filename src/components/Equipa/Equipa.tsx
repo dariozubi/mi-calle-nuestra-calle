@@ -6,7 +6,7 @@ function Equipa() {
   return (
     <>
       <div className="flex justify-between p-16">
-        <h1 className="text-extrabold text-4xl">Equipa</h1>
+        <h1 className="text-4xl font-extrabold">Equipa</h1>
         <div className="flex justify-between gap-8">
           <FilterButton>Fundadoras</FilterButton>
           <FilterButton>Asociadas</FilterButton>

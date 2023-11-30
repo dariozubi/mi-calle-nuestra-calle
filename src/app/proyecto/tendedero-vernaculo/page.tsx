@@ -31,7 +31,7 @@ export default function TendederoVernaculo() {
             Diseño participativo
           </p>
           <hr className="mt-8" />
-          <p className="mb-2 text-xl">Alianzas</p>
+          <p className="mb-6 text-xl">Alianzas</p>
           <Link href="" className="flex items-center text-xl">
             La Laguna
             <ArrowUpRight size={20} className="-mb-1" />
@@ -41,7 +41,7 @@ export default function TendederoVernaculo() {
             <ArrowUpRight size={20} className="-mb-1" />
           </Link>
           <hr className="mt-8" />
-          <p className="mb-2 text-xl">Metodologías</p>
+          <p className="mb-6 text-xl">Metodologías</p>
           <Link href="" className="flex items-center text-xl">
             Participa
             <ArrowUpRight size={20} className="-mb-1" />

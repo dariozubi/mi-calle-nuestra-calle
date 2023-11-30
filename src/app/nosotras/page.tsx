@@ -7,10 +7,10 @@ export default function Nosotras() {
   return (
     <main className="flex flex-col">
       <NavigationBar />
-      <div className="flex bg-yellow">
-        <div className="w-1/3 p-16">
+      <div className="bg-lila flex">
+        <div className="w-1/2 p-16">
           <div className="mb-12 h-5 w-5 rounded-full bg-black" />
-          <p className="text-xl">
+          <p className="text-2xl">
             MCNC fue fundada en Ciudad de México en el contexto de la pandemia
             de 2020, por la artista y futurista guatemalteca Sophia Arrazola
             como una respuesta a tiempos venideros. <br />
@@ -23,7 +23,7 @@ export default function Nosotras() {
             diseñadoras, sociólogas, antropólogas, ecologistas etc.
           </p>
         </div>
-        <div className="relative aspect-square w-2/3">
+        <div className="relative aspect-square w-1/2">
           <Image
             src="https://picsum.photos/1600/900"
             alt="image"

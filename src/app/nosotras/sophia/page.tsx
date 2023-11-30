@@ -7,9 +7,20 @@ export default function Sophia() {
   return (
     <main className="flex flex-col">
       <NavigationBar />
-      <div className="flex w-full">
-        <div className="flex w-1/2 flex-col px-16">
-          <div className="mb-12 h-5 w-5 rounded-full bg-ladrillo" />
+      <div className="flex justify-between bg-black px-16 py-6">
+        <Link
+          href="mailto:sophia@micallenuestracalle.com"
+          className="text-xl font-extrabold text-white"
+        >
+          sophia@micallenuestracalle.com
+        </Link>
+        <div className="flex gap-2 text-white">
+          <Link href="">Instagram</Link> | <Link href="">LinkedIn</Link>
+        </div>
+      </div>
+      <div className="relative flex w-full">
+        <div className="absolute top-0 ml-16 h-0 w-0 border-l-[15px] border-r-[15px] border-t-[15px] border-solid border-x-white border-t-black" />
+        <div className="mt-16 flex w-1/2 flex-col px-16">
           <h1 className="text-lg">Sophia Arrazola</h1>
           <hr className="mt-4" />
           <h2 className="mb-12 text-2xl">Intereses actuales</h2>
