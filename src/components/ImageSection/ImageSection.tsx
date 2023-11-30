@@ -8,18 +8,18 @@ async function ImageSection() {
     <div className="flex flex-wrap">
       {data.map((img: { download_url: string; id: string }) => (
         <Link
+          className="aspect-square w-1/4 p-[3px]"
           href="/proyecto/tendedero-vernaculo"
-          className="relative aspect-square w-1/4 bg-blue"
           key={img.id}
         >
-          <Image
-            src={img.download_url}
-            alt="image"
-            fill
-            style={{
-              objectFit: 'cover',
-            }}
-          />
+          <div className="relative h-full w-full overflow-hidden rounded">
+            <Image
+              src={img.download_url}
+              alt="image"
+              fill
+              className="object-cover"
+            />
+          </div>
         </Link>
       ))}
     </div>

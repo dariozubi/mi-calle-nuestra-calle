@@ -2,20 +2,28 @@ import { PropsWithChildren } from 'react'
 
 function SeParte() {
   return (
-    <div className="p-16" id="separte">
-      <h2 className="mb-12 text-6xl font-extrabold">Sé parte</h2>
-      <div className="flex">
-        <div className="flex w-1/2 flex-col">
-          <Item>ndnckjsndFKLwjehfkds</Item>
-          <Item>ndnckjsndFKLwjehfkds</Item>
-          <Item>ndnckjsndFKLwjehfkds</Item>
+    <div className="flex p-16" id="separte">
+      <div className="flex w-1/2 flex-col">
+        <h2 className="mb-12 text-6xl font-extrabold">Sé parte</h2>
+        <div className="flex  flex-col">
+          <Item>Dona tu tiempo como voluntaria</Item>
+          <Item>Haz un internship con nosotras</Item>
+          <Item>Únete al equipo de consultoras</Item>
         </div>
-        <div className="flex w-1/2 flex-col px-12">
-          <h4 className="mb-12 text-2xl">Tendedero vernáculo</h4>
-          <p>
-            Sophia es fundadora de Mi Calle, Nuestra Calle. Con más de 8 años.
-          </p>
-        </div>
+      </div>
+      <div className="flex w-1/2 flex-col px-12">
+        <h3 className="mb-12 text-3xl font-extrabold">¿Por qué unirme?</h3>
+        <p className="text-xl">
+          Creemos que todo conocimiento o area de expertís suma a nuestra causa.
+          <br />
+          <br />
+          Nuestra tribu esta conformada por una colectiva de artistas
+          interdisciplinarias, futuristas, urbanistas, estrategas, diseñadoras,
+          sociólogas, antropólogas, ecologistas etc, de distintas partes del
+          mundo. <br />
+          <br />
+          ¡Los futuros se construyen en comunidad! ¡Solo nos faltas tú!
+        </p>
       </div>
     </div>
   )
@@ -23,7 +31,7 @@ function SeParte() {
 
 function Item({ children }: PropsWithChildren) {
   return (
-    <button className="border-b border-black p-2 text-left hover:bg-black hover:text-white">
+    <button className="border-b border-black p-4 text-left text-2xl font-bold hover:bg-black hover:text-white">
       {children}
     </button>
   )

@@ -12,7 +12,7 @@ type Props = {
 
 export function ListItem({ item }: Props) {
   return (
-    <div className="w-fill flex justify-between bg-salmon px-16 py-4">
+    <div className="w-fill bg-grey flex justify-between px-16 py-4 hover:bg-white">
       <p>{item.name}</p>
       <p>{item.publisher}</p>
       <p>{item.country}</p>
