@@ -25,6 +25,7 @@ const config: Config = {
       grey: '#f2f0eb',
       white: '#ffffff',
       black: '#000000',
+      transparent: 'rgba(0,0,0,0)',
     },
   },
   plugins: [],
