@@ -6,7 +6,7 @@ import { ArrowDown, ArrowUpRight, Menu, X } from 'react-feather'
 import { MainLink } from './MainLink'
 import { usePathname } from 'next/navigation'
 
-const scrollLimit = 150
+const scrollLimit = 344
 
 function NavigationBar() {
   const [open, setOpen] = useState(false)
@@ -31,12 +31,8 @@ function NavigationBar() {
 
   return (
     <>
-      <nav
-        className={`${
-          isOnTop ? '' : 'fixed'
-        } z-50 flex w-full flex-col bg-white`}
-      >
-        <div className="flex items-center justify-between px-16 py-4">
+      <nav className={`fixed z-50 flex w-full flex-col bg-white`}>
+        <div className="z-10 flex w-full items-center justify-between bg-white px-16 py-4">
           <Link href="/" className="text-3xl font-black">
             mi calle, nuestra calle.
           </Link>
@@ -47,9 +43,9 @@ function NavigationBar() {
           )}
         </div>
         <div
-          className={`${
-            open || isOnTop ? 'flex' : 'hidden'
-          } gap-12 bg-lila px-16 py-8`}
+          className={`flex w-full gap-12 bg-lila px-16 py-8 transition-[margin] duration-700 ${
+            open || isOnTop ? '' : 'fixed -mt-72'
+          }`}
         >
           <div className="flex w-1/4 flex-col">
             <p className="text-2xl font-extrabold">México</p>
@@ -113,7 +109,11 @@ function NavigationBar() {
           </div>
         </div>
       </nav>
-      <div className={`${isOnTop ? '' : `h-48 w-full`}`} />
+      <div
+        className={`transition-[height] duration-500 ${
+          scrollPosition < scrollLimit + 100 ? 'h-72' : `h-48 w-full`
+        }`}
+      />
     </>
   )
 }
