@@ -6,7 +6,7 @@ function SeParte() {
     <>
       <figure className="relative aspect-[25/9] w-full">
         <Image
-          src="/img/hd/azcapotzalco_1.jpg"
+          src="/img/proyectas/azcapotzalco_1.jpg"
           alt="image"
           fill
           style={{

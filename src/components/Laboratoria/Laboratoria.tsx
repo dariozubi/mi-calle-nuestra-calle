@@ -41,7 +41,7 @@ function Laboratoria() {
         <div className="flex">
           <div className="relative w-1/2">
             <Image
-              src="https://picsum.photos/1600/900"
+              src="/img/proyectas/azcapotzalco_3.JPG"
               alt="image"
               fill
               className="object-cover"

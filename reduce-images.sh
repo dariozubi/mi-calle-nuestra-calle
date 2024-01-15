@@ -20,7 +20,7 @@ function convert_to_jpg(){
 
 # convert_to_jpg "$1/*.jpeg"
 
-width=400
+width=1920
 files=$1/*.jpg
 for f in $files
 do 

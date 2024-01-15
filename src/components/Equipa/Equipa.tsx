@@ -1,4 +1,4 @@
-import { equipa } from '@/utils/consts'
+import { equipa } from './consts'
 import { FilterButton } from './FilterButton'
 import { ListItem } from './ListItem'
 
