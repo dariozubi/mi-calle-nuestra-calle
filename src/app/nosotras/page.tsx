@@ -7,7 +7,7 @@ export default function Nosotras() {
   return (
     <main className="flex flex-col">
       <NavigationBar />
-      <div className="bg-lila flex">
+      <div className="flex bg-lila">
         <div className="w-1/2 p-16">
           <div className="mb-12 h-5 w-5 rounded-full bg-black" />
           <p className="text-2xl">
@@ -25,7 +25,7 @@ export default function Nosotras() {
         </div>
         <div className="relative aspect-square w-1/2">
           <Image
-            src="https://picsum.photos/1600/900"
+            src="/img/proyectas/azcapotzalco_3.jpg"
             alt="image"
             fill
             style={{

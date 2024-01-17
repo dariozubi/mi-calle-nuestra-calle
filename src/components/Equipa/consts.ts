@@ -1,44 +1,48 @@
-export const equipa = [
+import { Miembro } from './types'
+
+export const equipa: Miembro[] = [
   {
     name: 'Sophia Arrazola',
-    position: 'Fundadora y directora estratégica',
+    position: 'Directora ejecutiva (Fundadora)',
     country: 'Guatemala',
     url: '/nosotras/sophia',
+    tag: 'fundadora',
   },
   {
     name: 'Jesica Bastidas',
-    position: 'Fundadora y directora estratégica',
+    position: 'Directora de campo (Co-fundadora)',
     country: 'México',
-    url: '/nosotras/sophia',
+    url: '/nosotras/jesica',
+    tag: 'fundadora',
   },
   {
     name: 'Monserrat Padilla',
-    position: 'Aliada diseñadora, creativa y estratega',
+    position: 'Diseñadora, creativa y estratega (Aliada)',
     country: 'México',
-    url: '/nosotras/sophia',
+    tag: 'aliada',
+  },
+  {
+    name: 'Rosi Álvarez',
+    position: 'Mentora (Aliada)',
+    country: 'México',
+    tag: 'aliada',
+  },
+  {
+    name: 'Marce Bulla Montoya',
+    position: 'Mediadora comunitaria (Voluntaria)',
+    country: 'Costa Rica',
+    tag: 'voluntaria',
   },
   {
     name: 'Diana Rivadeneira',
-    position: 'Diseñadora estratega ',
+    position: 'Diseñadora estratega UX (Aliada)',
     country: 'Ecuador',
-    url: '/nosotras/sophia',
+    tag: 'aliada',
   },
   {
-    name: 'Ana Solano',
-    position: 'Diseñadora / colaboradora',
-    country: 'Costa Rica',
-    url: '/nosotras/sophia',
-  },
-  {
-    name: 'Ilaria Palermo',
-    position: 'Voluntaria',
-    country: 'Italia',
-    url: '/nosotras/sophia',
-  },
-  {
-    name: 'Chris V',
-    position: 'Voluntaria',
+    name: 'Chris Van Balen',
+    position: 'Urbanista y Geógrafa Humana (Voluntaria)',
     country: 'Holanda',
-    url: '/nosotras/sophia',
+    tag: 'voluntaria',
   },
 ]

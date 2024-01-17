@@ -1,8 +1,19 @@
 import { PropsWithChildren } from 'react'
 
-export function FilterButton({ children }: PropsWithChildren) {
+type Props = {
+  selected: boolean
+} & React.HTMLProps<HTMLButtonElement>
+
+export function FilterButton({
+  selected,
+  onClick,
+  children,
+}: PropsWithChildren<Props>) {
+  const colors = selected
+    ? 'bg-pink text-black'
+    : 'bg-black text-white hover:bg-pink hover:text-black'
   return (
-    <button className="h-10 bg-black px-2 text-xl  text-white hover:bg-pink hover:text-black">
+    <button onClick={onClick} className={`h-10 px-2 text-xl ${colors}`}>
       {children}
     </button>
   )
