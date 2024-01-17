@@ -332,8 +332,8 @@ export const equipa: Semblante[] = [
     slug: 'sophia-arrazola',
     nombre: 'Sophia Arrazola',
     correo: 'sophia@micallenuestracalle.com',
-    instagram: '',
-    linkedin: '',
+    instagram: 'https://www.instagram.com/sopharrazola_/?hl=es-la',
+    linkedin: 'https://www.linkedin.com/in/sophia-arrazola-63667189/',
     intereses: [
       'Género',
       'Migración climática',
@@ -377,8 +377,8 @@ export const equipa: Semblante[] = [
     slug: 'jesica-bastidas',
     nombre: 'Jesica Bastidas',
     correo: 'jesica@micallenuestracalle.com',
-    instagram: '',
-    linkedin: '',
+    instagram: 'https://www.instagram.com/jesica.bastidas/',
+    linkedin: 'https://www.linkedin.com/in/jesica-bastidas/',
     intereses: [
       'Interdisciplina y colaboración',
       'Arte comunitario',
