@@ -5,14 +5,14 @@ export const equipa: Miembro[] = [
     name: 'Sophia Arrazola',
     position: 'Directora ejecutiva (Fundadora)',
     country: 'Guatemala',
-    url: '/nosotras/sophia',
+    url: '/nosotras/sophia-arrazola',
     tag: 'fundadora',
   },
   {
     name: 'Jesica Bastidas',
     position: 'Directora de campo (Co-fundadora)',
     country: 'México',
-    url: '/nosotras/jesica',
+    url: '/nosotras/jesica-bastidas',
     tag: 'fundadora',
   },
   {

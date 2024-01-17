@@ -1,4 +1,4 @@
-import { Proyecta } from './types'
+import { Proyecta, Semblante } from './types'
 
 export const proyectas: Proyecta[] = [
   {
@@ -13,7 +13,7 @@ export const proyectas: Proyecta[] = [
     ],
     alianzas: [
       {
-        name: 'Violeta Radio',
+        nombre: 'Violeta Radio',
         url: 'https://violetaradio.org/',
       },
     ],
@@ -49,15 +49,15 @@ export const proyectas: Proyecta[] = [
     ],
     alianzas: [
       {
-        name: 'Placemaking México',
+        nombre: 'Placemaking México',
         url: 'https://lugarespublicos.org/',
       },
       {
-        name: 'Unidad de Género Azcapotzalco',
+        nombre: 'Unidad de Género Azcapotzalco',
         url: 'https://azcapotzalco.cdmx.gob.mx/iguales/',
       },
       {
-        name: 'Placemaking México',
+        nombre: 'Placemaking México',
         url: 'https://lugarespublicos.org/',
       },
     ],
@@ -99,7 +99,7 @@ export const proyectas: Proyecta[] = [
     ],
     alianzas: [
       {
-        name: 'La Nueva Fábrica',
+        nombre: 'La Nueva Fábrica',
         url: 'https://lanuevafabrica.org/es/',
       },
     ],
@@ -139,11 +139,11 @@ export const proyectas: Proyecta[] = [
     ],
     alianzas: [
       {
-        name: 'Dra. Anisah Abdullah',
+        nombre: 'Dra. Anisah Abdullah',
         url: 'https://www.linkedin.com/in/anisah/?originalSubdomain=tw',
       },
       {
-        name: 'Journal of Future Studies',
+        nombre: 'Journal of Future Studies',
         url: 'https://jfsdigital.org/',
       },
     ],
@@ -182,7 +182,7 @@ export const proyectas: Proyecta[] = [
     ],
     alianzas: [
       {
-        name: 'La Nueva Fábrica',
+        nombre: 'La Nueva Fábrica',
         url: 'https://lanuevafabrica.org/es/',
       },
     ],
@@ -224,7 +224,7 @@ export const proyectas: Proyecta[] = [
     ],
     alianzas: [
       {
-        name: 'Las Panas',
+        nombre: 'Las Panas',
         url: 'https://www.laspanasmx.com/',
       },
     ],
@@ -260,7 +260,7 @@ export const proyectas: Proyecta[] = [
     ],
     alianzas: [
       {
-        name: 'Superaccio',
+        nombre: 'Superaccio',
         url: 'https://superaccio.org/',
       },
     ],
@@ -297,11 +297,11 @@ export const proyectas: Proyecta[] = [
     ],
     alianzas: [
       {
-        name: 'Laguna MX',
-        url: 'https://lagunamexico.com/',
+        nombre: 'Laguna MX',
+        url: 'https://lagunombrexico.com/',
       },
       {
-        name: 'Diseña Colectiva',
+        nombre: 'Diseña Colectiva',
         url: 'https://www.instagram.com/disenacolectiva/',
       },
     ],
@@ -324,5 +324,93 @@ export const proyectas: Proyecta[] = [
       'tendedero_vernaculo_2.jpg',
       'tendedero_vernaculo_3.JPG',
     ],
+  },
+]
+
+export const equipa: Semblante[] = [
+  {
+    slug: 'sophia-arrazola',
+    nombre: 'Sophia Arrazola',
+    correo: 'sophia@micallenuestracalle.com',
+    instagram: '',
+    linkedin: '',
+    intereses: [
+      'Género',
+      'Migración climática',
+      'Aprender de otras formas',
+      'Arte comunitario',
+      'Ciudades comunes',
+    ],
+    proyectosRecientes: [
+      {
+        nombre: 'Tendedero Vernaculo',
+        url: '/proyectos/tendedero-vernaculo',
+      },
+      {
+        nombre: 'Lab La Nueva Fábrica',
+        url: '/proyectos/laboratoria-de-futuros-comunitarios',
+      },
+      {
+        nombre: 'Tejiendo futuros',
+        url: '/proyectos/tejiendo-futuros',
+      },
+    ],
+    conferencias: [
+      {
+        nombre: 'Institute for the future',
+        url: '',
+      },
+    ],
+    semblante: `Sophia es fundadora de Mi Calle, Nuestra Calle. Con más de 8 años de experiencia 
+    desarrollando proyectos de innovación social y liderando procesos de investigación antropológica 
+    y arte participativo, diseño de experiencias de inteligencia colectiva con enfoque de género y 
+    derechos humanos en América Latina y Europa. Desde un enfoque creativo, ético y crítico, ha 
+    colaborado como consultora independiente con proyectos de base, ONG's de impacto sostenible y 
+    organizaciones de cooperación internacional, entre otros.
+
+    Con alma de antropóloga urbana y una personalidad curiosa que la ha impulsado a explorar, 
+    descubrir e interesarse por los futuros como oficio, el arte comunitario-participativo como 
+    medio y el diseño de experiencias culturales antropológicas como vocación, combinado con un 
+    pensamiento crítico agudo.`,
+  },
+  {
+    slug: 'jesica-bastidas',
+    nombre: 'Jesica Bastidas',
+    correo: 'jesica@micallenuestracalle.com',
+    instagram: '',
+    linkedin: '',
+    intereses: [
+      'Interdisciplina y colaboración',
+      'Arte comunitario',
+      'Futuros participativos',
+      'Clown y artes escénicas',
+      'Arte especulativo',
+    ],
+    proyectosRecientes: [
+      {
+        nombre: 'Las Panas',
+        url: '/proyectos/historias-desde-la-risa',
+      },
+      {
+        nombre: 'Tendedero Vernaculo',
+        url: '/proyectos/tendedero-vernaculo',
+      },
+    ],
+    conferencias: [
+      {
+        nombre: 'Institute for the future',
+        url: '',
+      },
+    ],
+    semblante: `Jesica es co-fundadora de Mi Calle, Nuestra Calle. 
+    Artista escénica, clown y futurista con más de 9 años de experiencia en el 
+    acompañamiento comunitario a través del arte participativo, sus cruces con otras 
+    disciplinas y una dosis de buen humor. Se especializa en el trabajo con grupos 
+    para fomentar espacios de inclusión, inteligencia colectiva, colaboración y empatía. 
+    Su más reciente trabajo explora el arte especulativo en búsqueda de futuros participativos y nuevos anhelos. 
+    Encuentra en el humor una herramienta poderosa para el entretenimiento educativo, 
+    la crítica, la orientación comunitaria y la facilitación creativa. Colabora con 
+    instituciones científicas y ONGs para la divulgación lúdica de conocimientos, 
+    presentando su trabajo en México y extranjero.`,
   },
 ]

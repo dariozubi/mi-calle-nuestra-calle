@@ -66,7 +66,7 @@ function Proyecta({ slug }: Props) {
                 className="flex items-center text-xl"
                 key={alianza.url}
               >
-                {alianza.name}
+                {alianza.nombre}
                 <ArrowUpRight size={20} className="-mb-1" />
               </Link>
             ))}
