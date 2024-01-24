@@ -7,12 +7,12 @@ import { useCallback, useState } from 'react'
 import { Archivos } from './types'
 
 function Archivo() {
-  const [filters, setFilters] = useState<Archivos[]>(['conferencias'])
+  const [filters, setFilters] = useState<Archivos[]>([])
   const handleClick = useCallback(
     (filter: Archivos) => {
       const index = filters.indexOf(filter)
       if (index !== -1) {
-        if (filters.length > 1) {
+        if (filters.length > 0) {
           setFilters(filters.toSpliced(index, 1))
         }
       } else {
@@ -51,11 +51,11 @@ function Archivo() {
         <hr className="mt-16" />
       </div>
       <div className="flex flex-col gap-1 pb-1">
-        {filters.includes('conferencias') &&
+        {(!filters.length || filters.includes('conferencias')) &&
           conferencias.map(item => <ListItem item={item} key={item.url} />)}
-        {filters.includes('academia') &&
+        {(!filters.length || filters.includes('academia')) &&
           academia.map(item => <ListItem item={item} key={item.url} />)}
-        {filters.includes('exhibiciones') &&
+        {(!filters.length || filters.includes('exhibiciones')) &&
           exhibiciones.map(item => <ListItem item={item} key={item.url} />)}
       </div>
     </>
