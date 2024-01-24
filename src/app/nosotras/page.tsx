@@ -7,7 +7,7 @@ export default function Nosotras() {
   return (
     <main className="flex flex-col">
       <NavigationBar />
-      <div className="flex bg-lila">
+      <div className="flex bg-white">
         <div className="w-1/2 p-16">
           <div className="mb-12 h-5 w-5 rounded-full bg-black" />
           <p className="text-2xl">

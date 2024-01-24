@@ -5,6 +5,7 @@ import { useCallback, useEffect, useState } from 'react'
 import { ArrowDown, ArrowUpRight, Menu, X } from 'react-feather'
 import { MainLink } from './MainLink'
 import { usePathname } from 'next/navigation'
+import { links } from '@/utils/consts'
 
 const scrollLimit = 344
 
@@ -47,12 +48,12 @@ function NavigationBar() {
             open || isOnTop ? '' : 'fixed -mt-72'
           }`}
         >
-          <div className="flex w-1/4 flex-col">
+          <div className="flex w-2/12 flex-col">
             <p className="text-2xl font-extrabold">México</p>
             <p className="text-2xl font-extrabold">Guatemala</p>
             <p className="text-2xl font-extrabold">Barcelona</p>
           </div>
-          <div className="flex w-1/4 flex-col">
+          <div className="flex w-3/12 flex-col">
             <MainLink
               onClick={handleClose}
               active={pathname.includes('/nosotras')}
@@ -70,42 +71,60 @@ function NavigationBar() {
               Sé parte
             </MainLink>
           </div>
-          <div className="flex w-1/4 flex-col">
+          <div className="flex w-3/12 flex-col">
             <p className="text-2xl">Hazlo tu mismx</p>
-            <Link href="" className="flex items-center text-2xl font-extrabold">
+            <Link
+              href={links.metodologias}
+              target="_blank"
+              className="flex items-center text-2xl font-extrabold"
+            >
               Metodologías <ArrowDown size={28} />
             </Link>
-            <Link href="" className="flex items-center text-2xl font-extrabold">
+            <Link
+              target="_blank"
+              href={links.herramientas}
+              className="flex items-center text-2xl font-extrabold"
+            >
               Herramientas <ArrowDown size={28} />
             </Link>
             <p className="mt-6 flex items-center text-2xl">
               Contáctanos <ArrowUpRight size={28} />
             </p>
-            <div className="flex">
-              <Link href="" className="text-2xl font-extrabold">
-                whatsapp /
-              </Link>
+            <div className="flex items-center gap-2">
               <Link
-                href="mailto:hola@micallenuestracalle.com"
-                className="ml-2 text-2xl font-extrabold text-ladrillo"
+                href={links.mail}
+                target="_blank"
+                className="text-2xl font-extrabold text-white"
               >
-                mail
+                Email
+              </Link>
+              <p className="font-extrabold text-white">|</p>
+              <Link
+                href={links.dm}
+                target="_blank"
+                className="text-2xl font-extrabold text-white"
+              >
+                DM
               </Link>
             </div>
           </div>
-          <div className="flex w-1/4 flex-col">
+          <div className="flex w-4/12 flex-col">
             <div className="flex w-full items-center justify-end gap-2">
-              <Link className="text-xl" href="">
+              <Link className="text-xl" target="_blank" href={links.instagram}>
                 Instagram
               </Link>{' '}
               |{' '}
-              <Link className="text-xl" href="">
+              <Link className="text-xl" target="_blank" href={links.linkedin}>
                 Linkedin
               </Link>
             </div>
-            <button className="mt-28 bg-black py-2 text-xl text-white">
-              Explora futuros plurales
-            </button>
+            <a
+              href={links.merch}
+              target="_blank"
+              className="mt-28 bg-black py-2 text-center text-xl font-bold text-white"
+            >
+              Adquiere nuestra merch
+            </a>
           </div>
         </div>
       </nav>

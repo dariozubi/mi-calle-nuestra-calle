@@ -28,43 +28,34 @@ function Archivo() {
         <div className="flex justify-between">
           <h2 className="text-6xl font-extrabold">Archivo</h2>
           <div className="flex items-end gap-8">
-            {conferencias.length > 0 && (
-              <FilterButton
-                selected={filters.includes('conferencias')}
-                onClick={() => handleClick('conferencias')}
-              >
-                Conferencias
-              </FilterButton>
-            )}
-            {academia.length > 0 && (
-              <FilterButton
-                selected={filters.includes('academia')}
-                onClick={() => handleClick('academia')}
-              >
-                Academia
-              </FilterButton>
-            )}
-            {exhibiciones.length > 0 && (
-              <FilterButton
-                selected={filters.includes('exhibiciones')}
-                onClick={() => handleClick('exhibiciones')}
-              >
-                Exhibiciones
-              </FilterButton>
-            )}
+            <FilterButton
+              selected={filters.includes('conferencias')}
+              onClick={() => handleClick('conferencias')}
+            >
+              Conferencias
+            </FilterButton>
+            <FilterButton
+              selected={filters.includes('academia')}
+              onClick={() => handleClick('academia')}
+            >
+              Academia
+            </FilterButton>
+            <FilterButton
+              selected={filters.includes('exhibiciones')}
+              onClick={() => handleClick('exhibiciones')}
+            >
+              Exhibiciones
+            </FilterButton>
           </div>
         </div>
         <hr className="mt-16" />
       </div>
       <div className="flex flex-col gap-1 pb-1">
-        {conferencias.length > 0 &&
-          filters.includes('conferencias') &&
+        {filters.includes('conferencias') &&
           conferencias.map(item => <ListItem item={item} key={item.url} />)}
-        {academia.length > 0 &&
-          filters.includes('academia') &&
+        {filters.includes('academia') &&
           academia.map(item => <ListItem item={item} key={item.url} />)}
-        {exhibiciones.length > 0 &&
-          filters.includes('exhibiciones') &&
+        {filters.includes('exhibiciones') &&
           exhibiciones.map(item => <ListItem item={item} key={item.url} />)}
       </div>
     </>

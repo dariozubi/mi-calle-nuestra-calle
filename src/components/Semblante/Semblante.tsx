@@ -66,7 +66,9 @@ function Semblante({ slug }: Props) {
               <ArrowUpRight size={24} className="-mb-1" />
             </Link>
           ))}
-          <p className="mt-12">{semblante}</p>
+          <hr className="mt-12" />
+          <h2 className="mb-12 text-2xl">Acerca de</h2>
+          <p>{semblante}</p>
         </div>
         <div className="flex w-1/2 gap-4 pr-16">
           <div className="flex w-1/2 flex-col bg-blue"></div>

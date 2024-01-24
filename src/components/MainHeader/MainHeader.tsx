@@ -7,8 +7,7 @@ function MainHeader() {
       <b className="text-ladrillo">arte</b>,{' '}
       <b className="text-red">investigación</b> y{' '}
       <b className="text-lila">futuros</b> <b className="text-blue">plurales</b>{' '}
-      para las
-      <b className="text-lila">mujeres</b> y el{' '}
+      para las <b className="text-lila">mujeres</b> y el{' '}
       <b className="text-ladrillo">planeta</b>. Colaboramos en contextos{' '}
       <u>urbanos y rurales</u> con comunidades diversas.
     </h1>

@@ -26,16 +26,17 @@ function SeParte() {
         <div className="flex w-1/2 flex-col px-12">
           <h3 className="mb-12 text-3xl font-extrabold">¿Por qué unirme?</h3>
           <p className="text-xl">
-            Creemos que todo conocimiento o area de expertís suma a nuestra
-            causa.
+            Creemos que todo conocimiento o area de expertís <br /> suma a
+            nuestra causa.
             <br />
             <br />
             Nuestra tribu esta conformada por una colectiva de artistas
             interdisciplinarias, futuristas, urbanistas, estrategas,
-            diseñadoras, sociólogas, antropólogas, ecologistas etc, de distintas
-            partes del mundo. <br />
+            diseñadoras, sociólogas, antropólogas, ecologistas, etc, de
+            distintas partes del mundo. <br />
             <br />
-            ¡Los futuros se construyen en comunidad! ¡Solo nos faltas tú!
+            ¡Los futuros se construyen en comunidad! <br />
+            ¡Solo nos faltas tú!
           </p>
         </div>
       </div>

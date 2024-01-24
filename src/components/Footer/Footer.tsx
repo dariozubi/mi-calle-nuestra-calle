@@ -1,3 +1,4 @@
+import { links } from '@/utils/consts'
 import Link from 'next/link'
 import { PropsWithChildren } from 'react'
 
@@ -5,15 +6,15 @@ function Footer() {
   return (
     <div className="p-16">
       <div className="flex justify-between">
-        <Link className="font-bold" href="mailto:hola@micallenuestracalle.com">
+        <Link className="font-bold" target="_blank" href={links.mail}>
           hola@micallenuestracalle.com
         </Link>
         <div>
-          <Link className="text-sm" href="">
+          <Link className="text-sm" target="_blank" href={links.instagram}>
             Instagram
           </Link>{' '}
           |{' '}
-          <Link className="text-sm" href="">
+          <Link className="text-sm" target="_blank" href={links.linkedin}>
             Linkedin
           </Link>
         </div>

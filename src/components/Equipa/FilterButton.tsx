@@ -1,17 +1,20 @@
 import { PropsWithChildren } from 'react'
+import { colorVariants } from './consts'
 
 type Props = {
   selected: boolean
+  selectedBackgroundColor: keyof typeof colorVariants
 } & React.HTMLProps<HTMLButtonElement>
 
 export function FilterButton({
   selected,
+  selectedBackgroundColor,
   onClick,
   children,
 }: PropsWithChildren<Props>) {
   const colors = selected
-    ? 'bg-pink text-black'
-    : 'bg-black text-white hover:bg-pink hover:text-black'
+    ? colorVariants[selectedBackgroundColor].selected
+    : colorVariants[selectedBackgroundColor].default
   return (
     <button onClick={onClick} className={`h-10 px-2 text-xl ${colors}`}>
       {children}

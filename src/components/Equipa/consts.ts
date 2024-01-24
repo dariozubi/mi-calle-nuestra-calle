@@ -1,4 +1,28 @@
-import { Miembro } from './types'
+import { Miembro, Tag } from './types'
+
+export const backgroundColors: Record<Tag, keyof typeof colorVariants> = {
+  fundadora: 'pink',
+  aliada: 'yellow',
+  voluntaria: 'lila',
+}
+
+export const colorVariants = {
+  pink: {
+    selected: 'text-black bg-pink',
+    default: 'bg-black text-white hover:bg-pink hover:text-black',
+    hover: 'hover:bg-pink',
+  },
+  yellow: {
+    selected: 'text-black bg-yellow',
+    default: 'bg-black text-white hover:bg-yellow hover:text-black',
+    hover: 'hover:bg-yellow',
+  },
+  lila: {
+    selected: 'text-black bg-lila',
+    default: 'bg-black text-white hover:bg-lila hover:text-black',
+    hover: 'hover:bg-lila',
+  },
+}
 
 export const equipa: Miembro[] = [
   {

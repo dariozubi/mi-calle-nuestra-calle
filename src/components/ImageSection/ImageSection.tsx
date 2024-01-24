@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 async function ImageSection() {
   return (
-    <div className="flex flex-wrap">
+    <figure className="flex flex-wrap">
       {proyectas.map(({ images, slug }) => (
         <Link
           className="aspect-square w-1/4 p-[3px]"
@@ -21,7 +21,11 @@ async function ImageSection() {
           </div>
         </Link>
       ))}
-    </div>
+      <figcaption className="text-white">
+        Fotografías: mi calle, nuestra calle, México, Guatemala, Barcelona
+        (2020-2023)
+      </figcaption>
+    </figure>
   )
 }
 

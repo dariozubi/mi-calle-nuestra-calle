@@ -1,5 +1,18 @@
 import { Proyecta, Semblante } from './types'
 
+export const links = {
+  instagram: 'https://www.instagram.com/micalle_nuestracalle',
+  linkedin:
+    'https://www.linkedin.com/in/mi-calle-nuestra-calle-my-street-our-street-b25b64217/',
+  dm: 'https://ig.me/m/micalle_nuestracalle',
+  mail: 'mailto:hola@micallenuestracalle.com',
+  herramientas:
+    'https://drive.google.com/drive/folders/1r2ljvVj0eLhAoLwSNU96u7ZWdmhX6qLV',
+  metodologias:
+    'https://drive.google.com/drive/folders/1DU8jrbb9Ur4148BMcWoKs7zr6rZPNe4L',
+  merch: 'https://www.instagram.com/stories/highlights/17945019269657420/',
+}
+
 export const proyectas: Proyecta[] = [
   {
     slug: 'la-voz-de-las-mujeres',

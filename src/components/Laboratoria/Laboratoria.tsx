@@ -22,16 +22,6 @@ function Laboratoria() {
           futuros y prácticas narrativas, visibilizamos las historias y anhelos
           de comunidades diversas.
         </p>
-        <div className="mt-10 flex justify-end">
-          <div className="flex items-center gap-5">
-            <div className="flex items-baseline">
-              <MapPin size={16} />
-              <p className="text-xl">México</p>
-            </div>
-            <p className="text-xl">Guatemala</p>
-            <p className="text-xl">Barcelona</p>
-          </div>
-        </div>
       </div>
       <div className="bg-pink px-16 py-8">
         <h2 className="text-3xl font-extrabold">Creamos, de creer y crear</h2>
@@ -39,14 +29,17 @@ function Laboratoria() {
       <div className="relative bg-ladrillo p-16">
         <div className="absolute top-0 h-0 w-0 border-l-[15px] border-r-[15px] border-t-[15px] border-solid border-x-ladrillo border-t-pink" />
         <div className="flex">
-          <div className="relative w-1/2">
+          <figure className="relative w-1/2">
             <Image
               src="/img/proyectas/azcapotzalco_3.JPG"
               alt="image"
               fill
               className="object-cover"
             />
-          </div>
+            <figcaption className="relative top-[100%] text-black">
+              Fotografía: mi calle, nuestra calle, México (2021)
+            </figcaption>
+          </figure>
           <div className="w-1/2 px-16">
             <h3 className="mb-8 text-3xl font-bold">Servicios</h3>
             <ul className="text-xl">
