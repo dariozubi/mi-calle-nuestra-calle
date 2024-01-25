@@ -1,8 +1,8 @@
-import Proyecta from '@/components/Proyecta'
+import Trabajo from '@/components/Trabajo'
 import { proyectas } from '@/utils/consts'
 
 export default function Proyecto({ params }: { params: { slug: string } }) {
-  return <Proyecta slug={params.slug} />
+  return <Trabajo slug={params.slug} type="proyectas" />
 }
 
 export async function generateStaticParams() {

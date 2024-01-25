@@ -1,4 +1,5 @@
-import { Proyecta, Semblante } from './types'
+import Link from 'next/link'
+import { Aliada, Proyecta, Semblante } from './types'
 
 export const links = {
   instagram: 'https://www.instagram.com/micalle_nuestracalle',
@@ -13,9 +14,64 @@ export const links = {
   merch: 'https://www.instagram.com/stories/highlights/17945019269657420/',
 }
 
+export const aliadas: Record<string, Aliada> = {
+  violetaRadio: {
+    nombre: 'Violeta Radio',
+    url: 'https://violetaradio.org/',
+  },
+  placemaking: {
+    nombre: 'Placemaking México',
+    url: 'https://lugarespublicos.org/',
+  },
+  unidadDeGenero: {
+    nombre: 'Unidad de Género Azcapotzalco',
+    url: 'https://azcapotzalco.cdmx.gob.mx/iguales/',
+  },
+  laNuevaFabrica: {
+    nombre: 'La Nueva Fábrica',
+    url: 'https://lanuevafabrica.org/es/',
+  },
+  draAnisah: {
+    nombre: 'Dra. Anisah Abdullah',
+    url: 'https://www.linkedin.com/in/anisah/?originalSubdomain=tw',
+  },
+  journalOfFutureStudies: {
+    nombre: 'Journal of Future Studies',
+    url: 'https://jfsdigital.org/',
+  },
+  lasPanas: {
+    nombre: 'Las Panas',
+    url: 'https://www.laspanasmx.com/',
+  },
+  superaccio: {
+    nombre: 'Superaccio',
+    url: 'https://superaccio.org/',
+  },
+  lagunaMX: {
+    nombre: 'Laguna MX',
+    url: 'https://lagunombrexico.com/',
+  },
+  disenaColectiva: {
+    nombre: 'Diseña Colectiva',
+    url: 'https://www.instagram.com/disenacolectiva/',
+  },
+}
+
 export const proyectas: Proyecta[] = [
   {
     slug: 'la-voz-de-las-mujeres',
+    lugar: 'Violeta Radio, CDMX',
+    fecha: '2020',
+    tags: [
+      '2020',
+      'CDMX',
+      'Género',
+      'Arte comunitario',
+      'Muralismo',
+      'Taller',
+      'Ciudad',
+      'Presencial',
+    ],
     titulo: 'La voz de las mujeres',
     temas: [
       'Perspectiva de género',
@@ -24,12 +80,7 @@ export const proyectas: Proyecta[] = [
       'Violencia de género',
       'Urbanismo feminista',
     ],
-    alianzas: [
-      {
-        nombre: 'Violeta Radio',
-        url: 'https://violetaradio.org/',
-      },
-    ],
+    alianzas: [aliadas.violetaRadio],
     descripcion: `Serie de talleres de co-diseño para visualizar el futuro preferido de las radioescuchas,
       vecinas e integrantes de Violeta Radio.  
       Como resultado de este proceso de vinculación comunitaria, se intervinieron las instalaciones 
@@ -50,6 +101,16 @@ export const proyectas: Proyecta[] = [
   },
   {
     slug: 'los-futuros-de-las-mujeres',
+    tags: [
+      '2021',
+      'CDMX',
+      'Género',
+      'Futuros',
+      'Educación',
+      'Muralismo',
+      'Taller',
+      'Ciudad',
+    ],
     titulo: 'Los futuros de las mujeres',
     lugar: 'Azcapotzalco, CDMX',
     fecha: '2021',
@@ -60,20 +121,7 @@ export const proyectas: Proyecta[] = [
       'Violencia de género',
       'Urbanismo feminista',
     ],
-    alianzas: [
-      {
-        nombre: 'Placemaking México',
-        url: 'https://lugarespublicos.org/',
-      },
-      {
-        nombre: 'Unidad de Género Azcapotzalco',
-        url: 'https://azcapotzalco.cdmx.gob.mx/iguales/',
-      },
-      {
-        nombre: 'Placemaking México',
-        url: 'https://lugarespublicos.org/',
-      },
-    ],
+    alianzas: [aliadas.placemaking, aliadas.unidadDeGenero],
     descripcion: `Programa de formación comunitaria en perspectiva de género, derechos humanos 
     de las mujeres y diseño de futuros para la Alcaldía y Red de vecinas de Azcapotzalco. 
     A través de futuros participativos y arte comunitario, se creó y plasmó un escenario 
@@ -100,6 +148,14 @@ export const proyectas: Proyecta[] = [
   },
   {
     slug: 'tejiendo-futuros',
+    tags: [
+      'Género',
+      'Futuros',
+      'Arte Comunitario',
+      'Narrativas',
+      'Instalación',
+      'Taller',
+    ],
     titulo: 'Tejiendo futuros',
     lugar: 'La Nueva Fábrica, Santa Ana',
     fecha: '2022',
@@ -110,12 +166,7 @@ export const proyectas: Proyecta[] = [
       'Formación ciudadana',
       'Pensamiento prospectivo',
     ],
-    alianzas: [
-      {
-        nombre: 'La Nueva Fábrica',
-        url: 'https://lanuevafabrica.org/es/',
-      },
-    ],
+    alianzas: [aliadas.laNuevaFabrica],
     descripcion: `Talleres creativos en pensamiento prospectivo y formación ciudadana para vecinas 
     de la galería La Nueva Fábrica. Sus experiencias del pasado, presente, y anhelos futuros se 
     plasmaron en arte textil y se exhibió en la galería. Con un mural interactivo se inició la 
@@ -140,6 +191,18 @@ export const proyectas: Proyecta[] = [
   },
   {
     slug: 'educating-the-young',
+    tags: [
+      '2022',
+      'CDMX',
+      'GT',
+      'TW',
+      'Futuros',
+      'Educación',
+      'Investigación',
+      'Taller',
+      'Ciudad',
+      'Híbrido',
+    ],
     titulo: 'Educating The Young',
     lugar: 'México - Guatemala - Taiwán',
     fecha: '2022',
@@ -150,16 +213,7 @@ export const proyectas: Proyecta[] = [
       'Pedagogía crítica',
       'Estudio comparativo',
     ],
-    alianzas: [
-      {
-        nombre: 'Dra. Anisah Abdullah',
-        url: 'https://www.linkedin.com/in/anisah/?originalSubdomain=tw',
-      },
-      {
-        nombre: 'Journal of Future Studies',
-        url: 'https://jfsdigital.org/',
-      },
-    ],
+    alianzas: [aliadas.draAnisah, aliadas.journalOfFutureStudies],
     descripcion: `Investigación en colaboración con la Dra. Anisah Abdullah 
     (Universidad de Tamkang - Taiwán). Mediante talleres para la alfabetización 
     de futuros con educadores y jóvenes, se reportan hallazgos y recomendaciones 
@@ -183,6 +237,17 @@ export const proyectas: Proyecta[] = [
   },
   {
     slug: 'laboratoria-de-futuros-comunitarios',
+    tags: [
+      'Género',
+      'Futuros',
+      'Educación',
+      'Narrativas',
+      'Téxtil',
+      'Instalación',
+      'Taller',
+      'Rural',
+      'Hibrido',
+    ],
     titulo: 'Laboratoria de futuros comunitarios',
     lugar: 'La Nueva Fábrica, Santa Ana',
     fecha: '2022',
@@ -193,12 +258,7 @@ export const proyectas: Proyecta[] = [
       'Formación ciudadana',
       'Pensamiento crítico',
     ],
-    alianzas: [
-      {
-        nombre: 'La Nueva Fábrica',
-        url: 'https://lanuevafabrica.org/es/',
-      },
-    ],
+    alianzas: [aliadas.laNuevaFabrica],
     descripcion: `Modelo pedagógico y gestión cultural de un espacio de diálogo 
     y empoderamiento de las líderes comunitarias de Santa Ana. En talleres de 
     bordado experimental, se a-bordó la perspectiva de género, derechos humanos, 
@@ -225,6 +285,17 @@ export const proyectas: Proyecta[] = [
   },
   {
     slug: 'historias-desde-la-risa',
+    tags: [
+      '2023',
+      'CDMX',
+      'Género',
+      'Arte comunitario',
+      'Narrativas',
+      'Clown',
+      'Taller',
+      'Ciudad',
+      'Presencial',
+    ],
     titulo: 'Historias desde la risa',
     lugar: 'Las Panas, CDMX',
     fecha: '2023',
@@ -235,12 +306,7 @@ export const proyectas: Proyecta[] = [
       'Narración de historias',
       'Perspectiva de género',
     ],
-    alianzas: [
-      {
-        nombre: 'Las Panas',
-        url: 'https://www.laspanasmx.com/',
-      },
-    ],
+    alianzas: [aliadas.lasPanas],
     descripcion: `Taller de narraciones escénicas y anhelos futuros para el programa 
     de atención a mujeres de escasos recursos de Las Panas. A través de un tendedero 
     de ideas y la representación de sketches cómicos, se narran historias personales 
@@ -261,6 +327,15 @@ export const proyectas: Proyecta[] = [
   },
   {
     slug: 'futuros-desde-el-cuerpo',
+    tags: [
+      'Futuros',
+      'Arte comunitario',
+      'Narrativas',
+      'Corporal',
+      'Performance',
+      'Ciudad',
+      'Presencial',
+    ],
     titulo: 'Futuros desde el cuerpo',
     lugar: 'Superacció, Barcelona',
     fecha: '2023',
@@ -271,12 +346,7 @@ export const proyectas: Proyecta[] = [
       'Integración grupal',
       'Diversidad cultural',
     ],
-    alianzas: [
-      {
-        nombre: 'Superaccio',
-        url: 'https://superaccio.org/',
-      },
-    ],
+    alianzas: [aliadas.superaccio],
     descripcion: `Taller de empatía y vinculación con jóvenes migrantes 
     de origen norteafricano en Superaccio Barcelona. Con dibujos, impro 
     y expresión corporal, se toma el espacio público y construyen viñetas 
@@ -298,6 +368,18 @@ export const proyectas: Proyecta[] = [
   },
   {
     slug: 'tendedero-vernaculo',
+    tags: [
+      '2023',
+      'CDMX',
+      'Futuros',
+      'Ficción',
+      'Narrativas',
+      'Investigación',
+      'Instalación',
+      'Escenarios',
+      'Ciudad',
+      'Presencial',
+    ],
     titulo: 'Tendedero vernáculo',
     lugar: 'Laguna, CDMX',
     fecha: '2023',
@@ -308,16 +390,7 @@ export const proyectas: Proyecta[] = [
       'Urbanismo feminista',
       'Diseño participativo',
     ],
-    alianzas: [
-      {
-        nombre: 'Laguna MX',
-        url: 'https://lagunombrexico.com/',
-      },
-      {
-        nombre: 'Diseña Colectiva',
-        url: 'https://www.instagram.com/disenacolectiva/',
-      },
-    ],
+    alianzas: [aliadas.lagunaMX, aliadas.disenaColectiva],
     descripcion: `Instalación de arte que exhibe las respuestas de 100 chilangxs 
     (mujeres, hombres y personas no binarias) en la Colonia Doctores, para conocer 
     qué padecen, disfrutan y anhelan para sus espacios públicos. Se delinean cuatro 
@@ -357,15 +430,15 @@ export const equipa: Semblante[] = [
     proyectosRecientes: [
       {
         nombre: 'Tendedero Vernaculo',
-        url: '/proyectos/tendedero-vernaculo',
+        url: '/proyecta/tendedero-vernaculo',
       },
       {
         nombre: 'Lab La Nueva Fábrica',
-        url: '/proyectos/laboratoria-de-futuros-comunitarios',
+        url: '/proyecta/laboratoria-de-futuros-comunitarios',
       },
       {
         nombre: 'Tejiendo futuros',
-        url: '/proyectos/tejiendo-futuros',
+        url: '/proyecta/tejiendo-futuros',
       },
     ],
     conferencias: [
@@ -402,11 +475,11 @@ export const equipa: Semblante[] = [
     proyectosRecientes: [
       {
         nombre: 'Las Panas',
-        url: '/proyectos/historias-desde-la-risa',
+        url: '/proyecta/historias-desde-la-risa',
       },
       {
         nombre: 'Tendedero Vernaculo',
-        url: '/proyectos/tendedero-vernaculo',
+        url: '/proyecta/tendedero-vernaculo',
       },
     ],
     conferencias: [
@@ -425,5 +498,227 @@ export const equipa: Semblante[] = [
     la crítica, la orientación comunitaria y la facilitación creativa. Colabora con 
     instituciones científicas y ONGs para la divulgación lúdica de conocimientos, 
     presentando su trabajo en México y extranjero.`,
+  },
+]
+
+export const historias: Proyecta[] = [
+  {
+    slug: 'angelica-b',
+    lugar: 'Azcapotzalco, CDMX',
+    fecha: '2021',
+    tags: [
+      '2021',
+      'CDMX',
+      'Género',
+      'Futuros',
+      'Educación',
+      'Muralismo',
+      'Taller',
+      'Ciudad',
+    ],
+    titulo: 'Angélica B',
+    temas: [
+      'Perspectiva de género',
+      'Derechos humanos',
+      'Espacio público',
+      'Violencia de género',
+      'Urbanismo feminista',
+    ],
+    alianzas: [aliadas.placemaking, aliadas.unidadDeGenero],
+    descripcion: `Joven madre que había dejado la escuela y su práctica como artista urbana para atender 
+    los cuidados de su familia y hogar. Se unió al equipo de MCNC como líder, mediadora y artista local 
+    para la creación de murales en su colonia.  Más tarde retomó sus estudios, realizó murales en su 
+    institución académica y sigue cuidando de su familia. `,
+  },
+  {
+    slug: 'ana-v',
+    lugar: 'La Nueva Fábrica, Santa Ana',
+    fecha: '2022',
+    tags: [
+      'Género',
+      'Futuros',
+      'Educación',
+      'Narrativas',
+      'Téxtil',
+      'Instalación',
+      'Taller',
+      'Rural',
+      'Hibrido',
+    ],
+    titulo: 'Ana V',
+    temas: [
+      'Perspectiva de género',
+      'Derechos humanos',
+      'Violencia de género',
+      'Formación ciudadana',
+      'Pensamiento prospectivo',
+    ],
+    alianzas: [aliadas.laNuevaFabrica],
+    descripcion: `Líder comunitaria, artista textil y maestra local de bordado que había 
+    perdido su trabajo a raíz de la crisis por COVID-19. Se unió al equipo de MCNC como 
+    maestra de bordado y mediadora de procesos para  las mujeres de la comunidad. Más 
+    tarde se integró a un programa de gobierno para la facilitación de artes en diversas aldeas.`,
+  },
+  {
+    slug: 'marcela-b',
+    lugar: 'La Nueva Fábrica, Santa Ana',
+    fecha: '2022',
+    tags: [
+      'Género',
+      'Futuros',
+      'Educación',
+      'Narrativas',
+      'Téxtil',
+      'Instalación',
+      'Taller',
+      'Rural',
+      'Hibrido',
+    ],
+    titulo: 'Marcela B',
+    temas: [
+      'Perspectiva de género',
+      'Derechos humanos',
+      'Violencia de género',
+      'Formación ciudadana',
+      'Pensamiento prospectivo',
+    ],
+    alianzas: [aliadas.laNuevaFabrica],
+    descripcion: `Artista textil colombiana, local, interesada por detonar y guiar espacios 
+    de creación experimental y reflexión. Se unió al equipo de MCNC como líder y mediadora de 
+    espacios de creación y encuentro a través del arte. Inició una alianza con el Instituto 
+    Municipal de Educación Básica de la aldea para brindar a sus jóvenes una agenda cultural.`,
+  },
+]
+
+export const escenarios: Proyecta[] = [
+  {
+    slug: 'los-futuros-de-las-mujeres',
+    lugar: 'Azcapotzalco, CDMX',
+    fecha: '2021',
+    tags: [
+      '2021',
+      'CDMX',
+      'Género',
+      'Futuros',
+      'Ficción',
+      'Narrativas',
+      'Escenarios',
+      'Ciudad',
+      'Online',
+    ],
+    titulo: 'Los futuros de las mujeres',
+    temas: [
+      'Perspectiva de género',
+      'Derechos humanos',
+      'Espacio público',
+      'Violencia de género',
+      'Urbanismo feminista',
+    ],
+    alianzas: [aliadas.placemaking, aliadas.unidadDeGenero],
+    descripcion: [
+      <>
+        <span>Calles para nutrirnos y aprender</span>
+        <br />
+      </>,
+      `Calles con espacios de aprendizaje comunitario para producir y crear soluciones innovadoras 
+    y conectar con la naturaleza en armonía.`,
+      <>
+        <br />
+        <br />
+        Calles para convivir libres de violencia
+        <br />
+      </>,
+      `Calles para que niñxs y mujeres tengan una vida llena de equidad y gozo libres de violencia. 
+    Donde las mujeres son valoradas y reconocidas por su agencia y liderazgo.`,
+      <>
+        <br />
+        <br />
+        <span>
+          Lee los escenarios completos{' '}
+          <Link
+            target="_blank"
+            href="https://docs.google.com/presentation/d/1ijUsY8DVAGaeatr5fGefiuanOpYxr_fwlMxZQtc3hnE/edit?usp=sharing"
+          >
+            aquí
+          </Link>
+        </span>
+      </>,
+    ],
+    images: [
+      'futuros_1.jpg',
+      'futuros_2.jpg',
+      'futuros_3.jpg',
+      'futuros_4.jpg',
+    ],
+  },
+  {
+    slug: 'tendedero-vernaculo',
+    lugar: 'Laguna, CDMX',
+    fecha: '2023',
+    tags: [
+      '2023',
+      'CDMX',
+      'Futuros',
+      'Ficción',
+      'Narrativas',
+      'Escenarios',
+      'Ciudad',
+      'Presencial',
+    ],
+    titulo: 'Tendedero vernáculo ',
+    temas: [
+      'Espacio público',
+      'Gentrificación',
+      'Disidencias',
+      'Urbanismo feminista',
+      'Diseño participativo',
+    ],
+    alianzas: [aliadas.lagunaMX, aliadas.disenaColectiva],
+    descripcion: [
+      <>
+        <span>Calles verdes</span>
+        <br />
+      </>,
+      'Calles verdes con árboles, jardines y equipamiento para jugar y descansar. ',
+
+      <>
+        <br />
+        <br />
+        <span>Calles limpias y seguras</span>
+        <br />
+      </>,
+      'Calles limpias y seguras para que todas las edades transitemos de forma libre, a pie o en bici. ',
+
+      <>
+        <br />
+        <br />
+        <span>Calles para compartir/gozar</span>
+        <br />
+      </>,
+      'Calles para gozar y compartir sin discriminación entre vecinxs, visitantes y población migrante. ',
+
+      <>
+        <br />
+        <br />
+        <span>Calles que cuentan historias</span>
+        <br />
+      </>,
+      'Calles que cuentan historias a través de murales y albergan espacios comunitarios con talleres. ',
+
+      <>
+        <br />
+        <br />
+        Lee los escenarios completos{' '}
+        <Link href="https://docs.google.com/document/d/1pe1lS2s83Cixo9caKME7lui_CoWgGj1ef1_Nuj_Bx6o/edit?usp=sharing">
+          aquí
+        </Link>
+      </>,
+    ],
+    images: [
+      'tendedero_1.jpg',
+      'tendedero_2.jpg',
+      'tendedero_3.jpg',
+      'tendedero_4.jpg',
+    ],
   },
 ]

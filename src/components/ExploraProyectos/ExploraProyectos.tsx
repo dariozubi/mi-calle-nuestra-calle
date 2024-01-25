@@ -20,7 +20,7 @@ async function ExploraProyectos({ slug }: Props) {
         </div>
         {data.map(proyecta => (
           <Link
-            href={`/proyecto/${proyecta.slug}`}
+            href={`/proyecta/${proyecta.slug}`}
             className="relative aspect-square w-1/4 bg-blue"
             key={proyecta.slug}
           >
