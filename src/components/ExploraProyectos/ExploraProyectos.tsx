@@ -8,8 +8,8 @@ type Props = {
 
 async function ExploraProyectos({ slug }: Props) {
   const data = proyectas
-    .filter(p => p.slug !== slug)
-    .map(p => ({ img: p.images[0], slug: p.slug }))
+    .filter(p => p.slug !== slug && !!p.images)
+    .map(p => ({ img: p.images![0], slug: p.slug }))
   return (
     <div className="bg-pink p-16">
       <div className="flex">
