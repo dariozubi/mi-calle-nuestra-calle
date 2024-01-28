@@ -1,27 +1,14 @@
 'use client'
 
-import { escenarios, proyectas } from '@/utils/consts'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useCallback, useState } from 'react'
 import { TagButton } from './TagButton'
+import { tags, trabajos } from './consts'
+import { useImagesState } from './hooks'
 
 function ImageSection() {
-  const [currentTags, setCurrentTags] = useState<string[]>([])
+  const { currentTags, handleClick } = useImagesState()
 
-  const handleClick = useCallback(
-    (tag: string) => {
-      const index = currentTags.indexOf(tag)
-      if (index !== -1) {
-        if (currentTags.length > 0) {
-          setCurrentTags(currentTags.toSpliced(index, 1))
-        }
-      } else {
-        setCurrentTags([...currentTags, tag])
-      }
-    },
-    [currentTags]
-  )
   return (
     <figure>
       <div className="flex flex-wrap gap-2">
@@ -72,19 +59,3 @@ function ImageSection() {
 }
 
 export default ImageSection
-
-const trabajos = [
-  ...proyectas.map(t => ({
-    image: t.images ? t.images[0] : undefined,
-    titulo: t.titulo,
-    link: `/proyecta/${t.slug}`,
-    tags: t.tags,
-  })),
-  ...escenarios.map(t => ({
-    image: t.images ? t.images[0] : undefined,
-    titulo: t.titulo,
-    link: `/escenario/${t.slug}`,
-    tags: t.tags,
-  })),
-]
-const tags = [...new Set(trabajos.map(t => t.tags).flat())].sort()
