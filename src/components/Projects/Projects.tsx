@@ -2,7 +2,7 @@ import ImageSection from '../ImageSection'
 
 function Projects() {
   return (
-    <>
+    <section>
       <div className="flex items-center bg-blue px-16 py-8">
         <h2 className="text-3xl font-bold">
           Explora nuestros futuros plurales
@@ -21,7 +21,7 @@ function Projects() {
           Explora futuros plurales*
         </p>
       </div>
-    </>
+    </section>
   )
 }
 

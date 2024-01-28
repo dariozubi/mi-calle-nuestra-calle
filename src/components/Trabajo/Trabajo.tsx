@@ -36,7 +36,7 @@ function Trabajo({ slug, type }: Props) {
       {!!images && (
         <div className="relative aspect-[25/9] w-full">
           <Image
-            src={`/img/${type}/${images[0]}`}
+            src={`${images[0]}`}
             alt="image"
             fill
             style={{
