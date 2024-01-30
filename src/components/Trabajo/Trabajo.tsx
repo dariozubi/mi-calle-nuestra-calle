@@ -1,8 +1,9 @@
-import { historias, proyectas, escenarios } from '@/utils/consts'
-import Image from 'next/image'
 import Link from 'next/link'
 import { ArrowDown, ArrowUpRight } from 'react-feather'
+
+import { historias, proyectas, escenarios } from '@/utils/consts'
 import ExploraProyectos from '../ExploraProyectos'
+import { Galeria } from './Galeria'
 
 type Props = {
   slug: string
@@ -31,22 +32,11 @@ function Trabajo({ slug, type }: Props) {
     images,
     reporte,
   } = DATA[type].filter(p => p.slug === slug)[0]
+
   return (
     <>
-      {!!images && (
-        <div className="relative aspect-[25/9] w-full">
-          <Image
-            src={`${images[0]}`}
-            alt="image"
-            fill
-            style={{
-              objectFit: 'cover',
-            }}
-          />
-        </div>
-      )}
-      <div className="mx-16 mb-8 mt-16 h-5 w-5 rounded-full bg-ladrillo" />
-      <div className="g-16 mb-12 flex w-full px-16">
+      {!!images && <Galeria images={images} />}
+      <div className="g-16 mb-12 mt-8 flex w-full px-16">
         <div className="flex w-1/2 flex-col">
           <p>{titulo}</p>
           <hr className="mt-2" />
