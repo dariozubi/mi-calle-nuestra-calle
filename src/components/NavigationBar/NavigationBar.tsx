@@ -108,7 +108,7 @@ function NavigationBar() {
               </Link>
             </div>
           </div>
-          <div className="flex w-4/12 flex-col">
+          <div className="flex w-4/12 flex-col items-end justify-between">
             <div className="flex w-full items-center justify-end gap-2">
               <Link className="text-xl" target="_blank" href={links.instagram}>
                 Instagram
@@ -121,7 +121,7 @@ function NavigationBar() {
             <a
               href={links.merch}
               target="_blank"
-              className="mt-28 bg-black py-2 text-center text-xl font-bold text-white"
+              className="bg-black px-4 py-2 text-center text-xl font-bold text-white"
             >
               Adquiere nuestra merch
             </a>

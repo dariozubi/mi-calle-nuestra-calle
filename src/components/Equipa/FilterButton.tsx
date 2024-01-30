@@ -16,7 +16,10 @@ export function FilterButton({
     ? colorVariants[selectedBackgroundColor].selected
     : colorVariants[selectedBackgroundColor].default
   return (
-    <button onClick={onClick} className={`h-10 px-2 text-xl ${colors}`}>
+    <button
+      onClick={onClick}
+      className={`h-10 px-4 py-2 text-xl font-bold ${colors}`}
+    >
       {children}
     </button>
   )

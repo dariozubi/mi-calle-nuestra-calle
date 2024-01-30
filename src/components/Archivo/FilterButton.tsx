@@ -13,7 +13,7 @@ export function FilterButton({
     ? 'bg-ladrillo text-black'
     : 'bg-black text-ladrillo hover:bg-ladrillo hover:text-black'
   return (
-    <button onClick={onClick} className={`h-10 px-2  font-bold ${colors}`}>
+    <button onClick={onClick} className={`h-10 px-4 py-2 font-bold ${colors}`}>
       {children}
     </button>
   )
