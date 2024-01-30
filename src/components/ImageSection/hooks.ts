@@ -1,41 +1,36 @@
-import { useCallback, useEffect, useState } from 'react'
-import { usePathname, useRouter, useSearchParams } from 'next/navigation'
+import { useCallback, useState } from 'react'
 
 export function useImagesState() {
-  const searchParams = useSearchParams()
-  const router = useRouter()
-  const pathname = usePathname()
   const [currentTags, setCurrentTags] = useState<string[]>([])
 
-  useEffect(() => {
-    const urlTags = searchParams.get('tags')
-    setCurrentTags(urlTags ? urlTags.split(',') : [])
-  }, [searchParams])
+  // useEffect(() => {
+  //   const urlTags = searchParams.get('tags')
+  //   setCurrentTags(urlTags ? urlTags.split(',') : [])
+  // }, [searchParams])
 
   const handleClick = useCallback(
     (tag: string) => {
       const index = currentTags.indexOf(tag)
-      let newTags
       if (index !== -1) {
         if (currentTags.length > 0) {
-          newTags = currentTags.toSpliced(index, 1)
+          setCurrentTags(currentTags.toSpliced(index, 1))
         }
       } else {
-        newTags = [...currentTags, tag]
+        setCurrentTags([...currentTags, tag])
       }
-      router.replace(
-        `${pathname}${
-          newTags && newTags?.length
-            ? `?tags=${encodeURIComponent(newTags.toString())}`
-            : ''
-        }`,
-        {
-          shallow: true,
-          scroll: false,
-        }
-      )
+      // router.replace(
+      //   `${pathname}${
+      //     newTags && newTags?.length
+      //       ? `?tags=${encodeURIComponent(newTags.toString())}`
+      //       : ''
+      //   }`,
+      //   {
+      //     shallow: true,
+      //     scroll: false,
+      //   }
+      // )
     },
-    [currentTags, pathname, router]
+    [currentTags]
   )
 
   return { currentTags, handleClick }
