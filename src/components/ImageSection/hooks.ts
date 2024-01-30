@@ -23,7 +23,7 @@ export function useImagesState() {
       } else {
         newTags = [...currentTags, tag]
       }
-      router.push(
+      router.replace(
         `${pathname}${
           newTags && newTags?.length
             ? `?tags=${encodeURIComponent(newTags.toString())}`
