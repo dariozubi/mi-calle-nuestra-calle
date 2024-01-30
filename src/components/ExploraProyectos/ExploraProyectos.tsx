@@ -32,8 +32,8 @@ async function ExploraProyectos({ slug }: Props) {
                 objectFit: 'cover',
               }}
             />
-            <div className="absolute flex h-full w-full items-center justify-center opacity-0 group-hover:bg-white group-hover:opacity-70">
-              <span className="p-4 text-center font-extrabold">
+            <div className="group-hover:bg-darkGrey absolute flex h-full w-full items-center justify-center opacity-0 group-hover:opacity-70">
+              <span className="p-4 text-center text-sm text-white">
                 {proyecta.titulo}
               </span>
             </div>

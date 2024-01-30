@@ -23,6 +23,7 @@ const config: Config = {
       pink: '#efa4bf',
       lila: '#ba8bbb',
       grey: '#f2f0eb',
+      darkGrey: '#2e2e2e',
       white: '#ffffff',
       black: '#000000',
       transparent: 'rgba(0,0,0,0)',

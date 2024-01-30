@@ -9,7 +9,7 @@ function Projects() {
         </h2>
         <div className="ml-4 h-5 w-5 rounded-full bg-black" />
       </div>
-      <div className="relative bg-black p-16">
+      <div className="relative bg-black p-16" id="images">
         <div className="absolute top-0 h-0 w-0 border-l-[15px] border-r-[15px] border-t-[15px] border-solid border-x-black border-t-blue" />
         <ImageSection />
 

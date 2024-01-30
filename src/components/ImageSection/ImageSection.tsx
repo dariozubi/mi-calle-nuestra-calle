@@ -11,7 +11,7 @@ function ImageSection() {
 
   return (
     <figure>
-      <div className="flex flex-wrap gap-2">
+      <ul className="mb-16 flex gap-2 overflow-hidden">
         {tags.map(t => (
           <TagButton
             key={t}
@@ -21,7 +21,7 @@ function ImageSection() {
             {t}
           </TagButton>
         ))}
-      </div>
+      </ul>
       <div className="flex flex-wrap">
         {trabajos.map(
           ({ image, link, titulo, tags }) =>
@@ -40,10 +40,8 @@ function ImageSection() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute flex h-full w-full items-center justify-center opacity-0 group-hover:bg-white group-hover:opacity-70">
-                    <span className="p-4 text-center font-extrabold">
-                      {titulo}
-                    </span>
+                  <div className="group-hover:bg-darkGrey absolute flex h-full w-full items-center justify-center opacity-0 group-hover:opacity-70">
+                    <span className="p-4 text-center text-white">{titulo}</span>
                   </div>
                 </div>
               </Link>

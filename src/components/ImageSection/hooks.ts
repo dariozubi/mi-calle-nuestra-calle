@@ -25,7 +25,9 @@ export function useImagesState() {
       }
       router.push(
         `${pathname}${
-          newTags && newTags?.length ? `?tags=${newTags.toString()}` : ''
+          newTags && newTags?.length
+            ? `?tags=${encodeURIComponent(newTags.toString())}`
+            : ''
         }`,
         {
           shallow: true,

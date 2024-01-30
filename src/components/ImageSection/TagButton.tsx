@@ -1,15 +1,18 @@
+import { FiX } from 'react-icons/fi'
+
 type Props = {
   selected: boolean
-} & React.HTMLProps<HTMLButtonElement>
+} & React.HTMLProps<HTMLLIElement>
 
 export const TagButton = ({ children, selected, onClick }: Props) => {
-  const colors = selected ? 'bg-white text-black' : 'bg-black text-white'
+  const colors = selected ? 'bg-white text-black' : 'bg-darkGrey text-white'
   return (
-    <button
+    <li
       onClick={onClick}
-      className={`rounded-xl border px-4 py-2 ${colors}`}
+      className={`font-sm flex w-fit cursor-pointer items-center gap-1 whitespace-nowrap rounded-xl px-2 py-1 ${colors}`}
     >
       {children}
-    </button>
+      {selected && <FiX />}
+    </li>
   )
 }
