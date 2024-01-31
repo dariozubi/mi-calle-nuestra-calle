@@ -5,6 +5,7 @@ import { backgroundColors, equipa } from './consts'
 import { FilterButton } from './FilterButton'
 import { ListItem } from './ListItem'
 import { Tag } from './types'
+import { HoverPhoto } from './HoverPhoto'
 
 function Equipa() {
   const [seleccion, setSeleccion] = useState<Tag[]>([])
@@ -55,11 +56,12 @@ function Equipa() {
         {equipa.map(
           item =>
             (!seleccion.length || seleccion.some(s => s === item.tag)) && (
-              <ListItem
-                item={item}
-                key={item.name}
-                selectedBackgroundColor={backgroundColors[item.tag]}
-              />
+              <HoverPhoto img={item.img} key={item.name}>
+                <ListItem
+                  item={item}
+                  selectedBackgroundColor={backgroundColors[item.tag]}
+                />
+              </HoverPhoto>
             )
         )}
       </div>

@@ -31,6 +31,7 @@ export const equipa: Miembro[] = [
     country: 'Guatemala',
     url: '/nosotras/sophia-arrazola',
     tag: 'fundadora',
+    img: '/img/equipa/Sophia.jpg',
   },
   {
     name: 'Jesica Bastidas',
@@ -38,6 +39,7 @@ export const equipa: Miembro[] = [
     country: 'México',
     url: '/nosotras/jesica-bastidas',
     tag: 'fundadora',
+    img: '/img/equipa/Jesica.jpg',
   },
   {
     name: 'Rosi Álvarez',
@@ -45,6 +47,7 @@ export const equipa: Miembro[] = [
     country: 'México',
     url: 'https://www.linkedin.com/in/rosi-alvarez-7221462b/',
     tag: 'aliada',
+    img: '/img/equipa/Rosi.jpg',
   },
   {
     name: 'Monserrat Padilla',
@@ -52,6 +55,7 @@ export const equipa: Miembro[] = [
     country: 'México',
     url: 'https://esdd.mx',
     tag: 'aliada',
+    img: '/img/equipa/Monse.jpg',
   },
   {
     name: 'Luciana Renner',
@@ -59,6 +63,7 @@ export const equipa: Miembro[] = [
     country: 'México',
     url: 'https://mx.linkedin.com/in/luciana-renner-2190837a',
     tag: 'aliada',
+    img: '/img/equipa/Luciana.jpg',
   },
   {
     name: 'Carolina González',
@@ -66,6 +71,7 @@ export const equipa: Miembro[] = [
     country: 'Argentina',
     url: 'https://www.linkedin.com/in/carolagonz%C3%A1lez',
     tag: 'aliada',
+    img: '/img/equipa/Caro.jpg',
   },
   {
     name: 'Diana Rivadeneira',
@@ -73,6 +79,7 @@ export const equipa: Miembro[] = [
     country: 'Ecuador',
     url: 'https://www.linkedin.com/in/diana-rivadeneira',
     tag: 'aliada',
+    img: '/img/equipa/Diana.jpg',
   },
   {
     name: 'Marce Bulla Montoya',
@@ -80,6 +87,7 @@ export const equipa: Miembro[] = [
     country: 'Costa Rica',
     url: 'https://www.facebook.com/sandra.marcela.96?mibextid=kFxxJD',
     tag: 'voluntaria',
+    img: '/img/equipa/Marce.jpg',
   },
   {
     name: 'Chris Van Balen',
@@ -87,6 +95,7 @@ export const equipa: Miembro[] = [
     country: 'Holanda',
     url: 'https://www.linkedin.com/in/chrisvbalen/',
     tag: 'voluntaria',
+    img: '/img/equipa/Chris.jpg',
   },
   {
     name: 'Sophie Greenspan',
@@ -94,6 +103,7 @@ export const equipa: Miembro[] = [
     country: 'EEUU',
     url: 'https://www.instagram.com/_sophiegreenspan/',
     tag: 'voluntaria',
+    img: '/img/equipa/Sophie.jpg',
   },
   {
     name: 'Paulina Garzaro',
@@ -101,5 +111,6 @@ export const equipa: Miembro[] = [
     country: 'Guatemala',
     url: 'https://www.linkedin.com/in/paulina-garzaro-a46ab6197/',
     tag: 'voluntaria',
+    img: '/img/equipa/Paulina.jpg',
   },
 ]

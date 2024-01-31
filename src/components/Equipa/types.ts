@@ -3,7 +3,8 @@ export type Miembro = {
   position: string
   country: string
   tag: Tag
-  url?: string
+  url: string
+  img: string
 }
 
 export type Tag = 'fundadora' | 'aliada' | 'voluntaria'
