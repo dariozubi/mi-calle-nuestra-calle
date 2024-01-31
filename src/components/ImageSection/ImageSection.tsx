@@ -11,7 +11,7 @@ function ImageSection() {
 
   return (
     <figure>
-      <ul className="mb-16 flex gap-2 overflow-hidden">
+      <ul className="mb-16 box-content flex gap-2 overflow-auto pb-5">
         {tags.map(t => (
           <TagButton
             key={t}
@@ -40,7 +40,7 @@ function ImageSection() {
                     fill
                     className="object-cover"
                   />
-                  <div className="group-hover:bg-darkGrey absolute flex h-full w-full items-center justify-center opacity-0 group-hover:opacity-70">
+                  <div className="absolute flex h-full w-full items-center justify-center opacity-0 group-hover:bg-darkGrey group-hover:opacity-70">
                     <span className="p-4 text-center text-white">{titulo}</span>
                   </div>
                 </div>
