@@ -15,8 +15,8 @@ export const Layout = ({
   menuButtonClickHandler,
 }: PropsWithChildren<Props>) => {
   return (
-    <nav className={`fixed z-50 flex w-full flex-col bg-white`}>
-      <div className="z-10 flex w-full items-center justify-between bg-white px-8 py-4 lg:px-16">
+    <nav className="fixed z-50 flex w-full flex-col bg-white">
+      <div className="z-10 flex w-full items-center justify-between bg-white px-4 py-4 lg:px-16">
         <Link href="/" className="text-xl font-black lg:text-3xl">
           mi calle, nuestra calle.
         </Link>

@@ -11,7 +11,7 @@ function ImageSection() {
 
   return (
     <figure>
-      <ul className="mb-16 box-content flex gap-2 overflow-auto pb-5">
+      <ul className="mb-4 box-content flex gap-2 overflow-auto pb-5 text-sm sm:text-base lg:mb-16">
         {tags.map(t => (
           <TagButton
             key={t}
@@ -22,14 +22,14 @@ function ImageSection() {
           </TagButton>
         ))}
       </ul>
-      <div className="flex flex-wrap">
+      <div className="flex flex-wrap justify-center sm:justify-normal">
         {trabajos.map(
           ({ image, link, titulo, tags }) =>
             !!image &&
             (!currentTags.length ||
               tags.some(t => currentTags.includes(t))) && (
               <Link
-                className="group aspect-square w-1/4 min-w-[150px] p-2"
+                className="group aspect-square w-1/4 min-w-[150px] p-1 lg:p-2"
                 href={`${link}`}
                 key={link}
               >
@@ -40,7 +40,7 @@ function ImageSection() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute flex h-full w-full items-center justify-center opacity-0 group-hover:bg-darkGrey group-hover:opacity-70">
+                  <div className="absolute flex h-full w-full items-center justify-center bg-darkGrey opacity-70 sm:opacity-0 group-hover:sm:bg-darkGrey group-hover:sm:opacity-70">
                     <span className="p-4 text-center text-white">{titulo}</span>
                   </div>
                 </div>
@@ -48,7 +48,7 @@ function ImageSection() {
             )
         )}
       </div>
-      <figcaption className="text-white">
+      <figcaption className="text-sm text-white sm:text-base">
         Fotografías: mi calle, nuestra calle, México, Guatemala, Barcelona
         (2020-2023)
       </figcaption>

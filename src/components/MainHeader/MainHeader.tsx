@@ -1,6 +1,6 @@
 function MainHeader() {
   return (
-    <h1 className="p-16 pt-24 text-3xl font-bold">
+    <h1 className="p-4 pt-16 text-2xl font-bold lg:p-16 lg:pt-24 lg:text-3xl">
       <b className="text-green">Somos</b> una{' '}
       <b className="text-yellow">laboratoria</b>{' '}
       <b className="text-pink">comunitaria</b> de{' '}

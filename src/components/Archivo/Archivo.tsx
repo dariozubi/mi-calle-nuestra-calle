@@ -24,10 +24,12 @@ function Archivo() {
 
   return (
     <>
-      <div className="p-16" id="archivo">
-        <div className="flex justify-between">
-          <h2 className="text-6xl font-extrabold">Archivo</h2>
-          <div className="flex items-end gap-8">
+      <div className="p-4 lg:p-16" id="archivo">
+        <div className="flex flex-wrap items-center justify-between">
+          <h2 className="py-4 text-3xl font-extrabold sm:pb-0 lg:text-6xl">
+            Archivo
+          </h2>
+          <div className="flex flex-wrap items-end gap-2 lg:gap-8">
             <FilterButton
               selected={filters.includes('conferencias')}
               onClick={() => handleClick('conferencias')}
@@ -48,7 +50,7 @@ function Archivo() {
             </FilterButton>
           </div>
         </div>
-        <hr className="mt-16" />
+        <hr className="mb-4 mt-4 lg:mb-0" />
       </div>
       <div className="flex flex-col gap-1 pb-1">
         {(!filters.length || filters.includes('conferencias')) &&

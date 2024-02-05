@@ -1,11 +1,6 @@
 'use client'
 
-import Link from 'next/link'
 import { useCallback, useEffect, useState } from 'react'
-import { ArrowDown, ArrowUpRight, Menu, X } from 'react-feather'
-import { MainLink } from './MainLink'
-import { usePathname } from 'next/navigation'
-import { links } from '@/utils/consts'
 import { Layout } from './Layout'
 import DesktopNavigation from './DesktopNavigation'
 import { MobileNavigation } from './MobileNavigation'

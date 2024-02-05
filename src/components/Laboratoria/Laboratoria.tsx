@@ -4,9 +4,11 @@ import Image from 'next/image'
 function Laboratoria() {
   return (
     <>
-      <div className="bg-white p-16" id="labs">
-        <h2 className="mb-6 text-6xl font-extrabold">Laboratorias</h2>
-        <p className="text-3xl font-extrabold">
+      <div className="bg-white p-4 lg:p-16" id="labs">
+        <h2 className="mb-4 text-3xl font-extrabold lg:mb-6 lg:text-6xl">
+          Laboratorias
+        </h2>
+        <p className="text-xl font-bold lg:text-3xl lg:font-extrabold">
           Nuestro modelo es{' '}
           <span className="text-green">itinerante, reflexivo, lúdico</span> y{' '}
           <span className="text-yellow">adaptativo</span> al contexto. Montamos{' '}
@@ -23,26 +25,30 @@ function Laboratoria() {
           de comunidades diversas.
         </p>
       </div>
-      <div className="bg-pink px-16 py-8">
-        <h2 className="text-3xl font-extrabold">Creamos, de creer y crear</h2>
+      <div className="bg-pink p-4 lg:px-16 lg:py-8">
+        <h2 className="text-xl font-extrabold lg:text-3xl">
+          Creamos, de creer y crear
+        </h2>
       </div>
-      <div className="relative bg-ladrillo p-16">
+      <div className="relative bg-ladrillo p-4 lg:p-16">
         <div className="absolute top-0 h-0 w-0 border-l-[15px] border-r-[15px] border-t-[15px] border-solid border-x-ladrillo border-t-pink" />
-        <div className="flex">
-          <figure className="relative w-1/2">
+        <div className="flex flex-wrap">
+          <figure className="relative mb-12 mt-4 min-h-[300px] w-full lg:mb-0 lg:mt-0 lg:w-1/2">
             <Image
               src="/img/proyectas/azcapotzalco_3.JPG"
               alt="image"
               fill
               className="object-cover"
             />
-            <figcaption className="relative top-[100%] text-black">
+            <figcaption className="sm:tex-base relative top-[100%] text-sm text-black">
               Fotografía: mi calle, nuestra calle, México (2021)
             </figcaption>
           </figure>
-          <div className="w-1/2 px-16">
-            <h3 className="mb-8 text-3xl font-bold">Servicios</h3>
-            <ul className="text-xl">
+          <div className="w-full lg:w-1/2 lg:px-16">
+            <h3 className="mb-4 text-2xl font-bold lg:mb-8 lg:text-3xl">
+              Servicios
+            </h3>
+            <ul className="lg_mb-0 mb-4 text-base lg:text-xl">
               <li>Experiencias de vinculación comunitaria</li>
               <li>Etnografía poética y prácticas narrativas</li>
               <li>Investigación de futuros</li>

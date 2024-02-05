@@ -14,18 +14,22 @@ function SeParte() {
           }}
         />
       </figure>
-      <div className="flex p-16" id="separte">
-        <div className="flex w-1/2 flex-col">
-          <h2 className="mb-12 text-6xl font-extrabold">Sé parte</h2>
-          <div className="flex  flex-col">
+      <div className="flex flex-wrap p-4 lg:p-16" id="separte">
+        <div className="flex w-full flex-col lg:w-1/2">
+          <h2 className="text-3xl font-extrabold lg:mb-12 lg:text-6xl">
+            Sé parte
+          </h2>
+          <div className="flex flex-col">
             <Item>Dona tu tiempo como voluntaria</Item>
             <Item>Haz un internship con nosotras</Item>
             <Item>Únete al equipo de consultoras</Item>
           </div>
         </div>
-        <div className="flex w-1/2 flex-col px-12">
-          <h3 className="mb-12 text-3xl font-extrabold">¿Por qué unirme?</h3>
-          <p className="text-xl">
+        <div className="flex w-full flex-col lg:w-1/2 lg:px-12">
+          <h3 className="mb-4 mt-8 text-2xl font-extrabold lg:mb-12 lg:mt-0 lg:text-3xl">
+            ¿Por qué unirme?
+          </h3>
+          <p className="text-base lg:text-xl">
             Creemos que todo conocimiento o area de expertís <br /> suma a
             nuestra causa.
             <br />
@@ -46,7 +50,7 @@ function SeParte() {
 
 function Item({ children }: PropsWithChildren) {
   return (
-    <button className="border-b border-black p-4 text-left text-2xl font-bold hover:bg-black hover:text-white">
+    <button className="border-b border-black py-2 text-left text-base font-bold hover:bg-black hover:text-white lg:p-4 lg:text-2xl">
       {children}
     </button>
   )
