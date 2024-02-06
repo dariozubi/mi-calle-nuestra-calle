@@ -13,7 +13,7 @@ export const MobileNavigation = ({ open, handleClose }: Props) => {
     <div className="flex h-screen flex-col gap-2 bg-lila px-8 pt-4">
       <Link
         onClick={handleClose}
-        href="nosotras"
+        href="/nosotras"
         className="text-4xl font-extrabold"
       >
         Nosotras
