@@ -25,6 +25,8 @@ export default function Nosotras() {
             alt="image"
             fill
             className="object-cover"
+            sizes="(max-width: 1024px) 100vw, (max-width: 1200px) 50vw"
+            priority={true}
           />
         </div>
       </div>

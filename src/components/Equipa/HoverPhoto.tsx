@@ -8,7 +8,7 @@ type Props = {
 
 export const HoverPhoto = ({ children, img }: PropsWithChildren<Props>) => (
   <HoverCard.Root openDelay={200} closeDelay={100}>
-    <HoverCard.Trigger>{children}</HoverCard.Trigger>
+    <HoverCard.Trigger asChild>{children}</HoverCard.Trigger>
     <HoverCard.Portal>
       <HoverCard.Content align="start">
         <div className="h-[400px] w-[400px]">
