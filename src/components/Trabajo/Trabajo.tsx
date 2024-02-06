@@ -36,18 +36,20 @@ function Trabajo({ slug, type }: Props) {
   return (
     <>
       {!!images && <Galeria images={images} />}
-      <div className="g-16 mb-12 mt-8 flex w-full px-16">
-        <div className="flex w-1/2 flex-col">
-          <p>{titulo}</p>
+      <div className="mb-12 mt-8 flex w-full flex-wrap-reverse px-4 lg:px-16">
+        <div className="flex w-full flex-col lg:w-1/2">
+          <h1 className="hidden text-xl lg:block">{titulo}</h1>
           <hr className="mt-2" />
           {!!lugar && (
-            <p className="mb-6 text-xl">{`${lugar} ${
+            <p className="text-normal mb-4 lg:mb-6 lg:text-xl">{`${lugar} ${
               fecha ? `(${fecha})` : ''
             }`}</p>
           )}
           <hr className="mt-8" />
-          <p className="mb-6 text-xl">Temas</p>
-          <p className="text-xl">
+          <p className="mb-4 text-lg font-bold lg:mb-6 lg:text-xl lg:font-normal">
+            Temas
+          </p>
+          <p className="text-normal lg:text-xl">
             {temas.map((tema, i) => (
               <>
                 <span key={i}>{tema}</span>
@@ -56,13 +58,15 @@ function Trabajo({ slug, type }: Props) {
             ))}
           </p>
           <hr className="mt-8" />
-          <p className="mb-6 text-xl">Alianzas</p>
+          <p className="mb-4 text-lg font-bold lg:mb-6 lg:text-xl lg:font-normal">
+            Alianzas
+          </p>
           <>
             {alianzas.map(alianza => (
               <Link
                 href={alianza.url}
                 target="_blank"
-                className="flex items-center text-xl"
+                className="text-normal flex items-center lg:text-xl"
                 key={alianza.url}
               >
                 {alianza.nombre}
@@ -77,8 +81,10 @@ function Trabajo({ slug, type }: Props) {
             )}
           </>
         </div>
-        <div className="flex w-1/2 flex-col px-16">
-          <h1 className="mb-12 text-xl">{titulo}</h1>
+        <div className="flex w-full flex-col px-0 lg:w-1/2 lg:px-16">
+          <h1 className="mb-4 text-lg font-bold lg:mb-12 lg:block lg:text-xl lg:font-normal">
+            {titulo}
+          </h1>
           <p>{descripcion}</p>
           <br />
           <p>

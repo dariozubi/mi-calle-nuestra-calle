@@ -11,10 +11,10 @@ async function ExploraProyectos({ slug }: Props) {
     .filter(p => p.slug !== slug && !!p.images)
     .map(p => ({ img: p.images![0], slug: p.slug, titulo: p.titulo }))
   return (
-    <div className="bg-pink p-16">
-      <div className="flex">
+    <div className="bg-pink p-4 lg:p-16">
+      <div className="flex flex-wrap">
         <div className="flex aspect-square w-1/4 items-center justify-center bg-ladrillo">
-          <p className="text-lg">
+          <p className="text-normal text-center lg:text-lg">
             Explora + <br /> labs
           </p>
         </div>
@@ -28,12 +28,10 @@ async function ExploraProyectos({ slug }: Props) {
               src={`${proyecta.img}`}
               alt="image"
               fill
-              style={{
-                objectFit: 'cover',
-              }}
+              className="object-cover"
             />
-            <div className="group-hover:bg-darkGrey absolute flex h-full w-full items-center justify-center opacity-0 group-hover:opacity-70">
-              <span className="p-4 text-center text-sm text-white">
+            <div className="absolute flex h-full w-full items-center justify-center bg-darkGrey opacity-70 group-hover:bg-darkGrey group-hover:opacity-70 sm:opacity-0">
+              <span className="p-2 text-center text-xs text-white lg:p-4 lg:text-sm">
                 {proyecta.titulo}
               </span>
             </div>

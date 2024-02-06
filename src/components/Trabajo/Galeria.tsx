@@ -27,15 +27,13 @@ export const Galeria = ({ images }: Props) => {
         {images.map(image => (
           <div
             key={image}
-            className="relative aspect-[25/9] w-full bg-darkGrey"
+            className="relative aspect-[16/9] w-full bg-darkGrey"
           >
             <Image
               src={`${image}`}
               alt="image"
               fill
-              style={{
-                objectFit: 'contain',
-              }}
+              className="object-contain"
             />
           </div>
         ))}
