@@ -11,12 +11,12 @@ export const HoverPhoto = ({ children, img }: PropsWithChildren<Props>) => (
     <HoverCard.Trigger asChild>{children}</HoverCard.Trigger>
     <HoverCard.Portal>
       <HoverCard.Content align="start">
-        <div className="h-[400px] w-[400px]">
+        <div className="h-[300px] w-[300px]">
           <Image
             src={img}
             alt={img ? img.substring(0, img.length - 3) : 'image'}
             fill
-            className="object-cover"
+            className="overflow-hidden rounded-lg object-cover"
           />
         </div>
       </HoverCard.Content>

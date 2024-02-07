@@ -2,7 +2,7 @@ import Link from 'next/link'
 import { ArrowUpRight } from 'react-feather'
 import { Miembro } from './types'
 import { colorVariants } from './consts'
-import React, { Ref } from 'react'
+import React from 'react'
 
 type Props = {
   item: Miembro

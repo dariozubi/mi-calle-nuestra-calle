@@ -29,12 +29,7 @@ export const Galeria = ({ images }: Props) => {
             key={image}
             className="relative aspect-[16/9] w-full bg-darkGrey"
           >
-            <Image
-              src={`${image}`}
-              alt="image"
-              fill
-              className="object-contain"
-            />
+            <Image src={`${image}`} alt="image" fill className="object-cover" />
           </div>
         ))}
       </Slider>
