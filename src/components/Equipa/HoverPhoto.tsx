@@ -7,15 +7,17 @@ type Props = {
 }
 
 export const HoverPhoto = ({ children, img }: PropsWithChildren<Props>) => (
-  <HoverCard.Root openDelay={200} closeDelay={100}>
+  <HoverCard.Root openDelay={0} closeDelay={0}>
     <HoverCard.Trigger asChild>{children}</HoverCard.Trigger>
     <HoverCard.Portal>
       <HoverCard.Content align="start">
-        <div className="h-[300px] w-[300px]">
+        <div className="relative h-[300px] w-[300px]">
           <Image
             src={img}
             alt={img ? img.substring(0, img.length - 3) : 'image'}
             fill
+            priority={true}
+            sizes="300px"
             className="overflow-hidden rounded-lg object-cover"
           />
         </div>
