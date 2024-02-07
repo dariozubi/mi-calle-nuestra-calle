@@ -1,3 +1,4 @@
+import Aliadas from '@/components/Aliadas'
 import Equipa from '@/components/Equipa'
 import Image from 'next/image'
 
@@ -6,7 +7,7 @@ export default function Nosotras() {
     <>
       <div className="flex flex-wrap bg-white">
         <div className="w-full p-4 pt-16 lg:w-1/2 lg:p-16">
-          <p className="text-base lg:text-2xl">
+          <p className="text-base lg:text-xl">
             MCNC fue fundada en Ciudad de México en el contexto de la pandemia
             de 2020, por la artista y futurista guatemalteca Sophia Arrazola
             como una respuesta a tiempos venideros. <br />
@@ -31,6 +32,7 @@ export default function Nosotras() {
         </div>
       </div>
       <Equipa />
+      <Aliadas />
     </>
   )
 }

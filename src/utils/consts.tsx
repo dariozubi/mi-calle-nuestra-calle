@@ -103,13 +103,66 @@ export const equipa: Semblante[] = [
 ]
 
 export const aliadas: Record<string, Aliada> = {
+  gobiernoMX: {
+    nombre: 'Gobierno de México',
+    url: '',
+    logo: '/img/logos/gob_mexico.jpg',
+  },
+  gobiernoCDMX: {
+    nombre: 'Gobierno CDMX',
+    url: '',
+    logo: '/img/logos/cdmx.jpg',
+  },
+  ONUMujeres: {
+    nombre: 'ONU Mujeres México',
+    url: '',
+    logo: '/img/logos/un_women.jpg',
+  },
+  laNana: {
+    nombre: 'La Nana',
+    url: '',
+    logo: '/img/logos/la_nana.jpg',
+  },
+  centro: {
+    nombre: 'CENTRO',
+    url: '',
+    logo: '/img/logos/centro.jpg',
+  },
+  ibero: {
+    nombre: 'Ibero',
+    url: '',
+    logo: '/img/logos/ibero.jpg',
+  },
+  detde: {
+    nombre:
+      'DETDE (Dirección de Emprendimiento, Talento y Desarrollo Empresarial)',
+    url: '',
+    logo: '/img/logos/detde.jpg',
+  },
+  andar: {
+    nombre: 'Andar Consultorías',
+    url: '',
+    logo: '/img/logos/andar.jpg',
+  },
+  uvg: {
+    nombre: 'Universidad del Valle de Guatemala',
+    url: '',
+    logo: '/img/logos/uvg.jpg',
+  },
+  uniRL: {
+    nombre: 'Universidad Rafael Landivar',
+    url: '',
+    logo: '/img/logos/universidad_rafael_landivar.jpg',
+  },
   violetaRadio: {
     nombre: 'Violeta Radio',
     url: 'https://violetaradio.org/',
+    logo: '/img/logos/violeta_radio.jpg',
   },
   placemaking: {
     nombre: 'Placemaking México',
     url: 'https://lugarespublicos.org/',
+    logo: '/img/logos/placemakingmx.jpg',
   },
   unidadDeGenero: {
     nombre: 'Unidad de Género Azcapotzalco',
@@ -118,6 +171,7 @@ export const aliadas: Record<string, Aliada> = {
   laNuevaFabrica: {
     nombre: 'La Nueva Fábrica',
     url: 'https://lanuevafabrica.org/es/',
+    logo: '/img/logos/la_nueva_fabrica.jpg',
   },
   draAnisah: {
     nombre: 'Dra. Anisah Abdullah',
@@ -130,18 +184,22 @@ export const aliadas: Record<string, Aliada> = {
   lasPanas: {
     nombre: 'Las Panas',
     url: 'https://www.laspanasmx.com/',
+    logo: '/img/logos/las_panas.jpg',
   },
   superaccio: {
     nombre: 'Superaccio',
     url: 'https://superaccio.org/',
+    logo: '/img/logos/superaccio.jpg',
   },
   lagunaMX: {
     nombre: 'Laguna MX',
     url: 'https://lagunombrexico.com/',
+    logo: '/img/logos/laguna.jpg',
   },
   disenaColectiva: {
     nombre: 'Diseña Colectiva',
     url: 'https://www.instagram.com/disenacolectiva/',
+    logo: '/img/logos/disena_colectiva.jpg',
   },
 }
 
