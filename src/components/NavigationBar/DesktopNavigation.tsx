@@ -3,7 +3,6 @@
 import Link from 'next/link'
 import { ArrowDown, ArrowUpRight } from 'react-feather'
 import { MainLink } from './MainLink'
-import { usePathname } from 'next/navigation'
 import { links } from '@/utils/consts'
 
 type Props = {
@@ -12,7 +11,6 @@ type Props = {
 }
 
 function DesktopNavigation({ show, handleClose }: Props) {
-  const pathname = usePathname()
   return (
     <>
       <div
@@ -21,25 +19,39 @@ function DesktopNavigation({ show, handleClose }: Props) {
         }`}
       >
         <div className="hidden w-2/12 flex-col lg:flex">
-          <p className="text-2xl font-extrabold">México</p>
-          <p className="text-2xl font-extrabold">Guatemala</p>
-          <p className="text-2xl font-extrabold">Barcelona</p>
-        </div>
-        <div className="flex w-3/12 flex-col">
           <MainLink
             onClick={handleClose}
-            active={pathname.includes('/nosotras')}
-            href="/nosotras"
+            href="/#images"
+            className="text-2xl font-extrabold"
           >
+            México
+          </MainLink>
+          <MainLink
+            onClick={handleClose}
+            href="/#images"
+            className="text-2xl font-extrabold"
+          >
+            Guatemala
+          </MainLink>
+          <MainLink
+            onClick={handleClose}
+            href="/#images"
+            className="text-2xl font-extrabold"
+          >
+            Barcelona
+          </MainLink>
+        </div>
+        <div className="flex w-3/12 flex-col">
+          <MainLink onClick={handleClose} href="/nosotras">
             Nosotras
           </MainLink>
-          <MainLink onClick={handleClose} active={false} href="/#labs">
+          <MainLink onClick={handleClose} href="/#labs">
             Labs
           </MainLink>
-          <MainLink onClick={handleClose} active={false} href="/#archivo">
+          <MainLink onClick={handleClose} href="/archivo">
             Archivo
           </MainLink>
-          <MainLink onClick={handleClose} active={false} href="/#separte">
+          <MainLink onClick={handleClose} href="/#separte">
             Sé parte
           </MainLink>
         </div>

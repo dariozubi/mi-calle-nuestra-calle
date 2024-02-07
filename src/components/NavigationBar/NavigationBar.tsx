@@ -5,7 +5,7 @@ import { Layout } from './Layout'
 import DesktopNavigation from './DesktopNavigation'
 import { MobileNavigation } from './MobileNavigation'
 
-const scrollLimit = 344
+const scrollLimit = 10
 
 function NavigationBar() {
   const [open, setOpen] = useState(false)

@@ -1,4 +1,3 @@
-import Archivo from '@/components/Archivo'
 import Laboratoria from '@/components/Laboratoria'
 import MainHeader from '@/components/MainHeader'
 import Projects from '@/components/Projects'
@@ -10,7 +9,6 @@ export default function Home() {
       <MainHeader />
       <Projects />
       <Laboratoria />
-      <Archivo />
       <SeParte />
     </>
   )

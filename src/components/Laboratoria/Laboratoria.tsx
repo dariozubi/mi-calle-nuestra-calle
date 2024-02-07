@@ -1,10 +1,9 @@
-import { MapPin } from 'react-feather'
 import Image from 'next/image'
 
 function Laboratoria() {
   return (
     <>
-      <div className="bg-white p-4 lg:p-16" id="labs">
+      <section className="bg-white p-4 lg:p-16" id="labs">
         <h2 className="mb-4 text-3xl font-extrabold lg:mb-6 lg:text-6xl">
           Laboratorias
         </h2>
@@ -24,13 +23,13 @@ function Laboratoria() {
           futuros y prácticas narrativas, visibilizamos las historias y anhelos
           de comunidades diversas.
         </p>
-      </div>
-      <div className="bg-pink p-4 lg:px-16 lg:py-8">
+      </section>
+      <section className="bg-pink p-4 lg:px-16 lg:py-8">
         <h2 className="text-xl font-extrabold lg:text-3xl">
           Creamos, de creer y crear
         </h2>
-      </div>
-      <div className="relative bg-ladrillo p-4 lg:p-16">
+      </section>
+      <section className="relative bg-ladrillo p-4 lg:p-16">
         <div className="absolute top-0 h-0 w-0 border-l-[15px] border-r-[15px] border-t-[15px] border-solid border-x-ladrillo border-t-pink" />
         <div className="flex flex-wrap">
           <figure className="relative mb-12 mt-4 min-h-[300px] w-full lg:mb-0 lg:mt-0 lg:w-1/2">
@@ -63,7 +62,7 @@ function Laboratoria() {
             </ul>
           </div>
         </div>
-      </div>
+      </section>
     </>
   )
 }

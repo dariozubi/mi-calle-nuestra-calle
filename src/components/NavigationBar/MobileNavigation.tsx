@@ -27,7 +27,7 @@ export const MobileNavigation = ({ open, handleClose }: Props) => {
       </Link>
       <Link
         onClick={handleClose}
-        href="/#archivo"
+        href="/archivo"
         className="text-4xl font-extrabold"
       >
         Archivo
