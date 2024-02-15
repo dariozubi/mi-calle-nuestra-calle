@@ -1,4 +1,13 @@
 import Image from 'next/image'
+import Galeria from '../Galeria'
+
+const images = [
+  '/img/labs/labs1.jpg',
+  '/img/labs/labs2.jpg',
+  '/img/labs/labs3.jpg',
+  '/img/labs/labs4.jpg',
+  '/img/labs/labs5.jpg',
+]
 
 function Laboratoria() {
   return (
@@ -24,6 +33,7 @@ function Laboratoria() {
           de comunidades diversas.
         </p>
       </section>
+      <Galeria images={images} className="-mb-2" />
       <section className="bg-pink p-4 lg:px-16 lg:py-8">
         <h2 className="text-xl font-extrabold lg:text-3xl">
           Creamos, de creer y crear

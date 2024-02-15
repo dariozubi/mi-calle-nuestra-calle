@@ -9,9 +9,10 @@ import Image from 'next/image'
 
 type Props = {
   images: string[]
+  className?: string
 }
 
-export const Galeria = ({ images }: Props) => {
+const Galeria = ({ images, className }: Props) => {
   const settings = {
     infinite: true,
     arrows: true,
@@ -22,14 +23,14 @@ export const Galeria = ({ images }: Props) => {
     prevArrow: <ArrowButton type="previous" />,
   }
   return (
-    <div className="mt-7">
+    <div className={className}>
       <Slider {...settings}>
         {images.map(image => (
           <div
             key={image}
             className="relative aspect-[16/9] w-full bg-darkGrey"
           >
-            <Image src={`${image}`} alt="image" fill className="object-cover" />
+            <Image src={image} alt="image" fill className="object-cover" />
           </div>
         ))}
       </Slider>
@@ -56,3 +57,5 @@ const ArrowButton = ({
     />
   )
 }
+
+export default Galeria

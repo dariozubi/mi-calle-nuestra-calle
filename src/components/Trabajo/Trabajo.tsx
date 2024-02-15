@@ -3,7 +3,7 @@ import { ArrowDown, ArrowUpRight } from 'react-feather'
 
 import { historias, proyectas, escenarios } from '@/utils/consts'
 import ExploraProyectos from '../ExploraProyectos'
-import { Galeria } from './Galeria'
+import Galeria from '../Galeria'
 
 type Props = {
   slug: string
@@ -35,7 +35,7 @@ function Trabajo({ slug, type }: Props) {
 
   return (
     <>
-      {!!images && <Galeria images={images} />}
+      {!!images && <Galeria images={images} className="mt-7" />}
       <div className="mb-12 mt-8 flex w-full flex-wrap-reverse px-4 lg:px-16">
         <div className="flex w-full flex-col lg:w-1/2">
           <h1 className="hidden text-xl lg:block">{titulo}</h1>

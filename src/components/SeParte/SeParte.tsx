@@ -6,12 +6,10 @@ function SeParte() {
     <>
       <figure className="relative aspect-[25/9] w-full">
         <Image
-          src="/img/proyectas/azcapotzalco_1.jpg"
+          src="/img/separte.jpg"
           alt="image"
           fill
-          style={{
-            objectFit: 'cover',
-          }}
+          className="object-cover"
         />
       </figure>
       <div className="flex flex-wrap p-4 lg:p-16" id="separte">
