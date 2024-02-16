@@ -59,7 +59,7 @@ export const MobileNavigation = ({ open, handleClose }: Props) => {
       <p className=" flex items-center text-2xl">
         Contáctanos <ArrowUpRight size={28} />
       </p>
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-4">
         <Link
           href={links.mail}
           target="_blank"

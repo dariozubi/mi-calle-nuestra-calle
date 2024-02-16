@@ -18,29 +18,6 @@ function DesktopNavigation({ show, handleClose }: Props) {
           show ? '' : 'fixed -mt-72'
         }`}
       >
-        <div className="hidden w-2/12 flex-col lg:flex">
-          <MainLink
-            onClick={handleClose}
-            href="/#images"
-            className="text-2xl font-extrabold"
-          >
-            México
-          </MainLink>
-          <MainLink
-            onClick={handleClose}
-            href="/#images"
-            className="text-2xl font-extrabold"
-          >
-            Guatemala
-          </MainLink>
-          <MainLink
-            onClick={handleClose}
-            href="/#images"
-            className="text-2xl font-extrabold"
-          >
-            Barcelona
-          </MainLink>
-        </div>
         <div className="flex w-3/12 flex-col">
           <MainLink onClick={handleClose} href="/nosotras">
             Nosotras
@@ -71,10 +48,12 @@ function DesktopNavigation({ show, handleClose }: Props) {
           >
             Herramientas <ArrowDown size={28} />
           </Link>
-          <p className="mt-6 flex items-center text-2xl">
+        </div>
+        <div className="flex w-2/12 flex-col">
+          <p className="flex items-center text-2xl">
             Contáctanos <ArrowUpRight size={28} />
           </p>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-4">
             <Link
               href={links.mail}
               target="_blank"
