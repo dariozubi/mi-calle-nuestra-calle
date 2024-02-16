@@ -27,11 +27,9 @@ function Footer() {
       <div className="flex flex-wrap justify-between">
         <div className="flex w-full flex-wrap py-4 md:w-1/2 md:py-0">
           <FooterLink href="/nosotras">Nosotras</FooterLink>
-          <FooterLink href="/#archivo">Archivo</FooterLink>
-          <FooterLink href="/">Impacto</FooterLink>
+          <FooterLink href="/archivo">Archivo</FooterLink>
           <FooterLink href="/#labs">Laboratorias</FooterLink>
           <FooterLink href="/#separte">Sé parte</FooterLink>
-          <FooterLink href="/">Herramientas</FooterLink>
         </div>
         <div className="flex w-full items-end justify-end py-4 text-xs md:w-1/2 md:py-0">
           © 2023 Mi Calle, Nuestra Calle | Diseñado por Sophia Arrazola
@@ -43,7 +41,7 @@ function Footer() {
 
 function FooterLink({ children, href }: PropsWithChildren<{ href: string }>) {
   return (
-    <a href={href} className="w-1/3 text-sm">
+    <a href={href} className="w-1/2 text-sm">
       {children}
     </a>
   )

@@ -18,9 +18,15 @@ function SeParte() {
             Sé parte
           </h2>
           <div className="flex flex-col">
-            <Item>Dona tu tiempo como voluntaria</Item>
-            <Item>Haz un internship con nosotras</Item>
-            <Item>Únete al equipo de consultoras</Item>
+            <Item href="https://forms.gle/tzn1KGtphsBMxDV56">
+              Dona tu tiempo como voluntaria
+            </Item>
+            <Item href="https://forms.gle/MVZq97wSdJcWBWWt7">
+              Haz un internship con nosotras
+            </Item>
+            <Item href="https://forms.gle/grbpsqPRBuGkQHbw5">
+              Únete al equipo de consultoras
+            </Item>
           </div>
         </div>
         <div className="flex w-full flex-col lg:w-1/2 lg:px-12">
@@ -46,11 +52,15 @@ function SeParte() {
   )
 }
 
-function Item({ children }: PropsWithChildren) {
+function Item({ children, href }: PropsWithChildren<{ href: string }>) {
   return (
-    <button className="border-b border-black py-2 text-left text-base font-bold hover:bg-black hover:text-white lg:p-4 lg:text-2xl">
+    <a
+      href={href}
+      target="_blank"
+      className="border-b border-black py-2 text-left text-base font-bold hover:bg-black hover:text-white lg:p-4 lg:text-2xl"
+    >
       {children}
-    </button>
+    </a>
   )
 }
 
