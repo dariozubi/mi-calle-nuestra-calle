@@ -18,7 +18,7 @@ export function FilterButton({
   return (
     <button
       onClick={onClick}
-      className={`h-10 px-2 py-1 text-base font-bold lg:px-4 lg:py-2 lg:text-xl ${colors}`}
+      className={`h-fit px-2 py-1 text-sm font-bold lg:text-base ${colors}`}
     >
       {children}
     </button>

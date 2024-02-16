@@ -1,6 +1,6 @@
+import './globals.css'
 import type { Metadata } from 'next'
 import { Montserrat } from 'next/font/google'
-import './globals.css'
 import NavigationBar from '@/components/NavigationBar'
 import Footer from '@/components/Footer'
 

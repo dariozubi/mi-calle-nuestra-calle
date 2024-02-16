@@ -26,11 +26,11 @@ function Equipa() {
 
   return (
     <div className="lg:mt-8">
-      <div className="top-[68px] flex flex-wrap justify-between bg-white p-4 first-letter:flex lg:sticky lg:p-8">
-        <h1 className="my-4 text-3xl font-extrabold lg:m-0 lg:text-4xl">
+      <div className="top-[68px] flex flex-wrap items-baseline justify-between bg-white p-4 first-letter:flex lg:sticky lg:p-8">
+        <h1 className="mt-4 text-3xl font-extrabold lg:m-0 lg:mt-0 lg:text-4xl">
           Equipa
         </h1>
-        <div className="flex justify-between gap-2 lg:gap-8">
+        <div className="flex justify-between gap-4 lg:gap-8">
           <FilterButton
             selectedBackgroundColor={backgroundColors.fundadora}
             onClick={() => handleClick('fundadora')}

@@ -24,12 +24,12 @@ function Archivo() {
 
   return (
     <>
-      <div className="p-4 lg:p-16" id="archivo">
-        <div className="flex flex-wrap items-center justify-between">
-          <h2 className="py-4 text-3xl font-extrabold sm:pb-0 lg:text-6xl">
+      <div className="px-4 pt-16 lg:p-16" id="archivo">
+        <div className="flex flex-wrap items-center items-baseline justify-between">
+          <h2 className="text-3xl font-extrabold sm:pb-0 lg:text-6xl">
             Archivo
           </h2>
-          <div className="flex flex-wrap items-end gap-2 lg:gap-8">
+          <div className="flex flex-wrap items-end gap-4 lg:gap-8">
             <FilterButton
               selected={filters.includes('conferencias')}
               onClick={() => handleClick('conferencias')}
