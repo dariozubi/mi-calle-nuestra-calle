@@ -11,7 +11,7 @@ function ImageSection() {
 
   return (
     <figure>
-      <ul className="mb-4 box-content flex gap-2 overflow-auto text-sm sm:text-base lg:mb-16">
+      <ul className="mb-4 box-content flex gap-2 overflow-auto text-sm sm:text-base">
         {tags.map(t => (
           <TagButton
             key={t}

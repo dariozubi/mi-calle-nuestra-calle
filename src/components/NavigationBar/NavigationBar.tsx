@@ -29,7 +29,7 @@ function NavigationBar() {
 
   return (
     <>
-      <div className="hidden lg:block">
+      <nav className="hidden lg:block">
         <Layout
           open={open}
           showMenuButton={!isOnTop}
@@ -37,8 +37,8 @@ function NavigationBar() {
         >
           <DesktopNavigation handleClose={handleClose} show={open || isOnTop} />
         </Layout>
-      </div>
-      <div className="block lg:hidden">
+      </nav>
+      <nav className="block lg:hidden">
         <Layout
           open={open}
           showMenuButton={true}
@@ -46,7 +46,7 @@ function NavigationBar() {
         >
           <MobileNavigation handleClose={handleClose} open={open} />
         </Layout>
-      </div>
+      </nav>
       <div
         className={`hidden transition-[height] duration-500 lg:block ${
           scrollPosition < scrollLimit + 100 ? 'h-72' : `h-48 w-full`
