@@ -2,4 +2,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.micallenuestracalle.com/sitemap.xml
+Sitemap: https://micallenuestracalle.com/sitemap.xml
