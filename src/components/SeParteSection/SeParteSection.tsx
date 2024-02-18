@@ -1,9 +1,9 @@
 import { PropsWithChildren } from 'react'
 import Image from 'next/image'
 
-function SeParte() {
+function SeParteSection() {
   return (
-    <>
+    <section>
       <figure className="relative aspect-[25/9] w-full">
         <Image
           src="/img/separte.jpg"
@@ -48,7 +48,7 @@ function SeParte() {
           </p>
         </div>
       </div>
-    </>
+    </section>
   )
 }
 
@@ -64,4 +64,4 @@ function Item({ children, href }: PropsWithChildren<{ href: string }>) {
   )
 }
 
-export default SeParte
+export default SeParteSection

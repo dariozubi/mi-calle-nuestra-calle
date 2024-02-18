@@ -28,9 +28,9 @@ const aliadxs: Record<
   barcelona: [aliadas.superaccio],
 }
 
-function Aliadas() {
+function AliadasSection() {
   return (
-    <div className="flex flex-col gap-12 px-4 py-4 lg:px-16 lg:py-16">
+    <section className="flex flex-col gap-12 px-4 py-4 lg:px-16 lg:py-16">
       <div className="flex flex-col gap-4">
         <Aliadxs pais="México" />
         <div className="flex flex-wrap">
@@ -58,7 +58,7 @@ function Aliadas() {
           )}
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 
@@ -82,4 +82,4 @@ const Aliadxs = ({ pais }: { pais: string }) => (
   </h2>
 )
 
-export default Aliadas
+export default AliadasSection

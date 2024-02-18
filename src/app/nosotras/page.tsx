@@ -1,11 +1,11 @@
-import Aliadas from '@/components/Aliadas'
+import AliadasSection from '@/components/AliadasSection'
 import Equipa from '@/components/Equipa'
 import Image from 'next/image'
 
 export default function Nosotras() {
   return (
     <>
-      <div className="flex flex-wrap bg-white">
+      <section className="flex flex-wrap bg-white">
         <div className="w-full p-4 pt-16 lg:w-1/2 lg:p-16">
           <p className="text-base lg:text-xl">
             MCNC fue fundada en Ciudad de México en el contexto de la pandemia
@@ -30,9 +30,9 @@ export default function Nosotras() {
             priority={true}
           />
         </div>
-      </div>
+      </section>
       <Equipa />
-      <Aliadas />
+      <AliadasSection />
     </>
   )
 }

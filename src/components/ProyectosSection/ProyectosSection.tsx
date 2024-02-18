@@ -1,6 +1,6 @@
 import ImageSection from '../ImageSection'
 
-function Projects() {
+function ProyectosSection() {
   return (
     <section>
       <div className="flex items-center gap-6 bg-blue p-4 lg:px-16 lg:py-8">
@@ -26,4 +26,4 @@ function Projects() {
   )
 }
 
-export default Projects
+export default ProyectosSection

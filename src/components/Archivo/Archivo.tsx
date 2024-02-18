@@ -23,7 +23,7 @@ function Archivo() {
   )
 
   return (
-    <>
+    <section>
       <div className="px-4 pt-16 lg:p-16" id="archivo">
         <div className="flex flex-wrap items-baseline justify-between">
           <h2 className="text-3xl font-extrabold sm:pb-0 lg:text-6xl">
@@ -60,7 +60,7 @@ function Archivo() {
         {(!filters.length || filters.includes('exhibiciones')) &&
           exhibiciones.map(item => <ListItem item={item} key={item.url} />)}
       </div>
-    </>
+    </section>
   )
 }
 

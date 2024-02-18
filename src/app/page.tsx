@@ -1,15 +1,17 @@
-import Laboratoria from '@/components/Laboratoria'
+import LaboratoriaSection from '@/components/LaboratoriaSection'
 import MainHeader from '@/components/MainHeader'
-import Projects from '@/components/Projects'
-import SeParte from '@/components/SeParte'
+import ProyectosSection from '@/components/ProyectosSection'
+import SeParteSection from '@/components/SeParteSection'
+import ServiciosSection from '@/components/ServiciosSection'
 
 export default function Home() {
   return (
     <>
       <MainHeader />
-      <Projects />
-      <Laboratoria />
-      <SeParte />
+      <ProyectosSection />
+      <LaboratoriaSection />
+      <ServiciosSection />
+      <SeParteSection />
     </>
   )
 }

@@ -33,7 +33,7 @@ function Semblante({ slug }: Props) {
       </div>
       <div className="relative flex w-full flex-wrap">
         <div className="absolute top-0 ml-4 h-0 w-0 border-l-[15px] border-r-[15px] border-t-[15px] border-solid border-x-white border-t-black lg:ml-16" />
-        <div className="mt-8 flex w-full flex-col px-4 lg:mt-16 lg:w-1/2 lg:px-16">
+        <section className="mt-8 flex w-full flex-col px-4 lg:mt-16 lg:w-1/2 lg:px-16">
           <h1 className="text-lg">{nombre}</h1>
           <hr className="mt-4" />
           <h2 className="mb-4 text-lg font-bold lg:mb-12 lg:text-2xl lg:font-normal">
@@ -77,7 +77,7 @@ function Semblante({ slug }: Props) {
             Acerca de
           </h2>
           <p>{semblante}</p>
-        </div>
+        </section>
         <div className="hidden w-1/2 gap-4 pr-16 lg:flex">
           <div className="flex w-1/2 flex-col bg-blue"></div>
           <div className="flex w-1/2 flex-col bg-red"></div>

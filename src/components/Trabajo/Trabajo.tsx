@@ -37,7 +37,7 @@ function Trabajo({ slug, type }: Props) {
     <>
       {!!images && <Galeria images={images} className="mt-7" />}
       <div className="mb-12 mt-8 flex w-full flex-wrap-reverse px-4 lg:px-16">
-        <div className="flex w-full flex-col lg:w-1/2">
+        <section className="flex w-full flex-col lg:w-1/2">
           <h1 className="hidden text-xl lg:block">{titulo}</h1>
           <hr className="mt-2" />
           {!!lugar && (
@@ -80,8 +80,8 @@ function Trabajo({ slug, type }: Props) {
               </Link>
             )}
           </>
-        </div>
-        <div className="flex w-full flex-col px-0 lg:w-1/2 lg:px-16">
+        </section>
+        <section className="flex w-full flex-col px-0 lg:w-1/2 lg:px-16">
           <h1 className="mb-4 text-lg font-bold lg:mb-12 lg:block lg:text-xl lg:font-normal">
             {titulo}
           </h1>
@@ -120,7 +120,7 @@ function Trabajo({ slug, type }: Props) {
             )}
             <br />
           </p>
-        </div>
+        </section>
       </div>
       <ExploraProyectos slug={slug} />
     </>

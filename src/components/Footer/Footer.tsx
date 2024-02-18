@@ -4,7 +4,7 @@ import { PropsWithChildren } from 'react'
 
 function Footer() {
   return (
-    <div className="p-4 lg:p-16">
+    <footer className="p-4 lg:p-16">
       <div className="flex flex-wrap justify-between">
         <Link
           className="text-sm font-bold md:text-base"
@@ -31,19 +31,19 @@ function Footer() {
           <FooterLink href="/#labs">Laboratorias</FooterLink>
           <FooterLink href="/#separte">Sé parte</FooterLink>
         </div>
-        <div className="flex w-full items-end justify-end py-4 text-xs md:w-1/2 md:py-0">
+        <p className="flex w-full items-end justify-end py-4 text-xs md:w-1/2 md:py-0">
           © 2023 Mi Calle, Nuestra Calle | Diseñado por Sophia Arrazola
-        </div>
+        </p>
       </div>
-    </div>
+    </footer>
   )
 }
 
 function FooterLink({ children, href }: PropsWithChildren<{ href: string }>) {
   return (
-    <a href={href} className="w-1/2 text-sm">
+    <Link href={href} className="w-1/2 text-sm">
       {children}
-    </a>
+    </Link>
   )
 }
 
