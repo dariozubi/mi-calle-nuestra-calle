@@ -22,7 +22,7 @@ export default function Nosotras() {
         </div>
         <div className="relative aspect-square w-full lg:w-1/2">
           <Image
-            src="/img/proyectas/azcapotzalco_3.jpg"
+            src="/img/nosotras.jpg"
             alt="image"
             fill
             className="object-cover"
