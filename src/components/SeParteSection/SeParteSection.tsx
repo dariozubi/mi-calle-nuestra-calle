@@ -4,7 +4,7 @@ import Image from 'next/image'
 function SeParteSection() {
   return (
     <section>
-      <figure className="relative aspect-[25/9] w-full">
+      <figure className="relative aspect-[16/9] w-full">
         <Image
           src="/img/separte.jpg"
           alt="image"

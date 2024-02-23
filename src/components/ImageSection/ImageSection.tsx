@@ -11,7 +11,7 @@ function ImageSection() {
 
   return (
     <figure>
-      <ul className="mb-4 box-content flex gap-2 overflow-auto text-sm sm:text-base">
+      <ul className="mb-4 ml-1 box-content flex gap-2 overflow-auto text-sm sm:text-base lg:ml-2">
         {tags.map(t => (
           <TagButton
             key={t}
@@ -48,7 +48,7 @@ function ImageSection() {
             )
         )}
       </div>
-      <figcaption className="text-sm text-white sm:text-base">
+      <figcaption className="ml-1 text-sm text-white sm:text-base lg:ml-2">
         Fotografías: mi calle, nuestra calle, México, Guatemala, Barcelona
         (2020-2023)
       </figcaption>

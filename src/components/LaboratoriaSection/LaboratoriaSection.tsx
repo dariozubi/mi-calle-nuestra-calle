@@ -11,6 +11,7 @@ const images = [
 function LaboratoriaSection() {
   return (
     <section>
+      <Galeria images={images} className="-mb-2" />
       <div className="bg-white p-4 lg:p-16" id="labs">
         <h2 className="mb-4 text-3xl font-extrabold lg:mb-6 lg:text-6xl">
           Laboratorias
@@ -26,13 +27,9 @@ function LaboratoriaSection() {
           <span className="text-blue">espacios vulnerables</span> en{' '}
           <span className="text-lila">espacios seguros</span>, de{' '}
           <span className="text-green">reflexión crítica</span> y formación de{' '}
-          <span className="text-ladrillo">ciudadanía</span>. <br />
-          <br />A través de experiencias inmersivas de arte participativo,
-          futuros y prácticas narrativas, visibilizamos las historias y anhelos
-          de comunidades diversas.
+          <span className="text-ladrillo">ciudadanía</span>.
         </p>
       </div>
-      <Galeria images={images} className="-mb-2" />
     </section>
   )
 }

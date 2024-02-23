@@ -295,6 +295,12 @@ export const proyectas: Proyecta[] = [
   {
     slug: 'tejiendo-futuros',
     tags: [
+      '2022',
+      'GT',
+      'Investigación',
+      'Presencial',
+      'Rural',
+      'Téxtil',
       'Género',
       'Futuros',
       'Arte comunitario',
@@ -384,6 +390,11 @@ export const proyectas: Proyecta[] = [
   {
     slug: 'laboratoria-de-futuros-comunitarios',
     tags: [
+      '2022',
+      'GT',
+      'Arte comunitario',
+      'Investigación',
+      'Ficción',
       'Género',
       'Futuros',
       'Educación',
@@ -436,6 +447,8 @@ export const proyectas: Proyecta[] = [
       'CDMX',
       'Género',
       'Arte comunitario',
+      'Corporal',
+      'Ficción',
       'Narrativas',
       'Clown',
       'Taller',
@@ -474,6 +487,10 @@ export const proyectas: Proyecta[] = [
   {
     slug: 'futuros-desde-el-cuerpo',
     tags: [
+      '2023',
+      'Barcelona',
+      'Ficción',
+      'Taller',
       'Futuros',
       'Arte comunitario',
       'Narrativas',
@@ -517,12 +534,11 @@ export const proyectas: Proyecta[] = [
     tags: [
       '2023',
       'CDMX',
+      'Género',
       'Futuros',
       'Ficción',
-      'Narrativas',
       'Investigación',
       'Instalación',
-      'Escenarios',
       'Ciudad',
       'Presencial',
     ],
@@ -656,6 +672,9 @@ export const escenarios: Proyecta[] = [
     tags: [
       '2021',
       'CDMX',
+      'Arte comunitario',
+      'Investigación',
+      'Híbrido',
       'Género',
       'Futuros',
       'Ficción',
