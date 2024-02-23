@@ -1,14 +1,19 @@
 import Link from 'next/link'
 import { ArrowDown } from 'react-feather'
 import { Item } from './types'
+import { colorVariants } from './consts'
 
 type Props = {
   item: Item
+  selectedBackgroundColor: keyof typeof colorVariants
 }
 
-export function ListItem({ item }: Props) {
+export function ListItem({ item, selectedBackgroundColor }: Props) {
+  const selectedVariant = colorVariants[selectedBackgroundColor].hover
   return (
-    <div className="w-fill flex justify-between gap-2 bg-grey px-4 py-4 hover:bg-white lg:px-16">
+    <li
+      className={`w-fill flex justify-between gap-2 bg-grey px-4 py-4 lg:px-16 ${selectedVariant}`}
+    >
       <p className="w-[250px] overflow-hidden text-ellipsis whitespace-nowrap">
         {item.name}
       </p>
@@ -20,6 +25,6 @@ export function ListItem({ item }: Props) {
         <ArrowDown size={20} />
         <span className="hidden md:block">Descargar</span>
       </Link>
-    </div>
+    </li>
   )
 }

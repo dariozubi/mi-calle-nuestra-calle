@@ -7,14 +7,14 @@ import React from 'react'
 type Props = {
   item: Miembro
   selectedBackgroundColor: keyof typeof colorVariants
-} & React.HTMLProps<HTMLDivElement>
+} & React.HTMLProps<HTMLLIElement>
 
-export const ListItem = React.forwardRef<HTMLDivElement, Props>(
+export const ListItem = React.forwardRef<HTMLLIElement, Props>(
   function ListItem(props, ref) {
     const { item, selectedBackgroundColor, ...rest } = props
-    const selectedVariant = colorVariants[selectedBackgroundColor].selected
+    const selectedVariant = colorVariants[selectedBackgroundColor].hover
     return (
-      <div
+      <li
         ref={ref}
         className={`w-fill flex flex-wrap bg-grey px-4 py-4 lg:px-16 ${selectedVariant}`}
         {...rest}
@@ -35,7 +35,7 @@ export const ListItem = React.forwardRef<HTMLDivElement, Props>(
         ) : (
           <div />
         )}
-      </div>
+      </li>
     )
   }
 )

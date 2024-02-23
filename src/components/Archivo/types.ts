@@ -3,6 +3,7 @@ export type Item = {
   details: string
   country: string
   url: string
+  tag: Archivo
 }
 
-export type Archivos = 'conferencias' | 'academia' | 'exhibiciones'
+export type Archivo = 'conferencia' | 'academia' | 'exhibicion'

@@ -49,7 +49,7 @@ function NavigationBar() {
       </nav>
       <div
         className={`hidden transition-[height] duration-500 lg:block ${
-          scrollPosition < scrollLimit + 100 ? 'h-72' : `h-48 w-full`
+          scrollPosition < scrollLimit + 100 ? 'h-64' : `h-48 w-full`
         }`}
       />
     </>

@@ -2,64 +2,55 @@
 
 import { ListItem } from './ListItem'
 import { FilterButton } from './FilterButton'
-import { academia, conferencias, exhibiciones } from './consts'
+import { archivos, filters } from './consts'
 import { useCallback, useState } from 'react'
-import { Archivos } from './types'
+import { Archivo } from './types'
 
 function Archivo() {
-  const [filters, setFilters] = useState<Archivos[]>([])
+  const [seleccion, setSeleccion] = useState<Archivo[]>([])
   const handleClick = useCallback(
-    (filter: Archivos) => {
-      const index = filters.indexOf(filter)
+    (filter: Archivo) => {
+      const index = seleccion.indexOf(filter)
       if (index !== -1) {
-        if (filters.length > 0) {
-          setFilters(filters.toSpliced(index, 1))
+        if (seleccion.length > 0) {
+          setSeleccion(seleccion.toSpliced(index, 1))
         }
       } else {
-        setFilters([...filters, filter])
+        setSeleccion([...seleccion, filter])
       }
     },
-    [filters]
+    [seleccion]
   )
 
   return (
     <section>
-      <div className="px-4 pt-16 lg:p-16" id="archivo">
-        <div className="flex flex-wrap items-baseline justify-between">
-          <h2 className="text-3xl font-extrabold sm:pb-0 lg:text-6xl">
-            Archivo
-          </h2>
-          <div className="flex flex-wrap items-end gap-4 lg:gap-8">
+      <div className="sticky top-[62px] flex flex-wrap items-baseline justify-between bg-white p-4 pt-12 lg:px-16 lg:pt-20">
+        <h2 className="text-3xl font-extrabold sm:pb-0 lg:text-4xl">Archivo</h2>
+        <div className="flex flex-wrap items-end gap-4 px-4 lg:gap-8 lg:px-16">
+          {filters.map(i => (
             <FilterButton
-              selected={filters.includes('conferencias')}
-              onClick={() => handleClick('conferencias')}
+              key={i.value}
+              selectedBackgroundColor={i.value}
+              onClick={() => handleClick(i.value)}
+              selected={seleccion.includes(i.value)}
             >
-              Conferencias
+              {i.label}
             </FilterButton>
-            <FilterButton
-              selected={filters.includes('academia')}
-              onClick={() => handleClick('academia')}
-            >
-              Academia
-            </FilterButton>
-            <FilterButton
-              selected={filters.includes('exhibiciones')}
-              onClick={() => handleClick('exhibiciones')}
-            >
-              Exhibiciones
-            </FilterButton>
-          </div>
+          ))}
         </div>
-        <hr className="mb-4 mt-4 lg:mb-0" />
       </div>
-      <div className="flex flex-col gap-1 pb-1">
-        {(!filters.length || filters.includes('conferencias')) &&
-          conferencias.map(item => <ListItem item={item} key={item.url} />)}
-        {(!filters.length || filters.includes('academia')) &&
-          academia.map(item => <ListItem item={item} key={item.url} />)}
-        {(!filters.length || filters.includes('exhibiciones')) &&
-          exhibiciones.map(item => <ListItem item={item} key={item.url} />)}
-      </div>
+      <ul className="flex flex-col gap-1 pb-1">
+        {archivos.map(
+          item =>
+            (!seleccion.length || seleccion.some(s => s === item.tag)) && (
+              <ListItem
+                key={item.url}
+                item={item}
+                selectedBackgroundColor={item.tag}
+              />
+            )
+        )}
+      </ul>
     </section>
   )
 }

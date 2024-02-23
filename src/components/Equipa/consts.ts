@@ -1,23 +1,32 @@
 import { Miembro, Tag } from './types'
 
-export const backgroundColors: Record<Tag, keyof typeof colorVariants> = {
-  fundadora: 'pink',
-  aliada: 'yellow',
-  voluntaria: 'lila',
-}
+export const filters: { label: string; value: Tag }[] = [
+  {
+    label: 'Fundadoras',
+    value: 'fundadora',
+  },
+  {
+    label: 'Aliadas',
+    value: 'aliada',
+  },
+  {
+    label: 'Voluntarias',
+    value: 'voluntaria',
+  },
+]
 
 export const colorVariants = {
-  pink: {
+  fundadora: {
     selected: 'text-black bg-pink',
     default: 'bg-black text-white hover:bg-pink hover:text-black',
     hover: 'hover:bg-pink',
   },
-  yellow: {
+  aliada: {
     selected: 'text-black bg-yellow',
     default: 'bg-black text-white hover:bg-yellow hover:text-black',
     hover: 'hover:bg-yellow',
   },
-  lila: {
+  voluntaria: {
     selected: 'text-black bg-lila',
     default: 'bg-black text-white hover:bg-lila hover:text-black',
     hover: 'hover:bg-lila',

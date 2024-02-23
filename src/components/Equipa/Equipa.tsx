@@ -1,7 +1,7 @@
 'use client'
 
 import { useCallback, useState } from 'react'
-import { backgroundColors, equipa } from './consts'
+import { equipa, filters } from './consts'
 import { FilterButton } from './FilterButton'
 import { ListItem } from './ListItem'
 import { Tag } from './types'
@@ -31,42 +31,28 @@ function Equipa() {
           Equipa
         </h1>
         <div className="flex justify-between gap-4 lg:gap-8">
-          <FilterButton
-            selectedBackgroundColor={backgroundColors.fundadora}
-            onClick={() => handleClick('fundadora')}
-            selected={seleccion.includes('fundadora')}
-          >
-            Fundadoras
-          </FilterButton>
-          <FilterButton
-            selectedBackgroundColor={backgroundColors.aliada}
-            onClick={() => handleClick('aliada')}
-            selected={seleccion.includes('aliada')}
-          >
-            Aliadas
-          </FilterButton>
-          <FilterButton
-            selectedBackgroundColor={backgroundColors.voluntaria}
-            onClick={() => handleClick('voluntaria')}
-            selected={seleccion.includes('voluntaria')}
-          >
-            Voluntarias
-          </FilterButton>
+          {filters.map(i => (
+            <FilterButton
+              key={i.value}
+              selectedBackgroundColor={i.value}
+              onClick={() => handleClick(i.value)}
+              selected={seleccion.includes(i.value)}
+            >
+              {i.label}
+            </FilterButton>
+          ))}
         </div>
       </div>
-      <div className="flex flex-col gap-1 pb-1">
+      <ul className="flex flex-col gap-1 pb-1">
         {equipa.map(
           item =>
             (!seleccion.length || seleccion.some(s => s === item.tag)) && (
               <HoverPhoto img={item.img} key={item.name}>
-                <ListItem
-                  item={item}
-                  selectedBackgroundColor={backgroundColors[item.tag]}
-                />
+                <ListItem item={item} selectedBackgroundColor={item.tag} />
               </HoverPhoto>
             )
         )}
-      </div>
+      </ul>
     </section>
   )
 }
