@@ -45,11 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={montserrat.className}>
-        <main className="flex flex-col">
-          <NavigationBar />
-          {children}
-          <Footer />
-        </main>
+        <main className="flex flex-col">{children}</main>
       </body>
     </html>
   )
