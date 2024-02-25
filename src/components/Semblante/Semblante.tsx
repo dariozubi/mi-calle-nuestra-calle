@@ -1,6 +1,7 @@
 import { equipa } from '@/utils/consts'
 import Link from 'next/link'
 import { ArrowUpRight } from 'react-feather'
+import Image from 'next/image'
 
 type Props = {
   slug: string
@@ -16,6 +17,7 @@ function Semblante({ slug }: Props) {
     proyectosRecientes,
     conferencias,
     semblante,
+    moodboard,
   } = equipa.filter(p => p.slug === slug)[0]
   return (
     <>
@@ -76,12 +78,101 @@ function Semblante({ slug }: Props) {
           <h2 className="mb-4 text-lg font-bold lg:mb-12 lg:text-2xl lg:font-normal">
             Acerca de
           </h2>
-          <p>{semblante}</p>
+          <p
+            className="text-base lg:text-xl"
+            dangerouslySetInnerHTML={{ __html: semblante }}
+          />
         </section>
-        <div className="hidden w-1/2 gap-4 pr-16 lg:flex">
-          <div className="flex w-1/2 flex-col bg-blue"></div>
-          <div className="flex w-1/2 flex-col bg-red"></div>
-        </div>
+        <section className="flex w-full flex-col gap-4 p-4 lg:w-1/2 lg:py-0 lg:pr-16">
+          <div className="relative aspect-video w-full">
+            <Image
+              src={moodboard[0]}
+              alt="image"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, (max-width: 1200px) 50vw"
+              priority={true}
+            />
+          </div>
+          <div className="flex w-full gap-4">
+            <div className="flex w-1/2 flex-col gap-4">
+              <div className="relative aspect-video w-full">
+                <Image
+                  src={moodboard[1]}
+                  alt="image"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 50vw, (max-width: 1200px) 25vw"
+                  priority={true}
+                />
+              </div>
+              <div className="relative aspect-square w-full">
+                <Image
+                  src={moodboard[2]}
+                  alt="image"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 50vw, (max-width: 1200px) 25vw"
+                  priority={true}
+                />
+              </div>
+            </div>
+            <div className="relative flex aspect-square w-1/2 flex-col gap-4">
+              <Image
+                src={moodboard[3]}
+                alt="image"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 50vw, (max-width: 1200px) 25vw"
+                priority={true}
+              />
+            </div>
+          </div>
+          <div className="relative aspect-video w-full">
+            <Image
+              src={moodboard[4]}
+              alt="image"
+              fill
+              className="object-cover"
+              sizes="(max-width: 1024px) 100vw, (max-width: 1200px) 50vw"
+              priority={true}
+            />
+          </div>
+          <div className="flex w-full gap-4">
+            <div className="flex w-1/2 flex-col gap-4">
+              <div className="relative aspect-video w-full">
+                <Image
+                  src={moodboard[5]}
+                  alt="image"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 50vw, (max-width: 1200px) 25vw"
+                  priority={true}
+                />
+              </div>
+              <div className="relative aspect-square w-full">
+                <Image
+                  src={moodboard[6]}
+                  alt="image"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 50vw, (max-width: 1200px) 25vw"
+                  priority={true}
+                />
+              </div>
+            </div>
+            <div className="relative flex aspect-square w-1/2 flex-col gap-4">
+              <Image
+                src={moodboard[7]}
+                alt="image"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1024px) 50vw, (max-width: 1200px) 25vw"
+                priority={true}
+              />
+            </div>
+          </div>
+        </section>
       </div>
     </>
   )

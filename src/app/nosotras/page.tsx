@@ -55,7 +55,7 @@ export default function Nosotras() {
             Actuamos
           </h2>
           <p className="text-base lg:text-xl">
-            como mediadoras, creando vínculos entre org’s aliadas, entidades de
+            como mediadoras, creando vínculos entre ONG’s aliadas, entidades de
             gobierno, mujeres líderes, artistas locales y sus vecinas.
           </p>
           <h2 className="my-8 text-xl font-extrabold text-yellow lg:text-4xl">
@@ -86,7 +86,7 @@ export default function Nosotras() {
           </h2>
           <p className="text-base lg:text-xl">
             espacios públicos/privados en espacios de sanación, seguros y libres
-            de violencias todas las formas de violencia.
+            de todas las formas de violencia.
           </p>
         </div>
       </section>

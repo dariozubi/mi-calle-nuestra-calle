@@ -39,4 +39,5 @@ export type Semblante = {
   proyectosRecientes: Enlace[]
   conferencias: Enlace[]
   semblante: string
+  moodboard: string[]
 }

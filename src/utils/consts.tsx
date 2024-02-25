@@ -53,12 +53,22 @@ export const equipa: Semblante[] = [
     y arte participativo, diseño de experiencias de inteligencia colectiva con enfoque de género y 
     derechos humanos en América Latina y Europa. Desde un enfoque creativo, ético y crítico, ha 
     colaborado como consultora independiente con proyectos de base, ONG's de impacto sostenible y 
-    organizaciones de cooperación internacional, entre otros.
+    organizaciones de cooperación internacional, entre otros.<br/><br/>
 
     Con alma de antropóloga urbana y una personalidad curiosa que la ha impulsado a explorar, 
     descubrir e interesarse por los futuros como oficio, el arte comunitario-participativo como 
     medio y el diseño de experiencias culturales antropológicas como vocación, combinado con un 
     pensamiento crítico agudo.`,
+    moodboard: [
+      '/img/sophia/1-moodsoph.jpg',
+      '/img/sophia/2-moodsoph.jpg',
+      '/img/sophia/3-moodsoph.jpg',
+      '/img/sophia/4-moodsoph.jpg',
+      '/img/sophia/5-moodsoph.jpg',
+      '/img/sophia/6-moodsoph.jpg',
+      '/img/sophia/7-moodsoph.jpg',
+      '/img/sophia/8-moodsoph.jpg',
+    ],
   },
   {
     slug: 'jesica-bastidas',
@@ -94,11 +104,21 @@ export const equipa: Semblante[] = [
     acompañamiento comunitario a través del arte participativo, sus cruces con otras 
     disciplinas y una dosis de buen humor. Se especializa en el trabajo con grupos 
     para fomentar espacios de inclusión, inteligencia colectiva, colaboración y empatía. 
-    Su más reciente trabajo explora el arte especulativo en búsqueda de futuros participativos y nuevos anhelos. 
+    <br/><br/>Su más reciente trabajo explora el arte especulativo en búsqueda de futuros participativos y nuevos anhelos. 
     Encuentra en el humor una herramienta poderosa para el entretenimiento educativo, 
     la crítica, la orientación comunitaria y la facilitación creativa. Colabora con 
     instituciones científicas y ONGs para la divulgación lúdica de conocimientos, 
     presentando su trabajo en México y extranjero.`,
+    moodboard: [
+      '/img/jes/1-moodjes.jpg',
+      '/img/jes/2-moodjes.jpg',
+      '/img/jes/3-moodjes.jpg',
+      '/img/jes/4-moodjes.jpg',
+      '/img/jes/5-moodjes.jpg',
+      '/img/jes/6-moodjes.jpg',
+      '/img/jes/7-moodjes.jpg',
+      '/img/jes/8-moodjes.jpg',
+    ],
   },
 ]
 
