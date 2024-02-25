@@ -6,9 +6,9 @@ export default function Nosotras() {
   return (
     <>
       <section className="flex flex-wrap bg-white">
-        <div className="flex w-full items-center bg-pink p-4 pt-16 lg:w-5/12 lg:p-16">
+        <div className="flex w-full bg-pink p-4 pt-16 lg:w-5/12 lg:p-16">
           <div>
-            <h1 className="mb-4 text-3xl font-extrabold lg:text-4xl">
+            <h1 className="mb-8 mt-8 text-3xl font-extrabold lg:text-4xl">
               Historia
             </h1>
             <p className="text-base lg:text-xl">
