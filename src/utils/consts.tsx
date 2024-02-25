@@ -106,17 +106,17 @@ export const aliadas: Record<string, Aliada> = {
   gobiernoMX: {
     nombre: 'Gobierno de México',
     url: '',
-    logo: '/img/logos/gob_mexico.jpg',
+    logo: '/img/logos/gob_mexico.png',
   },
   gobiernoCDMX: {
     nombre: 'Gobierno CDMX',
     url: '',
-    logo: '/img/logos/cdmx.jpg',
+    logo: '/img/logos/cdmx.png',
   },
   ONUMujeres: {
     nombre: 'ONU Mujeres México',
     url: '',
-    logo: '/img/logos/un_women.jpg',
+    logo: '/img/logos/un_women.png',
   },
   laNana: {
     nombre: 'La Nana',
@@ -126,12 +126,12 @@ export const aliadas: Record<string, Aliada> = {
   centro: {
     nombre: 'CENTRO',
     url: '',
-    logo: '/img/logos/centro.jpg',
+    logo: '/img/logos/centro.png',
   },
   ibero: {
     nombre: 'Ibero',
     url: '',
-    logo: '/img/logos/ibero.jpg',
+    logo: '/img/logos/ibero.png',
   },
   detde: {
     nombre:
@@ -142,17 +142,17 @@ export const aliadas: Record<string, Aliada> = {
   andar: {
     nombre: 'Andar Consultorías',
     url: '',
-    logo: '/img/logos/andar.jpg',
+    logo: '/img/logos/andar.png',
   },
   uvg: {
     nombre: 'Universidad del Valle de Guatemala',
     url: '',
-    logo: '/img/logos/uvg.jpg',
+    logo: '/img/logos/uvg.png',
   },
   uniRL: {
     nombre: 'Universidad Rafael Landivar',
     url: '',
-    logo: '/img/logos/universidad_rafael_landivar.jpg',
+    logo: '/img/logos/universidad_rafael_landivar.png',
   },
   violetaRadio: {
     nombre: 'Violeta Radio',
@@ -162,7 +162,7 @@ export const aliadas: Record<string, Aliada> = {
   placemaking: {
     nombre: 'Placemaking México',
     url: 'https://lugarespublicos.org/',
-    logo: '/img/logos/placemakingmx.jpg',
+    logo: '/img/logos/placemakingmx.png',
   },
   unidadDeGenero: {
     nombre: 'Unidad de Género Azcapotzalco',
@@ -171,7 +171,7 @@ export const aliadas: Record<string, Aliada> = {
   laNuevaFabrica: {
     nombre: 'La Nueva Fábrica',
     url: 'https://lanuevafabrica.org/es/',
-    logo: '/img/logos/la_nueva_fabrica.jpg',
+    logo: '/img/logos/la_nueva_fabrica.png',
   },
   draAnisah: {
     nombre: 'Dra. Anisah Abdullah',
@@ -184,17 +184,17 @@ export const aliadas: Record<string, Aliada> = {
   lasPanas: {
     nombre: 'Las Panas',
     url: 'https://www.laspanasmx.com/',
-    logo: '/img/logos/las_panas.jpg',
+    logo: '/img/logos/las_panas.png',
   },
   superaccio: {
     nombre: 'Superaccio',
     url: 'https://superaccio.org/',
-    logo: '/img/logos/superaccio.jpg',
+    logo: '/img/logos/superaccio.png',
   },
   lagunaMX: {
     nombre: 'Laguna MX',
     url: 'https://lagunombrexico.com/',
-    logo: '/img/logos/laguna.jpg',
+    logo: '/img/logos/laguna.png',
   },
   disenaColectiva: {
     nombre: 'Diseña Colectiva',
