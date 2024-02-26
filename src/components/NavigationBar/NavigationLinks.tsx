@@ -56,12 +56,12 @@ export const NavigationLinks = () => {
       </div>
       <hr className="my-2 w-full lg:hidden" />
       <div className="flex w-full flex-col lg:w-2/12">
-        <p className="flex items-center">
+        <div className="flex items-center">
           <Text from="Navigation" variant="md" className="font-normal">
             contact
           </Text>{' '}
           <ArrowUpRight size={28} />
-        </p>
+        </div>
         <div className="flex items-center gap-4">
           <Link
             href={links.mail}
