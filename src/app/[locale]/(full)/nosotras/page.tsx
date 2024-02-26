@@ -1,8 +1,11 @@
 import AliadasSection from '@/components/AliadasSection'
 import Equipa from '@/components/Equipa'
+import { PageProps } from '@/utils/types'
+import { unstable_setRequestLocale } from 'next-intl/server'
 import Image from 'next/image'
 
-export default function Nosotras() {
+export default function Nosotras({ params: { locale } }: PageProps) {
+  unstable_setRequestLocale(locale)
   return (
     <>
       <section className="flex flex-wrap bg-white">
