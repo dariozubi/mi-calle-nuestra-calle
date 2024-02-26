@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react'
 import Image from 'next/image'
+import Text from '../Text'
 
 function SeParteSection() {
   return (
@@ -14,38 +15,33 @@ function SeParteSection() {
       </figure>
       <div className="flex flex-wrap p-4 lg:p-16" id="separte">
         <div className="flex w-full flex-col lg:w-1/2">
-          <h2 className="text-3xl font-extrabold lg:mb-12 lg:text-6xl">
-            Sé parte
-          </h2>
+          <Text from="Home" as="h2" variant="xl" className="lg:mb-12">
+            join
+          </Text>
           <div className="flex flex-col">
             <Item href="https://forms.gle/tzn1KGtphsBMxDV56">
-              Dona tu tiempo como voluntaria
+              <Text from="Home">donate-time</Text>
             </Item>
             <Item href="https://forms.gle/MVZq97wSdJcWBWWt7">
-              Haz un internship con nosotras
+              <Text from="Home">internship</Text>
             </Item>
             <Item href="https://forms.gle/grbpsqPRBuGkQHbw5">
-              Únete al equipo de consultoras
+              <Text from="Home">consulting</Text>
             </Item>
           </div>
         </div>
         <div className="flex w-full flex-col lg:w-1/2 lg:px-12">
-          <h3 className="mb-4 mt-8 text-2xl font-extrabold lg:mb-12 lg:mt-0 lg:text-3xl">
-            ¿Por qué unirme?
-          </h3>
-          <p className="text-base lg:text-xl">
-            Creemos que todo conocimiento o area de expertís suma a nuestra
-            causa.
-            <br />
-            <br />
-            Nuestra tribu esta conformada por una colectiva de artistas
-            interdisciplinarias, futuristas, urbanistas, estrategas,
-            diseñadoras, sociólogas, antropólogas, ecologistas, etc, de
-            distintas partes del mundo. <br />
-            <br />
-            ¡Los futuros se construyen en comunidad! <br />
-            ¡Solo nos faltas tú!
-          </p>
+          <Text
+            from="Home"
+            as="h3"
+            variant="md"
+            className="mb-4 mt-8 lg:mb-12 lg:mt-0"
+          >
+            why-join
+          </Text>
+          <Text from="Home" isRichText>
+            why-join-text
+          </Text>
         </div>
       </div>
     </section>

@@ -5,8 +5,13 @@ import Link from 'next/link'
 import { TagButton } from './TagButton'
 import { tags, trabajos } from './consts'
 import { useImagesState } from './hooks'
+import { ReactNode } from 'react'
 
-function ImageSection() {
+type Props = {
+  caption: ReactNode
+}
+
+function ImageSection({ caption }: Props) {
   const { currentTags, handleClick } = useImagesState()
 
   return (
@@ -48,8 +53,8 @@ function ImageSection() {
             )
         )}
       </div>
-      <figcaption className="ml-1 text-sm text-white sm:text-base lg:ml-2">
-        Fotografías: MCNC (2020-2023)
+      <figcaption className="ml-1 flex text-sm text-white sm:text-base lg:ml-2">
+        {caption}: MCNC (2020-2023)
       </figcaption>
     </figure>
   )
