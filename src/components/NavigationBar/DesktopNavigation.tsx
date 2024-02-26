@@ -72,7 +72,7 @@ function DesktopNavigation({ show, handleClose }: Props) {
           </div>
         </div>
         <div className="flex w-4/12 flex-col items-end justify-between">
-          <div className="flex w-full items-center justify-end gap-2">
+          <div className="flex w-full items-center justify-start gap-2">
             <Link className="text-xl" target="_blank" href={links.instagram}>
               Instagram
             </Link>{' '}
@@ -84,7 +84,7 @@ function DesktopNavigation({ show, handleClose }: Props) {
           <a
             href={links.merch}
             target="_blank"
-            className="bg-black px-4 py-2 text-center text-xl font-bold text-white"
+            className="w-full bg-black px-4 py-2 text-center text-xl font-bold text-white"
           >
             Adquiere nuestra merch
           </a>

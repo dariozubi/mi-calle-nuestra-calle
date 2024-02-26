@@ -43,48 +43,48 @@ export default function Nosotras() {
       </div>
       <section className="relative flex flex-wrap bg-grey p-4 pt-8 lg:p-16">
         <div className="absolute top-0 h-0 w-0 border-l-[15px] border-r-[15px] border-t-[15px] border-solid border-x-grey border-t-blue" />
-        <div className="w-full lg:w-1/2">
+        <div className="w-full lg:w-1/2 lg:pr-24">
           <h2 className="mb-8 text-xl font-extrabold text-pink lg:text-4xl">
             Creemos
           </h2>
-          <p className="text-base lg:text-xl">
+          <p className="text-balance text-base lg:text-xl">
             que los procesos de formación cívica basados en el reconocimiento de
             saberes detonan el pensamiento crítico.
           </p>
           <h2 className="my-8 text-xl font-extrabold text-blue lg:text-4xl">
             Actuamos
           </h2>
-          <p className="text-base lg:text-xl">
+          <p className="text-balance text-base lg:text-xl">
             como mediadoras, creando vínculos entre ONG’s aliadas, entidades de
             gobierno, mujeres líderes, artistas locales y sus vecinas.
           </p>
           <h2 className="my-8 text-xl font-extrabold text-yellow lg:text-4xl">
             Invitamos
           </h2>
-          <p className="text-base lg:text-xl">
+          <p className="text-balance text-base lg:text-xl">
             a mujeres diversas a imaginar nuevos futuros y resignificar el rol
             que desempeñan en sus comunidades.
           </p>
         </div>
-        <div className="mt-8 w-full lg:mt-0 lg:w-1/2 lg:border-l lg:pl-8">
+        <div className="mt-8 w-full lg:mt-0 lg:w-1/2 lg:border-l lg:pl-24">
           <h2 className="mb-8 text-xl font-extrabold text-ladrillo lg:text-4xl">
             Tejemos
           </h2>
-          <p className="text-base lg:text-xl">
+          <p className="text-balance text-base lg:text-xl">
             redes sororas, colocando a las mujeres al centro como agentes de
             cambio y cultura de paz en sus comunidades.
           </p>
           <h2 className="my-8 text-xl font-extrabold text-green lg:text-4xl">
             Celebramos
           </h2>
-          <p className="text-base lg:text-xl">
+          <p className="text-balance text-base lg:text-xl">
             la experimentación artística, abordamos los problemas críticos que
             enfrentan las mujeres hoy y en el futuro con respons-habilidad.
           </p>
           <h2 className="my-4 text-xl font-extrabold text-lila lg:text-4xl">
             Transformamos
           </h2>
-          <p className="text-base lg:text-xl">
+          <p className="text-balance text-base lg:text-xl">
             espacios públicos/privados en espacios de sanación, seguros y libres
             de todas las formas de violencia.
           </p>

@@ -27,17 +27,50 @@ function ServiciosSection() {
               Servicios
             </h3>
             <ul className="lg_mb-0 mb-4 text-base lg:text-xl">
-              <li>Experiencias de vinculación comunitaria</li>
-              <li>Etnografía poética y prácticas narrativas</li>
-              <li>Investigación de futuros</li>
-              <li>Diseño y mediación talleres participativos</li>
-              <li>Diseño de futuros experienciales</li>
-              <li>Planeación prospectiva estratégica</li>
-              <li>Diseño de teorías de cambio</li>
-              <li>Diseño de metodologías</li>
-              <li>Programas pedagógicos en contexto</li>
-              <li>Experiencias de arte participativo</li>
-              <li>Intervenciones de arte en espacio público</li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Experiencias de
+                vinculación comunitaria
+              </li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Etnografía
+                poética y prácticas narrativas
+              </li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Investigación de
+                futuros
+              </li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Diseño y
+                mediación talleres participativos
+              </li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Diseño de futuros
+                experienciales
+              </li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Planeación
+                prospectiva estratégica
+              </li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Diseño de teorías
+                de cambio
+              </li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Diseño de
+                metodologías
+              </li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Programas
+                pedagógicos en contexto
+              </li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Experiencias de
+                arte participativo
+              </li>
+              <li className="flex">
+                <span className="mr-2 hidden lg:block">•</span>Intervenciones de
+                arte en espacio público
+              </li>
             </ul>
           </div>
         </div>

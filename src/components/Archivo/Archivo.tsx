@@ -24,9 +24,11 @@ function Archivo() {
 
   return (
     <section>
-      <div className="sticky top-[62px] flex flex-wrap items-baseline justify-between bg-white p-4 pt-12 lg:px-16 lg:pt-20">
-        <h2 className="text-3xl font-extrabold sm:pb-0 lg:text-4xl">Archivo</h2>
-        <div className="flex flex-wrap items-end gap-4 px-4 lg:gap-8 lg:px-16">
+      <div className="sticky top-[62px] flex flex-wrap items-baseline justify-between gap-4 bg-white p-4 pt-12 lg:px-16 lg:pt-20">
+        <h2 className="mb-4 text-3xl font-extrabold sm:mb-0 sm:pb-0 lg:text-4xl">
+          Archivo
+        </h2>
+        <div className="mb-4 flex flex-wrap items-end gap-1 sm:mb-0 lg:gap-8 lg:px-16">
           {filters.map(i => (
             <FilterButton
               key={i.value}

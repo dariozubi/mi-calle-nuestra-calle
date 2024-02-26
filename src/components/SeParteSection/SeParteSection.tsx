@@ -34,8 +34,8 @@ function SeParteSection() {
             ¿Por qué unirme?
           </h3>
           <p className="text-base lg:text-xl">
-            Creemos que todo conocimiento o area de expertís <br /> suma a
-            nuestra causa.
+            Creemos que todo conocimiento o area de expertís suma a nuestra
+            causa.
             <br />
             <br />
             Nuestra tribu esta conformada por una colectiva de artistas

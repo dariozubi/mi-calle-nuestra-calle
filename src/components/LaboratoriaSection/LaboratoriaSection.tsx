@@ -17,10 +17,7 @@ function LaboratoriaSection() {
           Laboratorias
         </h2>
         <p className="text-xl font-bold lg:text-3xl lg:font-extrabold">
-          Nuestro modelo es{' '}
-          <span className="text-green">itinerante, reflexivo, lúdico</span> y{' '}
-          <span className="text-yellow">adaptativo</span> al contexto. Montamos{' '}
-          <span className="text-pink">laboratorias efímeras</span> de{' '}
+          Montamos <span className="text-pink">laboratorias efímeras</span> de{' '}
           <span className="text-ladrillo">diversas escalas</span> y{' '}
           <span className="text-red">temporalidades</span>, para la{' '}
           <span className="text-lila">transformación</span> de{' '}

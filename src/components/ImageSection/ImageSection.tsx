@@ -22,14 +22,14 @@ function ImageSection() {
           </TagButton>
         ))}
       </ul>
-      <div className="flex flex-wrap justify-center sm:justify-normal">
+      <div className="flex flex-wrap justify-normal">
         {trabajos.map(
           ({ image, link, titulo, tags }) =>
             !!image &&
             (!currentTags.length ||
               tags.some(t => currentTags.includes(t))) && (
               <Link
-                className="group aspect-square w-1/4 min-w-[150px] p-1 lg:p-2"
+                className="group aspect-square w-1/4 min-w-[110px] p-1 lg:p-2"
                 href={`${link}`}
                 key={link}
               >
@@ -40,7 +40,7 @@ function ImageSection() {
                     fill
                     className="object-cover"
                   />
-                  <div className="absolute flex h-full w-full items-center justify-center bg-darkGrey opacity-70 sm:opacity-0 group-hover:sm:bg-darkGrey group-hover:sm:opacity-70">
+                  <div className="absolute flex h-full w-full items-center justify-center opacity-0 group-hover:bg-darkGrey group-hover:opacity-70">
                     <span className="p-4 text-center text-white">{titulo}</span>
                   </div>
                 </div>
@@ -49,8 +49,7 @@ function ImageSection() {
         )}
       </div>
       <figcaption className="ml-1 text-sm text-white sm:text-base lg:ml-2">
-        Fotografías: mi calle, nuestra calle, México, Guatemala, Barcelona
-        (2020-2023)
+        Fotografías: MCNC (2020-2023)
       </figcaption>
     </figure>
   )

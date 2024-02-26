@@ -26,11 +26,11 @@ function Equipa() {
 
   return (
     <section>
-      <div className="top-[68px] flex flex-wrap items-baseline justify-between bg-white p-4 first-letter:flex lg:sticky lg:p-16">
+      <div className="top-[68px] flex flex-wrap items-baseline justify-between gap-4 bg-white p-4 first-letter:flex lg:sticky lg:p-16">
         <h1 className="mt-4 text-3xl font-extrabold lg:m-0 lg:mt-0 lg:text-4xl">
           Equipa
         </h1>
-        <div className="flex justify-between gap-4 lg:gap-8">
+        <div className="my-4 flex justify-between gap-4 lg:my-0 lg:gap-8">
           {filters.map(i => (
             <FilterButton
               key={i.value}

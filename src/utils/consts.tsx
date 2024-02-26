@@ -11,7 +11,8 @@ export const links = {
     'https://drive.google.com/drive/folders/1r2ljvVj0eLhAoLwSNU96u7ZWdmhX6qLV',
   metodologias:
     'https://drive.google.com/drive/folders/1DU8jrbb9Ur4148BMcWoKs7zr6rZPNe4L',
-  merch: 'https://www.instagram.com/stories/highlights/17945019269657420/',
+  merch:
+    'https://drive.google.com/drive/folders/1EAV7tm2uBR2IAznLxy8vokRfMvgRpkBp?usp=drive_link',
 }
 
 export const equipa: Semblante[] = [
