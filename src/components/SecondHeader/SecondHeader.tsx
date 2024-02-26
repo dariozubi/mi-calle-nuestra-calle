@@ -1,6 +1,6 @@
 function SecondHeader() {
   return (
-    <h2 className="p-4 pt-16 text-2xl font-extrabold lg:p-16 lg:pt-24 lg:text-3xl">
+    <h2 className="px-4 py-12 text-xl font-extrabold lg:p-16 lg:text-3xl">
       A través de <span className="text-green">experiencias</span>{' '}
       <span className="text-yellow">inmersivas</span> de{' '}
       <span className="text-pink">arte participativo</span>,{' '}

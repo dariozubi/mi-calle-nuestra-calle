@@ -83,7 +83,7 @@ function Semblante({ slug }: Props) {
             dangerouslySetInnerHTML={{ __html: semblante }}
           />
         </section>
-        <section className="flex w-full flex-col gap-4 p-4 lg:w-1/2 lg:py-0 lg:pr-16">
+        <section className="flex w-full flex-col gap-2 pt-8 lg:w-1/2 lg:gap-4 lg:py-0 lg:pt-0">
           <div className="relative aspect-video w-full">
             <Image
               src={moodboard[0]}
@@ -94,8 +94,8 @@ function Semblante({ slug }: Props) {
               priority={true}
             />
           </div>
-          <div className="flex w-full gap-4">
-            <div className="flex w-1/2 flex-col gap-4">
+          <div className="flex w-full gap-2 lg:gap-4">
+            <div className="flex w-1/2 flex-col gap-2 lg:gap-4">
               <div className="relative aspect-video w-full">
                 <Image
                   src={moodboard[1]}
@@ -117,7 +117,7 @@ function Semblante({ slug }: Props) {
                 />
               </div>
             </div>
-            <div className="relative flex aspect-square w-1/2 flex-col gap-4">
+            <div className="relative flex aspect-square w-1/2 flex-col gap-2 lg:gap-4">
               <Image
                 src={moodboard[3]}
                 alt="image"
@@ -138,8 +138,8 @@ function Semblante({ slug }: Props) {
               priority={true}
             />
           </div>
-          <div className="flex w-full gap-4">
-            <div className="flex w-1/2 flex-col gap-4">
+          <div className="flex w-full gap-2 lg:gap-4">
+            <div className="flex w-1/2 flex-col gap-2 lg:gap-4">
               <div className="relative aspect-video w-full">
                 <Image
                   src={moodboard[5]}
@@ -161,7 +161,7 @@ function Semblante({ slug }: Props) {
                 />
               </div>
             </div>
-            <div className="relative flex aspect-square w-1/2 flex-col gap-4">
+            <div className="relative flex aspect-square w-1/2 flex-col gap-2 lg:gap-4">
               <Image
                 src={moodboard[7]}
                 alt="image"

@@ -12,7 +12,7 @@ function LaboratoriaSection() {
   return (
     <section>
       <Galeria images={images} className="-mb-2" />
-      <div className="bg-white p-4 lg:p-16" id="labs">
+      <div className="bg-white px-4 py-12 lg:p-16" id="labs">
         <h2 className="mb-4 text-3xl font-extrabold lg:mb-6 lg:text-6xl">
           Laboratorias
         </h2>
