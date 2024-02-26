@@ -9,7 +9,7 @@ type Props = {
   variant?: Variants
 }
 
-type Variants = 'xxl' | 'xl' | 'lg' | 'md' | 'sm'
+type Variants = 'xxl' | 'xl' | 'lg' | 'md' | 'sm' | 'xs'
 
 const baseClassNames: Record<Variants | 'text', string> = {
   text: 'text-base lg:text-xl',
@@ -18,6 +18,7 @@ const baseClassNames: Record<Variants | 'text', string> = {
   lg: 'text-xl font-extrabold lg:text-3xl',
   md: 'text-2xl font-bold lg:text-3xl',
   sm: 'text-sm lg:text-base',
+  xs: 'text-xs',
 }
 
 function Text({
