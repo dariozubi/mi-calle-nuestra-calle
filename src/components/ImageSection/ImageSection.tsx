@@ -3,27 +3,31 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { TagButton } from './TagButton'
-import { tags, trabajos } from './consts'
+import { trabajos } from './consts'
 import { useImagesState } from './hooks'
 import { ReactNode } from 'react'
 
 type Props = {
   caption: ReactNode
+  tags: {
+    element: ReactNode
+    label: string
+  }[]
 }
 
-function ImageSection({ caption }: Props) {
+function ImageSection({ caption, tags }: Props) {
   const { currentTags, handleClick } = useImagesState()
 
   return (
     <figure>
       <ul className="mb-4 ml-1 box-content flex gap-2 overflow-auto text-sm sm:text-base lg:ml-2">
-        {tags.map(t => (
+        {tags.map((t, i) => (
           <TagButton
-            key={t}
-            selected={currentTags.includes(t)}
-            onClick={() => handleClick(t)}
+            key={i}
+            selected={currentTags.includes(t.label)}
+            onClick={() => handleClick(t.label)}
           >
-            {t}
+            {t.element}
           </TagButton>
         ))}
       </ul>

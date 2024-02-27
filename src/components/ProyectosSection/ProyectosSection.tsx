@@ -1,7 +1,16 @@
 import ImageSection from '@/components/ImageSection'
 import Text from '@/components/Text'
+import { tags } from '@/utils/consts'
 
 function ProyectosSection() {
+  const translatedTags = tags.map(t => ({
+    label: t,
+    element: (
+      <Text from="Tags" variant="sm">
+        {t}
+      </Text>
+    ),
+  }))
   return (
     <section>
       <div className="flex items-center gap-6 bg-blue p-4 lg:px-16 lg:py-8">
@@ -21,6 +30,7 @@ function ProyectosSection() {
               photos
             </Text>
           }
+          tags={translatedTags}
         />
       </div>
     </section>
