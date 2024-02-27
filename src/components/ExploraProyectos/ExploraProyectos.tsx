@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { proyectas } from '@/utils/consts'
+import Text from '../Text'
 
 type Props = {
   slug: string
@@ -9,7 +10,7 @@ type Props = {
 async function ExploraProyectos({ slug }: Props) {
   const data = proyectas
     .filter(p => p.slug !== slug && !!p.images)
-    .map(p => ({ img: p.images![0], slug: p.slug, titulo: p.titulo }))
+    .map(p => ({ img: p.images![0], slug: p.slug }))
   return (
     <div className="bg-pink p-4 lg:p-16">
       <div className="flex flex-wrap">
@@ -31,9 +32,12 @@ async function ExploraProyectos({ slug }: Props) {
               className="object-cover"
             />
             <div className="absolute flex h-full w-full items-center justify-center bg-darkGrey opacity-70 group-hover:bg-darkGrey group-hover:opacity-70 sm:opacity-0">
-              <span className="p-2 text-center text-xs text-white lg:p-4 lg:text-sm">
-                {proyecta.titulo}
-              </span>
+              <Text
+                from="Proyectos"
+                className="p-2 text-center text-white lg:p-4"
+                variant="sm"
+                as="span"
+              >{`${proyecta.slug}.titulo`}</Text>
             </div>
           </Link>
         ))}

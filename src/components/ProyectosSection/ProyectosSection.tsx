@@ -1,6 +1,7 @@
 import ImageSection from '@/components/ImageSection'
 import Text from '@/components/Text'
 import { tags } from '@/utils/consts'
+import { trabajos } from './consts'
 
 function ProyectosSection() {
   const translatedTags = tags.map(t => ({
@@ -10,6 +11,13 @@ function ProyectosSection() {
         {t}
       </Text>
     ),
+  }))
+
+  const translatedTrabajos = trabajos.map(t => ({
+    image: t.image,
+    link: t.link,
+    tags: t.tags,
+    titulo: <Text from="Proyectos">{`${t.slug}.titulo`}</Text>,
   }))
   return (
     <section>
@@ -31,6 +39,7 @@ function ProyectosSection() {
             </Text>
           }
           tags={translatedTags}
+          trabajos={translatedTrabajos}
         />
       </div>
     </section>

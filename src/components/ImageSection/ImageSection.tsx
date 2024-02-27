@@ -3,7 +3,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { TagButton } from './TagButton'
-import { trabajos } from './consts'
 import { useImagesState } from './hooks'
 import { ReactNode } from 'react'
 
@@ -13,9 +12,15 @@ type Props = {
     element: ReactNode
     label: string
   }[]
+  trabajos: {
+    image?: string
+    link: string
+    titulo: ReactNode
+    tags: string[]
+  }[]
 }
 
-function ImageSection({ caption, tags }: Props) {
+function ImageSection({ caption, tags, trabajos }: Props) {
   const { currentTags, handleClick } = useImagesState()
 
   return (
