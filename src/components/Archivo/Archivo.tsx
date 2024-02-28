@@ -8,6 +8,7 @@ import { Archivo } from './types'
 
 function Archivo() {
   const [seleccion, setSeleccion] = useState<Archivo[]>([])
+
   const handleClick = useCallback(
     (filter: Archivo) => {
       const index = seleccion.indexOf(filter)

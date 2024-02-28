@@ -15,9 +15,9 @@ async function ExploraProyectos({ slug }: Props) {
     <div className="bg-pink p-4 lg:p-16">
       <div className="flex flex-wrap">
         <div className="flex aspect-square w-1/4 items-center justify-center bg-ladrillo">
-          <p className="text-normal text-center lg:text-lg">
-            Explora + <br /> labs
-          </p>
+          <Text from="Proyectos" className="text-center" isRichText>
+            explora
+          </Text>
         </div>
         {data.map(proyecta => (
           <Link

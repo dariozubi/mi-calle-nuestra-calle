@@ -1,5 +1,6 @@
 import { aliadas } from '@/utils/consts'
 import Image from 'next/image'
+import Text from '../Text'
 
 const aliadxs: Record<
   'mexico' | 'guatemala' | 'barcelona',
@@ -32,20 +33,12 @@ function AliadasSection() {
   return (
     <section className="flex flex-col gap-12 px-4 py-4 lg:px-16 lg:py-16">
       <div>
-        <h2 className="mb-8 text-xl font-extrabold lg:text-4xl">Aliadxs</h2>
-        <p className="text-base lg:text-xl">
-          Desde el año 2020, colaboramos de manera directa e indirecta con una
-          red de organizaciones (gubernamentales y no gubernamentales),
-          organizaciones de base y/o universidades, que abogan por los derechos
-          humanos de las mujeres, radicadas en México, Guatemala y Barcelona.{' '}
-          <br />
-          <br />
-          Nuestros proyectos de cooperación, van desde la creación y gestión de
-          laboratorias efímeras que inciden de manera directa o indirecta en
-          comunidades de mujeres diversas en situación de exclusión social,
-          hasta proyectos de consultoría en investigación de futuros con enfoque
-          de género, etc.
-        </p>
+        <Text from="Nosotras" variant="lg" as="h2" className="mb-8">
+          aliadxs
+        </Text>
+        <Text from="Nosotras" isRichText>
+          aliadxs-text
+        </Text>
       </div>
       <hr />
       <div className="flex flex-col gap-4">

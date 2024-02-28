@@ -1,5 +1,6 @@
 import { PropsWithChildren } from 'react'
 import { colorVariants } from './consts'
+import Text from '../Text'
 
 type Props = {
   selected: boolean
@@ -16,10 +17,7 @@ export function FilterButton({
     ? colorVariants[selectedBackgroundColor].selected
     : colorVariants[selectedBackgroundColor].default
   return (
-    <button
-      onClick={onClick}
-      className={`h-fit px-2 py-1 text-sm font-bold lg:text-base ${colors}`}
-    >
+    <button onClick={onClick} className={`h-fit px-2 py-1 ${colors}`}>
       {children}
     </button>
   )
