@@ -30,9 +30,7 @@ export type Semblante = {
   correo: string
   instagram: string
   linkedin: string
-  intereses: string[]
-  proyectosRecientes: Enlace[]
+  proyectosRecientes: string[]
   conferencias: Enlace[]
-  semblante: string
   moodboard: string[]
 }

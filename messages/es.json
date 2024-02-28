@@ -83,6 +83,20 @@
         "academia": "Academia",
         "exhibiciones": "Exhibiciones"
     },
+    "Semblante": {
+        "intereses": "Intereses actuales",
+        "proyectos": "Proyectos recientes",
+        "conferencias": "Conferencias / Talleres",
+        "acerca-de": "Acerca de",
+        "sophia-arrazola": {
+            "intereses": "Género<br></br>Migración climática<br></br>Aprender de otras formas<br></br>Arte comunitario<br></br>Ciudades comunes",
+            "semblante": "Sophia es fundadora de Mi Calle, Nuestra Calle. Con más de 8 años de experiencia desarrollando proyectos de innovación social y liderando procesos de investigación antropológica y arte participativo, diseño de experiencias de inteligencia colectiva con enfoque de género y derechos humanos en América Latina y Europa. Desde un enfoque creativo, ético y crítico, ha colaborado como consultora independiente con proyectos de base, ONG's de impacto sostenible y organizaciones de cooperación internacional, entre otros.<br></br><br></br>Con alma de antropóloga urbana y una personalidad curiosa que la ha impulsado a explorar, descubrir e interesarse por los futuros como oficio, el arte comunitario-participativo como medio y el diseño de experiencias culturales antropológicas como vocación, combinado con un pensamiento crítico agudo."
+        },
+        "jesica-bastidas": {
+            "intereses": "Interdisciplina y colaboración<br></br>Arte comunitario<br></br>Futuros participativos<br></br>Clown y artes escénicas<br></br>Arte especulativo",
+            "semblante": "Jesica es co-fundadora de Mi Calle, Nuestra Calle. Artista escénica, clown y futurista con más de 9 años de experiencia en el acompañamiento comunitario a través del arte participativo, sus cruces con otras disciplinas y una dosis de buen humor. Se especializa en el trabajo con grupos para fomentar espacios de inclusión, inteligencia colectiva, colaboración y empatía. <br></br><br></br>Su más reciente trabajo explora el arte especulativo en búsqueda de futuros participativos y nuevos anhelos. Encuentra en el humor una herramienta poderosa para el entretenimiento educativo, la crítica, la orientación comunitaria y la facilitación creativa. Colabora con instituciones científicas y ONGs para la divulgación lúdica de conocimientos, presentando su trabajo en México y extranjero."
+        }
+    },
     "Tags": {
         "a2020": "2020",
         "a2021": "2021",

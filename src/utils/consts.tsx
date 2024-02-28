@@ -21,26 +21,10 @@ export const equipa: Semblante[] = [
     correo: 'sophia@micallenuestracalle.com',
     instagram: 'https://www.instagram.com/sopharrazola_/?hl=es-la',
     linkedin: 'https://www.linkedin.com/in/sophia-arrazola-63667189/',
-    intereses: [
-      'Género',
-      'Migración climática',
-      'Aprender de otras formas',
-      'Arte comunitario',
-      'Ciudades comunes',
-    ],
     proyectosRecientes: [
-      {
-        nombre: 'Tendedero Vernaculo',
-        url: '/proyecta/tendedero-vernaculo',
-      },
-      {
-        nombre: 'Lab La Nueva Fábrica',
-        url: '/proyecta/laboratoria-de-futuros-comunitarios',
-      },
-      {
-        nombre: 'Tejiendo futuros',
-        url: '/proyecta/tejiendo-futuros',
-      },
+      'tendedero-vernaculo',
+      'laboratoria-de-futuros-comunitarios',
+      'tejiendo-futuros',
     ],
     conferencias: [
       {
@@ -48,17 +32,6 @@ export const equipa: Semblante[] = [
         url: '',
       },
     ],
-    semblante: `Sophia es fundadora de Mi Calle, Nuestra Calle. Con más de 8 años de experiencia 
-    desarrollando proyectos de innovación social y liderando procesos de investigación antropológica 
-    y arte participativo, diseño de experiencias de inteligencia colectiva con enfoque de género y 
-    derechos humanos en América Latina y Europa. Desde un enfoque creativo, ético y crítico, ha 
-    colaborado como consultora independiente con proyectos de base, ONG's de impacto sostenible y 
-    organizaciones de cooperación internacional, entre otros.<br/><br/>
-
-    Con alma de antropóloga urbana y una personalidad curiosa que la ha impulsado a explorar, 
-    descubrir e interesarse por los futuros como oficio, el arte comunitario-participativo como 
-    medio y el diseño de experiencias culturales antropológicas como vocación, combinado con un 
-    pensamiento crítico agudo.`,
     moodboard: [
       '/img/sophia/1-moodsoph.jpg',
       '/img/sophia/2-moodsoph.jpg',
@@ -76,39 +49,13 @@ export const equipa: Semblante[] = [
     correo: 'jesica@micallenuestracalle.com',
     instagram: 'https://www.instagram.com/jesica.bastidas/',
     linkedin: 'https://www.linkedin.com/in/jesica-bastidas/',
-    intereses: [
-      'Interdisciplina y colaboración',
-      'Arte comunitario',
-      'Futuros participativos',
-      'Clown y artes escénicas',
-      'Arte especulativo',
-    ],
-    proyectosRecientes: [
-      {
-        nombre: 'Las Panas',
-        url: '/proyecta/historias-desde-la-risa',
-      },
-      {
-        nombre: 'Tendedero Vernaculo',
-        url: '/proyecta/tendedero-vernaculo',
-      },
-    ],
+    proyectosRecientes: ['historias-desde-la-risa', 'tendedero-vernaculo'],
     conferencias: [
       {
         nombre: 'Institute for the future',
         url: '',
       },
     ],
-    semblante: `Jesica es co-fundadora de Mi Calle, Nuestra Calle. 
-    Artista escénica, clown y futurista con más de 9 años de experiencia en el 
-    acompañamiento comunitario a través del arte participativo, sus cruces con otras 
-    disciplinas y una dosis de buen humor. Se especializa en el trabajo con grupos 
-    para fomentar espacios de inclusión, inteligencia colectiva, colaboración y empatía. 
-    <br/><br/>Su más reciente trabajo explora el arte especulativo en búsqueda de futuros participativos y nuevos anhelos. 
-    Encuentra en el humor una herramienta poderosa para el entretenimiento educativo, 
-    la crítica, la orientación comunitaria y la facilitación creativa. Colabora con 
-    instituciones científicas y ONGs para la divulgación lúdica de conocimientos, 
-    presentando su trabajo en México y extranjero.`,
     moodboard: [
       '/img/jes/1-moodjes.jpg',
       '/img/jes/2-moodjes.jpg',

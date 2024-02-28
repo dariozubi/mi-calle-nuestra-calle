@@ -2,6 +2,7 @@ import { equipa } from '@/utils/consts'
 import Link from 'next/link'
 import { ArrowUpRight } from 'react-feather'
 import Image from 'next/image'
+import Text from '../Text'
 
 type Props = {
   slug: string
@@ -13,15 +14,13 @@ function Semblante({ slug }: Props) {
     correo,
     instagram,
     linkedin,
-    intereses,
     proyectosRecientes,
     conferencias,
-    semblante,
     moodboard,
   } = equipa.filter(p => p.slug === slug)[0]
   return (
     <>
-      <div className="mt-14 flex flex-col justify-between bg-black px-4 py-6 lg:mt-6 lg:flex-row lg:px-16">
+      <div className="mt-14 flex flex-col justify-between bg-black px-4 py-6 lg:mt-9 lg:flex-row lg:px-16">
         <Link
           href={`mailto:${correo}`}
           className="text-base font-extrabold text-white lg:text-xl"
@@ -36,34 +35,30 @@ function Semblante({ slug }: Props) {
       <div className="relative flex w-full flex-wrap">
         <div className="absolute top-0 ml-4 h-0 w-0 border-l-[15px] border-r-[15px] border-t-[15px] border-solid border-x-white border-t-black lg:ml-16" />
         <section className="mt-8 flex w-full flex-col px-4 lg:mt-16 lg:w-1/2 lg:px-16">
-          <h1 className="text-lg">{nombre}</h1>
-          <hr className="mt-4" />
-          <h2 className="mb-4 text-lg font-bold lg:mb-12 lg:text-2xl lg:font-normal">
-            Intereses actuales
-          </h2>
-          {intereses.map(i => (
-            <p className="text-lg lg:text-2xl" key={i}>
-              {i}
-            </p>
-          ))}
-          <hr className="mt-8 lg:mt-12" />
-          <h2 className="mb-4 text-lg font-bold lg:mb-12 lg:text-2xl lg:font-normal">
-            Proyectos recientes
-          </h2>
+          <h1 className="text-3xl font-extrabold lg:text-6xl">{nombre}</h1>
+          <hr className="mt-8 lg:mt-20" />
+          <Text from="Semblante" as="h2" variant="lg" className="mb-8">
+            intereses
+          </Text>
+          <Text from="Semblante" isRichText>{`${slug}.intereses`}</Text>
+          <hr className="mt-8 lg:mt-24" />
+          <Text from="Semblante" as="h2" variant="lg" className="mb-8">
+            proyectos
+          </Text>
           {proyectosRecientes.map(p => (
             <Link
-              href={p.url}
-              key={p.url}
+              href={`/proyecta/${p}`}
+              key={p}
               className="flex items-center text-lg lg:text-2xl"
             >
-              {p.nombre}
+              <Text from="Proyectos" as="span">{`${p}.titulo`}</Text>
               <ArrowUpRight size={24} className="-mb-1" />
             </Link>
           ))}
-          <hr className="mt-8 lg:mt-12" />
-          <h2 className="mb-4 text-lg font-bold lg:mb-12 lg:text-2xl lg:font-normal">
-            Conferencias / Talleres
-          </h2>
+          <hr className="mt-8 lg:mt-24" />
+          <Text from="Semblante" as="h2" variant="lg" className="mb-8">
+            conferencias
+          </Text>
           {conferencias.map(p => (
             <Link
               href={p.url}
@@ -74,14 +69,15 @@ function Semblante({ slug }: Props) {
               <ArrowUpRight size={24} className="-mb-1" />
             </Link>
           ))}
-          <hr className="mt-8 lg:mt-12" />
-          <h2 className="mb-4 text-lg font-bold lg:mb-12 lg:text-2xl lg:font-normal">
-            Acerca de
-          </h2>
-          <p
-            className="text-base lg:text-xl"
-            dangerouslySetInnerHTML={{ __html: semblante }}
-          />
+          <hr className="mt-8 lg:mt-24" />
+          <Text from="Semblante" as="h2" variant="lg" className="mb-8">
+            acerca-de
+          </Text>
+          <Text
+            from="Semblante"
+            className="text-balance"
+            isRichText
+          >{`${slug}.semblante`}</Text>
         </section>
         <section className="flex w-full flex-col gap-2 pt-8 lg:w-1/2 lg:gap-4 lg:py-0 lg:pt-0">
           <div className="relative aspect-video w-full">
