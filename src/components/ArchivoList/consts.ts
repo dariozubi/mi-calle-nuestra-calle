@@ -1,19 +1,4 @@
-import { Archivo, Item } from './types'
-
-export const filters: { label: string; value: Archivo }[] = [
-  {
-    label: 'Conferencias',
-    value: 'conferencia',
-  },
-  {
-    label: 'Academia',
-    value: 'academia',
-  },
-  {
-    label: 'Exhibiciones',
-    value: 'exhibicion',
-  },
-]
+import { Item } from './types'
 
 export const colorVariants = {
   conferencia: {

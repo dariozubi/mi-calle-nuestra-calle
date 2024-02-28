@@ -1,6 +1,5 @@
 import { PropsWithChildren } from 'react'
 import { colorVariants } from './consts'
-import Text from '../Text'
 
 type Props = {
   selected: boolean

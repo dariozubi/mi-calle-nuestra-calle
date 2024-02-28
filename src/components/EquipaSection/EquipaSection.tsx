@@ -1,9 +1,9 @@
-import { Equipa } from './Equipa'
+import { EquipaList } from './EquipaList'
 import Text from '@/components/Text'
 import { Filter, Miembro } from './types'
 
 function EquipaSection() {
-  const filters = [
+  const filters: Filter[] = [
     {
       label: (
         <Text from="Nosotras" as="span" variant="sm">
@@ -28,9 +28,9 @@ function EquipaSection() {
       ),
       value: 'voluntaria',
     },
-  ] as Filter[]
+  ]
 
-  const miembros = [
+  const miembros: Miembro[] = [
     {
       name: 'Sophia Arrazola',
       position: (
@@ -163,9 +163,9 @@ function EquipaSection() {
       tag: 'voluntaria',
       img: '/img/equipa/Paulina.jpg',
     },
-  ] as Miembro[]
+  ]
   return (
-    <Equipa
+    <EquipaList
       header={
         <Text from="Nosotras" variant="xl" as="h2">
           equipa

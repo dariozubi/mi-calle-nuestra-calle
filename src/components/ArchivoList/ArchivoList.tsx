@@ -1,22 +1,21 @@
 'use client'
 
-import { ReactNode, useCallback, useState } from 'react'
-import { FilterButton } from './FilterButton'
 import { ListItem } from './ListItem'
-import { Filter, Miembro, Tag } from './types'
-import { HoverPhoto } from './HoverPhoto'
+import { FilterButton } from './FilterButton'
+import { ReactNode, useCallback, useState } from 'react'
+import { Archivo, Filter } from './types'
+import { archivos } from './consts'
 
 type Props = {
   header: ReactNode
   filters: Filter[]
-  miembros: Miembro[]
 }
 
-export const Equipa = ({ header, filters, miembros }: Props) => {
-  const [seleccion, setSeleccion] = useState<Tag[]>([])
+function ArchivoList({ header, filters }: Props) {
+  const [seleccion, setSeleccion] = useState<Archivo[]>([])
 
   const handleClick = useCallback(
-    (filter: Tag) => {
+    (filter: Archivo) => {
       const index = seleccion.indexOf(filter)
       if (index !== -1) {
         if (seleccion.length > 0) {
@@ -31,9 +30,9 @@ export const Equipa = ({ header, filters, miembros }: Props) => {
 
   return (
     <section>
-      <div className="top-[68px] flex flex-wrap items-baseline justify-between gap-4 bg-white p-4 first-letter:flex lg:sticky lg:p-8">
+      <div className="sticky top-[62px] flex flex-wrap items-baseline justify-between gap-4 bg-white p-4 pt-12 lg:px-16 lg:pt-20">
         {header}
-        <div className="my-4 flex justify-between gap-4 lg:my-0 lg:gap-8">
+        <div className="mb-4 flex flex-wrap items-end gap-1 sm:mb-0 lg:gap-8">
           {filters.map(i => (
             <FilterButton
               key={i.value}
@@ -47,15 +46,19 @@ export const Equipa = ({ header, filters, miembros }: Props) => {
         </div>
       </div>
       <ul className="flex flex-col gap-1 pb-1">
-        {miembros.map(
+        {archivos.map(
           item =>
             (!seleccion.length || seleccion.some(s => s === item.tag)) && (
-              <HoverPhoto img={item.img} key={item.name}>
-                <ListItem item={item} selectedBackgroundColor={item.tag} />
-              </HoverPhoto>
+              <ListItem
+                key={item.url}
+                item={item}
+                selectedBackgroundColor={item.tag}
+              />
             )
         )}
       </ul>
     </section>
   )
 }
+
+export default ArchivoList
