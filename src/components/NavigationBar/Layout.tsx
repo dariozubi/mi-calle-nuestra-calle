@@ -4,6 +4,7 @@ import { PropsWithChildren, useCallback, useState } from 'react'
 import Link from 'next/link'
 import { Menu, X } from 'react-feather'
 import { useScrollPosition } from './hooks'
+import { LanguageSelector } from './LanguageSelector'
 
 const scrollLimit = 10
 
@@ -21,17 +22,20 @@ export const Layout = ({ children }: PropsWithChildren) => {
           <Link href="/" className="text-xl font-black lg:text-3xl">
             mi calle, nuestra calle.
           </Link>
-          <div className="hidden lg:block">
-            {!isOnTop && (
+          <div className="flex h-full items-center gap-8">
+            <LanguageSelector />
+            <div className="hidden lg:block lg:min-w-[30px]">
+              {!isOnTop && (
+                <button onClick={handleClick}>
+                  {open ? <X size={30} /> : <Menu size={30} />}
+                </button>
+              )}
+            </div>
+            <div className="block lg:hidden">
               <button onClick={handleClick}>
                 {open ? <X size={30} /> : <Menu size={30} />}
               </button>
-            )}
-          </div>
-          <div className="block lg:hidden">
-            <button onClick={handleClick}>
-              {open ? <X size={30} /> : <Menu size={30} />}
-            </button>
+            </div>
           </div>
         </div>
         <div className="block lg:hidden">

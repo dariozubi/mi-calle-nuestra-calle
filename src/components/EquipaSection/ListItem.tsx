@@ -2,16 +2,17 @@ import Link from 'next/link'
 import { ArrowUpRight } from 'react-feather'
 import { Miembro } from './types'
 import { colorVariants } from './consts'
-import React from 'react'
+import React, { ReactNode } from 'react'
 
 type Props = {
   item: Miembro
+  conectar: ReactNode
   selectedBackgroundColor: keyof typeof colorVariants
 } & React.HTMLProps<HTMLLIElement>
 
 export const ListItem = React.forwardRef<HTMLLIElement, Props>(
   function ListItem(props, ref) {
-    const { item, selectedBackgroundColor, ...rest } = props
+    const { item, selectedBackgroundColor, conectar, ...rest } = props
     const selectedVariant = colorVariants[selectedBackgroundColor].hover
     return (
       <li
@@ -30,7 +31,7 @@ export const ListItem = React.forwardRef<HTMLLIElement, Props>(
             className="flex w-1/2 items-center gap-1 pt-2 lg:w-2/12 lg:justify-end lg:pt-0"
           >
             <ArrowUpRight size={16} className="-mb-1" />
-            Conectar
+            {conectar}
           </Link>
         ) : (
           <div />

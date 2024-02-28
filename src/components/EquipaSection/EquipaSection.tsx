@@ -173,6 +173,11 @@ function EquipaSection() {
       }
       filters={filters}
       miembros={miembros}
+      conectar={
+        <Text from="Nosotras" as="span" variant="sm">
+          conectar
+        </Text>
+      }
     />
   )
 }

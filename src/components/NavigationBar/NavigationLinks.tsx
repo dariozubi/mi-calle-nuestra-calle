@@ -1,7 +1,7 @@
-import Link from 'next/link'
 import { links } from '@/utils/consts'
 import { ArrowDown, ArrowUpRight } from 'react-feather'
 import Text from '@/components/Text'
+import { Link } from '@/navigation'
 
 export const NavigationLinks = () => {
   return (
@@ -12,28 +12,28 @@ export const NavigationLinks = () => {
             we
           </Text>
         </Link>
-        <a href="/#labs">
+        <Link href="/#labs">
           <Text from="Navigation" variant="xxl">
             labs
           </Text>
-        </a>
+        </Link>
         <Link href="/archivo">
           <Text from="Navigation" variant="xxl">
             archive
           </Text>
         </Link>
-        <a href="/#separte">
+        <Link href="/#separte">
           <Text from="Navigation" variant="xxl">
             join
           </Text>
-        </a>
+        </Link>
       </div>
       <hr className="my-2 w-full lg:hidden" />
       <div className="flex w-full flex-col lg:w-3/12">
         <Text from="Navigation" variant="md" className="font-normal">
           do-it-yourself
         </Text>
-        <Link
+        <a
           href={links.metodologias}
           target="_blank"
           className="flex items-center"
@@ -42,8 +42,8 @@ export const NavigationLinks = () => {
             methods
           </Text>{' '}
           <ArrowDown size={28} />
-        </Link>
-        <Link
+        </a>
+        <a
           target="_blank"
           href={links.herramientas}
           className="flex items-center"
@@ -52,7 +52,7 @@ export const NavigationLinks = () => {
             tools
           </Text>{' '}
           <ArrowDown size={28} />
-        </Link>
+        </a>
       </div>
       <hr className="my-2 w-full lg:hidden" />
       <div className="flex w-full flex-col lg:w-2/12">
@@ -63,33 +63,33 @@ export const NavigationLinks = () => {
           <ArrowUpRight size={28} />
         </div>
         <div className="flex items-center gap-4">
-          <Link
+          <a
             href={links.mail}
             target="_blank"
             className="text-2xl font-extrabold text-white"
           >
             Email
-          </Link>
+          </a>
           <p className="font-extrabold text-white">|</p>
-          <Link
+          <a
             href={links.dm}
             target="_blank"
             className="text-2xl font-extrabold text-white"
           >
             DM
-          </Link>
+          </a>
         </div>
       </div>
       <hr className="my-2 w-full lg:hidden" />
       <div className="flex w-full flex-col items-end justify-between lg:w-4/12 lg:pl-12 ">
         <div className="flex w-full items-center justify-start gap-2">
-          <Link className="text-xl" target="_blank" href={links.instagram}>
+          <a className="text-xl" target="_blank" href={links.instagram}>
             Instagram
-          </Link>{' '}
+          </a>{' '}
           |{' '}
-          <Link className="text-xl" target="_blank" href={links.linkedin}>
+          <a className="text-xl" target="_blank" href={links.linkedin}>
             Linkedin
-          </Link>
+          </a>
         </div>
         <a
           href={links.merch}

@@ -8,11 +8,12 @@ import { HoverPhoto } from './HoverPhoto'
 
 type Props = {
   header: ReactNode
+  conectar: ReactNode
   filters: Filter[]
   miembros: Miembro[]
 }
 
-export const EquipaList = ({ header, filters, miembros }: Props) => {
+export const EquipaList = ({ header, conectar, filters, miembros }: Props) => {
   const [seleccion, setSeleccion] = useState<Tag[]>([])
 
   const handleClick = useCallback(
@@ -51,7 +52,11 @@ export const EquipaList = ({ header, filters, miembros }: Props) => {
           item =>
             (!seleccion.length || seleccion.some(s => s === item.tag)) && (
               <HoverPhoto img={item.img} key={item.name}>
-                <ListItem item={item} selectedBackgroundColor={item.tag} />
+                <ListItem
+                  item={item}
+                  selectedBackgroundColor={item.tag}
+                  conectar={conectar}
+                />
               </HoverPhoto>
             )
         )}
