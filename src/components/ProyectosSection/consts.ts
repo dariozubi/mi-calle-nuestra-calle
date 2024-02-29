@@ -1,4 +1,4 @@
-import { escenarios, proyectas } from '@/utils/consts'
+import { proyectas } from '@/utils/consts'
 
 export const trabajos = [
   ...proyectas.map(t => ({
