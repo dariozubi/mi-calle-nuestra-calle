@@ -1,4 +1,7 @@
-import { ReactNode } from 'react'
+export type PageProps = {
+  params: { slug: string; locale: string }
+  searchParams?: { [key: string]: string | string[] | undefined }
+}
 
 type Enlace = {
   nombre: string
@@ -14,17 +17,9 @@ export type Aliada = {
 export type Proyecta = {
   slug: string
   tags: string[]
-  titulo: string
   lugar: string
   fecha: string
-  temas: string[]
   alianzas: Aliada[]
-  descripcion: string | ReactNode[]
-  metodos?: string
-  pedagogias?: string
-  medio?: string
-  cambios?: string
-  creditos?: string
   images?: string[]
   reporte?: string
 }
@@ -35,9 +30,7 @@ export type Semblante = {
   correo: string
   instagram: string
   linkedin: string
-  intereses: string[]
-  proyectosRecientes: Enlace[]
+  proyectosRecientes: string[]
   conferencias: Enlace[]
-  semblante: string
   moodboard: string[]
 }

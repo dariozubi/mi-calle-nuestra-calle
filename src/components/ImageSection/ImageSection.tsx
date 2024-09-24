@@ -1,24 +1,38 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { TagButton } from './TagButton'
-import { tags, trabajos } from './consts'
 import { useImagesState } from './hooks'
+import { ReactNode } from 'react'
+import { Link } from '@/navigation'
 
-function ImageSection() {
+type Props = {
+  caption: ReactNode
+  tags: {
+    element: ReactNode
+    label: string
+  }[]
+  trabajos: {
+    image?: string
+    link: string
+    titulo: ReactNode
+    tags: string[]
+  }[]
+}
+
+function ImageSection({ caption, tags, trabajos }: Props) {
   const { currentTags, handleClick } = useImagesState()
 
   return (
     <figure>
       <ul className="mb-4 ml-1 box-content flex gap-2 overflow-auto text-sm sm:text-base lg:ml-2">
-        {tags.map(t => (
+        {tags.map((t, i) => (
           <TagButton
-            key={t}
-            selected={currentTags.includes(t)}
-            onClick={() => handleClick(t)}
+            key={i}
+            selected={currentTags.includes(t.label)}
+            onClick={() => handleClick(t.label)}
           >
-            {t}
+            {t.element}
           </TagButton>
         ))}
       </ul>
@@ -48,8 +62,8 @@ function ImageSection() {
             )
         )}
       </div>
-      <figcaption className="ml-1 text-sm text-white sm:text-base lg:ml-2">
-        Fotografías: MCNC (2020-2023)
+      <figcaption className="ml-1 flex text-sm text-white sm:text-base lg:ml-2">
+        {caption}: MCNC (2020-2023)
       </figcaption>
     </figure>
   )
