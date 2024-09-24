@@ -2,13 +2,14 @@
     "Navigation": {
         "we": "Nosotras",
         "labs": "Labs",
+        "projects": "Proyectos",
         "archive": "Archivo",
         "join": "Sé parte",
         "do-it-yourself": "Hazlo tu mismx",
         "methods": "Metodologías",
         "tools": "Herramientas",
         "contact": "Contáctanos",
-        "get-merch": "Adquiere nuestra merch",
+        "last-project": "Visita nuestro proyecto más reciente",
         "designed-by": "Diseñado por"
     },
     "Home": {
@@ -148,8 +149,8 @@
             "creditos": "Sophia Arrazola, Sophie Greenspan, Jesica Bastidas y comunidad de Violeta Radio",
             "temas": "Perspectiva de género<br></br>Derechos humanos<br></br>Feminismos<br></br>Violencia de género<br></br>Urbanismo feminista"
         },
-        "los-futuros-de-las-mujeres": {
-            "titulo": "Los futuros de las mujeres",
+        "los-futuros-de-la-calle-de-las-mujeres": {
+            "titulo": "Los futuros de la calle de las mujeres",
             "descripcion": "Programa de formación comunitaria en perspectiva de género, derechos humanos de las mujeres y diseño de futuros para la Alcaldía y Red de vecinas de Azcapotzalco. A través de futuros participativos y arte comunitario, se creó y plasmó un escenario futurible en murales para la fachada de su mercado.",
             "metodos": "Antropología anticipatoria, visualizaciones de ciclos, análisis causal por capas, escaneo del horizonte, creación de escenarios futuros, planeación prospectiva estratégica",
             "pedagogias": "vinculación comunitaria, teatro del oprimido, arte comunitario, futuros participativos, tendedero de ideas",
@@ -158,12 +159,12 @@
             "creditos": "Sophia Arrazola, Jesica Bastidas, Sophie Greenspan, Veronica Navarro, Red de vecinas y Unidad de Género de Azcapotzalco",
             "temas": "Perspectiva de género<br></br>Derechos humanos<br></br>Espacio público<br></br>Violencia de género<br></br>Urbanismo feminista"
         },
-        "tejiendo-futuros": {
-            "titulo": "Tejiendo futuros",
-            "descripcion": "Talleres creativos en pensamiento prospectivo y formación ciudadana para vecinas de la galería La Nueva Fábrica. Sus experiencias del pasado, presente, y anhelos futuros se plasmaron en arte textil y se exhibió en la galería. Con un mural interactivo se inició la conversación con el resto de la comunidad.",
+        "tejiendo-nuevos-futuros": {
+            "titulo": "Tejiendo nuevos futuros",
+            "descripcion": "Esta pieza surge de una serie de talleres comunitarios realizados durante una residencia artística en La Nueva Fábrica, donde mujeres de diversas comunidades compartieron sus historias y anhelos futuros. A través del bordado comunitario, estas experiencias fueron plasmadas sobre textil utilizando diversas técnicas, creando una obra que entreteje realidades resonantes y explora los derechos humanos y futuros imaginados por las participantes.",
             "metodos": "Visualizaciones de ciclos, creación de escenarios futuros, antropología anticipatoria, etnografía poética",
             "pedagogias": "vinculación comunitaria, futuros participativos, arte participativo, prácticas narrativas",
-            "medio": "mural interactivo, tendedero comunitario, bordado, arte textil, instalación de arte",
+            "medio": "mural interactivo, tendedero comunitario, bordado, arte textil, instalación efímera",
             "cambios": "autonomía económica, derecho al descanso y tiempo libre, nuevas masculinidades",
             "creditos": "Sophia Arrazola, Jesica Bastidas, La Nueva Fábrica y comunidad de vecinas de la aldea Santa Ana",
             "temas": "Perspectiva de género<br></br>Derechos humanos<br></br>Violencia de género<br></br>Formación ciudadana<br></br>Pensamiento prospectivo"
@@ -178,9 +179,9 @@
             "creditos": "Jesica Bastidas, Sophia Arrazola y Dra. Anisah Abdullah",
             "temas": "Juventudes<br></br>Alfabetización de futuros<br></br>Aprendizaje colaborativo<br></br>Pedagogía crítica<br></br>Estudio comparativo"
         },
-        "laboratoria-de-futuros-comunitarios": {
-            "titulo": "Laboratoria de futuros comunitarios",
-            "descripcion": "Modelo pedagógico y gestión cultural de un espacio de diálogo y empoderamiento de las líderes comunitarias de Santa Ana. En talleres de bordado experimental, se a-bordó la perspectiva de género, derechos humanos, futuros y la conquista de sus autonomías. Se abrieron bazares para la venta de estos productos.",
+        "lab-futuros-comunitarios": {
+            "titulo": "Lab Futuros comunitarios",
+            "descripcion": "Mediación de un espacio de diálogo y empoderamiento económico para mujeres de comunidades vecinas a La Nueva Fábrica, un espacio de arte contemporáneo en Antigua Guatemala.<br></br><br></br>Este proyecto, desarrollado durante un año, creó un espacio seguro y creativo para mujeres de comunidades cercanas a La Nueva Fábrica. A través de ciclos de bordado experimental, y con el apoyo de artistas locales, las participantes compartieron y analizaron sus experiencias de vida desde una perspectiva de género y derechos humanos. Al finalizar cada ciclo, crearon productos de bordado que vendieron en un bazar autogestionado, y también participaron en diversas actividades de curaduría comunitaria. Las obras generadas en los talleres se exhibieron trimestralmente en la galería.",
             "metodos": "Etnografía poética, visualizaciones de ciclos, ¿futuros aspiracionales?",
             "pedagogias": "vinculación comunitaria, diseño de modelo pedagógico, planeación prospectiva estratégica, teoría de cambio",
             "medio": "taller productivo de bordado, agenda cultural, instalación de arte, arte textil",
@@ -217,6 +218,10 @@
             "cambios": "calles limpias y seguras, derecho a la ciudad, tejido social",
             "creditos": "Sophia Arrazola,  Jesica Bastidas, Monse Padilla, Ilaria Palermo, Chris van Balen, Rosi Álvarez, Johana Trujillo y Esteban Ruiz-Velasco",
             "temas": "Espacio público<br></br>Gentrificación<br></br>Disidencias<br></br>Urbanismo feminista<br></br>Diseño participativo"
+        },
+        "la-calle-de-las-mujeres": {
+            "titulo": "La calle de las mujeres",
+            "descripcion": "Luego de un proceso de 6 meses de trabajo comunitario con la Red de Mujeres de Azcapotzalco, nuestra laboratoria concluyó con la visualización de dos escenarios futuros descritos en breves metáforas:<br></br><br></br><bl>“El capataz y la mujer atada” - Escenario Distópico.</bl><br></br><br></br>La historia de un Capataz que tiene poder y control total sobre nuestro territorio, nos priva de nuestros derechos ciudadanos y nos excluye de la toma de decisiones comunitarias. <br></br><br></br><bl>“Vecinas patrulleras” - Escenario Utópico.</bl><br></br><br></br>Nuestro barrio es seguro, la calle está bien iluminada y podemos compartir con nuestras familias con tranquilidad a cualquier hora porque todas nos conocemos como fue años atrás.<br></br><br></br>Lee los escenarios completos <escenarios>aquí</escenarios>"
         }
     }
 }

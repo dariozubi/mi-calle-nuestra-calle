@@ -12,6 +12,11 @@ export const NavigationLinks = () => {
             we
           </Text>
         </Link>
+        <Link href="/#proyectos">
+          <Text from="Navigation" variant="xxl">
+            projects
+          </Text>
+        </Link>
         <Link href="/#labs">
           <Text from="Navigation" variant="xxl">
             labs
@@ -97,7 +102,7 @@ export const NavigationLinks = () => {
           className="mt-8 w-full bg-black px-4 py-2 text-center text-white lg:mt-0"
         >
           <Text from="Navigation" className="font-bold">
-            get-merch
+            last-project
           </Text>
         </a>
       </div>

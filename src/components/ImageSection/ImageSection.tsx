@@ -1,10 +1,10 @@
 'use client'
 
 import Image from 'next/image'
-import Link from 'next/link'
 import { TagButton } from './TagButton'
 import { useImagesState } from './hooks'
 import { ReactNode } from 'react'
+import { Link } from '@/navigation'
 
 type Props = {
   caption: ReactNode

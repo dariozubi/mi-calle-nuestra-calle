@@ -23,8 +23,8 @@ export const equipa: Semblante[] = [
     linkedin: 'https://www.linkedin.com/in/sophia-arrazola-63667189/',
     proyectosRecientes: [
       'tendedero-vernaculo',
-      'laboratoria-de-futuros-comunitarios',
-      'tejiendo-futuros',
+      'lab-futuros-comunitarios',
+      'tejiendo-nuevos-futuros',
     ],
     conferencias: [
       {
@@ -218,14 +218,14 @@ export const proyectas: Proyecta[] = [
     ],
     alianzas: [aliadas.violetaRadio],
     images: [
-      '/img/proyectas/violeta_radio_1.jpg',
-      '/img/proyectas/violeta_radio_2.jpg',
-      '/img/proyectas/violeta_radio_4.jpg',
       '/img/proyectas/violeta_radio_5.jpg',
+      '/img/proyectas/violeta_radio_0.jpg',
+      '/img/proyectas/violeta_radio_3.jpg',
+      '/img/proyectas/violeta_radio_1.jpg',
     ],
   },
   {
-    slug: 'los-futuros-de-las-mujeres',
+    slug: 'los-futuros-de-la-calle-de-las-mujeres',
     tags: [
       'a2021',
       'cdmx',
@@ -251,7 +251,7 @@ export const proyectas: Proyecta[] = [
       'https://drive.google.com/file/d/1C5Vsuon8zRiZ_CoXKznT2SpSXtYWwftS/view?usp=sharing',
   },
   {
-    slug: 'tejiendo-futuros',
+    slug: 'tejiendo-nuevos-futuros',
     tags: [
       'a2022',
       'gt',
@@ -305,7 +305,7 @@ export const proyectas: Proyecta[] = [
       'https://jfsdigital.org/navigating-possible-futures-a-comparative-study/',
   },
   {
-    slug: 'laboratoria-de-futuros-comunitarios',
+    slug: 'lab-futuros-comunitarios',
     tags: [
       'a2022',
       'gt',
@@ -411,7 +411,7 @@ export const proyectas: Proyecta[] = [
 
 export const escenarios: Proyecta[] = [
   {
-    slug: 'los-futuros-de-las-mujeres',
+    slug: 'la-calle-de-las-mujeres',
     lugar: 'Azcapotzalco, CDMX',
     fecha: '2021',
     tags: [

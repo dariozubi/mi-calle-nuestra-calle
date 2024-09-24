@@ -75,38 +75,40 @@ function Trabajo({ slug, type }: Props) {
             variant="lg"
             className="mb-4 lg:mb-12 lg:block"
           >{`${slug}.titulo`}</Text>
-          <Text from="Proyectos">{`${slug}.descripcion`}</Text>
+          <Text from="Proyectos" isRichText>{`${slug}.descripcion`}</Text>
           <br />
-          <p>
-            <Text from="Proyectos" as="span" className="font-bold">
-              metodos
-            </Text>
-            : <Text from="Proyectos" as="span">{`${slug}.metodos`}</Text>
-            <br />
-            <br />
-            <Text from="Proyectos" as="span" className="font-bold">
-              pedagogias
-            </Text>
-            : <Text from="Proyectos" as="span">{`${slug}.pedagogias`}</Text>
-            <br />
-            <br />
-            <Text from="Proyectos" as="span" className="font-bold">
-              medio
-            </Text>
-            : <Text from="Proyectos" as="span">{`${slug}.medio`}</Text>
-            <br />
-            <br />
-            <Text from="Proyectos" as="span" className="font-bold">
-              cambios
-            </Text>
-            : <Text from="Proyectos" as="span">{`${slug}.cambios`}</Text>
-            <br />
-            <br />
-            <Text from="Proyectos" as="span" className="font-bold">
-              creditos
-            </Text>
-            : <Text from="Proyectos" as="span">{`${slug}.creditos`}</Text>
-          </p>
+          {type !== 'escenarios' && (
+            <p>
+              <Text from="Proyectos" as="span" className="font-bold">
+                metodos
+              </Text>
+              : <Text from="Proyectos" as="span">{`${slug}.metodos`}</Text>
+              <br />
+              <br />
+              <Text from="Proyectos" as="span" className="font-bold">
+                pedagogias
+              </Text>
+              : <Text from="Proyectos" as="span">{`${slug}.pedagogias`}</Text>
+              <br />
+              <br />
+              <Text from="Proyectos" as="span" className="font-bold">
+                medio
+              </Text>
+              : <Text from="Proyectos" as="span">{`${slug}.medio`}</Text>
+              <br />
+              <br />
+              <Text from="Proyectos" as="span" className="font-bold">
+                cambios
+              </Text>
+              : <Text from="Proyectos" as="span">{`${slug}.cambios`}</Text>
+              <br />
+              <br />
+              <Text from="Proyectos" as="span" className="font-bold">
+                creditos
+              </Text>
+              : <Text from="Proyectos" as="span">{`${slug}.creditos`}</Text>
+            </p>
+          )}
         </section>
       </div>
       <ExploraProyectos slug={slug} />

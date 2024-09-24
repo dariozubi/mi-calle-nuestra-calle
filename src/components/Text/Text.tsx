@@ -16,7 +16,7 @@ const baseClassNames: Record<Variants | 'text', string> = {
   xxl: 'text-4xl font-extrabold',
   xl: 'text-3xl font-extrabold lg:text-6xl',
   lg: 'text-2xl font-extrabold lg:text-3xl',
-  md: 'text-2xl font-bold lg:text-3xl',
+  md: 'text-2xl font-extrabold',
   sm: 'text-sm lg:text-base',
   xs: 'text-xs',
 }
@@ -43,6 +43,15 @@ function Text({
               r: m => <span className="text-red">{m}</span>,
               pu: m => <span className="text-lila">{m}</span>,
               b: m => <span className="text-blue">{m}</span>,
+              bl: m => <span className="font-extrabold">{m}</span>,
+              escenarios: m => (
+                <a
+                  className="underline"
+                  href="https://docs.google.com/presentation/d/1ijUsY8DVAGaeatr5fGefiuanOpYxr_fwlMxZQtc3hnE/edit#slide=id.g264ab6ef26c_0_112"
+                >
+                  {m}
+                </a>
+              ),
               br: () => <br />,
             })
           : t(children)
